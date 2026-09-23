@@ -1,0 +1,4 @@
+Neither literally — think of git as the hub, not a relay. Both localhost and the VPS sync with git independently; they never sync with each other directly:
+You edit locally → commit → push to GitHub → tell me "deploy" → VPS does git pull (+ rebuild/restart).
+Someone else edits on GitHub → you pull locally to stay in sync → VPS does the same git pull to catch up — completely separately from your local pull.
+The one rule that keeps this safe: the VPS only ever pulls from git, never pushes, and nobody edits code directly on the VPS. That way a single git pull on the VPS always means "match whatever's on GitHub right now," regardless of whether the change originated from you or someone else — same deploy command either way. If the VPS ever diverges (someone SSHs in and hand-edits a file), that invariant breaks and pulls start conflicting, so that's the thing to avoid.
