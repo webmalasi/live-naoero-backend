@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+    <Event>
+        <AirlineDesignator>ON</AirlineDesignator>
+        <FlightNumber>123</FlightNumber>
+        <OriginCode>DUS</OriginCode>
+        <DestinationCode>EWR</DestinationCode>
+        <DepartureDate>2026-10-15T15:00:00</DepartureDate>
+        <ArrivalDate>2026-10-15T20:00:00</ArrivalDate>
+        <EquipmentText>Airbus A321neo</EquipmentText>
+        <CancellationReason>-</CancellationReason>
+    </Event>
+    <Data Format="Json" Source="CRM">
+        <Customer>
+            <Ref>60182202</Ref>
+            <TypeCode>EndCustomer</TypeCode>
+            <Firstname>Firstname</Firstname>
+            <Surname>Lastname</Surname>
+            <Emails>
+                <CustomerEmail>
+                    <Email>test@test.com</Email>
+                </CustomerEmail>
+            </Emails>
+            <Phones>
+                <CustomerPhone>
+                    <PhoneNumber>+496785235456</PhoneNumber>
+                </CustomerPhone>
+            </Phones>
+        </Customer>
+        <LoadBookingRequest>
+            <UniqueID>
+                <TypeCode>PnrCode</TypeCode>
+                <ID>004DZ0</ID>
+            </UniqueID>
+            <Verification>
+                <PassengerName>Lastname</PassengerName>
+                <RefCustomer>60182202</RefCustomer>
+            </Verification>
+        </LoadBookingRequest>
+    </Data>

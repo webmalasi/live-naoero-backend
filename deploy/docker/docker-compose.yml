@@ -1,0 +1,32 @@
+# Naoero Laravel backend on the app server. The code lives on the host in
+# /var/www/naoero-laravel; nginx (host) serves public/ and passes PHP to
+# the app container on 127.0.0.1:9020. Host networking lets the containers
+# reach PostgreSQL on 127.0.0.1:5545.
+name: naoero-laravel
+
+x-php: &php
+  image: naoero-laravel-php:8.4
+  network_mode: host
+  restart: unless-stopped
+  volumes:
+    - /var/www/naoero-laravel:/var/www/html
+
+services:
+  app:
+    <<: *php
+    build: .
+    container_name: naoero-laravel-app
+
+  queue:
+    <<: *php
+    container_name: naoero-laravel-queue
+    user: www-data
+    command: php artisan queue:work --sleep=3 --tries=3 --max-time=3600
+    depends_on: [app]
+
+  scheduler:
+    <<: *php
+    container_name: naoero-laravel-scheduler
+    user: www-data
+    command: php artisan schedule:work
+    depends_on: [app]

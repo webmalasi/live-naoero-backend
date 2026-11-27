@@ -1,0 +1,167 @@
+{
+    "slug": "unaccompanied-minors",
+    "title": "Unaccompanied Minors",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/unaccompanied-minors",
+    "summary": "Children between the ages of 5 and 11 (inclusive) may travel alone as an Unaccompanied Minor (UM).",
+    "seo_title": "Unaccompanied Minors | Naoero Airlines",
+    "seo_description": "Who can travel as an Unaccompanied Minor, booking requirements, forms, documents, medication and collection.",
+    "banner_key": "unaccompanied-minors",
+    "sort_order": 260,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Travel Info > Before You Fly > Unaccompanied Minors",
+            "heading": "Unaccompanied Minors",
+            "body": "If you wish to transport an Unaccompanied Minor (UM) on any Naoero Airlines flight, there are a number of things you MUST do to ensure the Unaccompanied Minor is uplifted on the service booked and not denied travel at the airport. Children between the ages of 5 and 11 (inclusive) may travel alone as an \"Unaccompanied Minor\", or UM for short",
+            "image_alt": "A child looking out of an airport terminal window at a plane",
+            "image": "seed:unaccompanied-minors/hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Travel Info > Before You Fly > Unaccompanied Minors",
+            "heading": "Can My Child Travel Alone?",
+            "body": "Everything you need to know before arranging travel for an unaccompanied minor."
+        },
+        {
+            "key": "at-a-glance",
+            "type": "cards",
+            "show_on": "both",
+            "items": [
+                {
+                    "icon": "plane",
+                    "title": "Age",
+                    "text": "5-11 years may travel alone"
+                },
+                {
+                    "icon": "send",
+                    "title": "Service",
+                    "text": "Unaccompanied Minor 'or' 'UM' for short"
+                },
+                {
+                    "icon": "package",
+                    "title": "Booking",
+                    "text": "Reserve at least 72 hours before departure"
+                },
+                {
+                    "icon": "escort",
+                    "title": "Escort",
+                    "text": "At departure and arrival points"
+                },
+                {
+                    "icon": "shield-check",
+                    "title": "Form Required",
+                    "text": "Download UM Form before travel"
+                }
+            ]
+        },
+        {
+            "key": "who-can-travel",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Who Can Travel",
+            "body": "A child between the ages of five and eleven years inclusive, i.e. not reached their 12th birthday, travelling without a parent or guardian.\n- This includes children travelling in a different class or cabin to their parent or guardian.\n- Children aged between 12 and under 16 years may travel as a Young Person with YP status and escorted if requested by their parent or guardian.\n- UM paperwork is not required for Young Person status.\n- Infants and children aged from 0 to 4 years inclusive cannot travel as an Unaccompanied Minor."
+        },
+        {
+            "key": "booking-requirements",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Booking Requirements",
+            "body": "- You must book the child as an Unaccompanied Minor at the time of booking the flight.\n- Submit the Unaccompanied Minor form to Naoero Airlines reservations at least 72 hours before departure.\n- Maximum number of Unaccompanied Minors on any given flight is 8.\n- No additional UM bookings will be accepted once this maximum has been reached.",
+            "note": "**Information Required**: Child's Name, Age, Special Instructions And Contact Details For Parents/Guardians Of The Persons Who Will Deliver And Collect The Child."
+        },
+        {
+            "key": "um-form",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Unaccompanied Minor Form",
+            "body": "The Naoero Airlines Unaccompanied Minor form must be completed for each Unaccompanied Minor travelling, signed by the child's parent/guardian and presented at check-in for each flight.\n- The name and signature must match the details recorded in the booking.\n- The Declaration section must only be signed by the child's parent/legal guardian.\n- Personal information of the child and the person escorting the child at departure will be documented on the form.\n- This information may be viewed by any person picking up the Unaccompanied Minor."
+        },
+        {
+            "key": "documents",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Travel Documents",
+            "body": "The Unaccompanied Minor must hold their own valid passport and all country-specific travel documents.\n- Valid passport\n- Visas\n- Authorization letters",
+            "note": "**Check In Advance**: The Person Making The Booking Should Make Enquiries Sufficiently In Advance With The Consulates Or Embassies Of Each Country."
+        },
+        {
+            "key": "medication",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Children Travelling With Medication",
+            "body": "Children travelling alone must be capable of self-administering their medication. Naoero Airlines staff are not authorised to administer medication.\n- Notify Naoero Airlines at the time of booking.\n- Advise Naoero Airlines of any allergies or special requirements.\n- Organise a letter from the child's doctor if medication is required.",
+            "note": "**Doctor's Letter Must**: Be Dated Within Two Years Of Travel, Be Written In English, Confirm The Child Can Identify The Need For Medication And Confirm The Child Can Self-Administer It."
+        },
+        {
+            "key": "fare",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Fare & Supervision Fee",
+            "body": "The applicable fare will need to be paid.",
+            "note": "**No Extra Fee**: There Is No Extra Fee For The Unaccompanied Minor."
+        },
+        {
+            "key": "delivery",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Delivery & Collection",
+            "body": "The booking must include the name and contact details of the people responsible for delivering and collecting the child.\n- The person escorting the child at the departure airport must be at least 16 years of age.\n- Arrive at check-in no later than 2.5 hours before departure.\n- The parent/guardian must provide acceptable photo ID when delivering the child.\n- The person escorting the child must remain at the airport until the flight has departed and is in the air.\n- The person collecting the child must provide acceptable photo ID.\n- The Unaccompanied Minor will not be handed over unless acceptable photo ID is produced.\n- Everyone listed on the form must be contactable by Naoero Airlines staff for the entire time the child is unaccompanied.",
+            "note": "**Acceptable Forms Of Photo ID**: A Valid National Passport, Valid Motor Vehicle Driver's Licence Or Other Photo Identification Card Issued By A National Authority."
+        },
+        {
+            "key": "refusal",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Refusal Of Carriage",
+            "body": "We reserve the right to refuse carriage where we are not satisfied that all requirements in this policy have been met.\n- The Unaccompanied Minor may be required to show proof of age at check-in.\n- A passport is suitable for identification.\n- Boarding will be refused if the required passport is not provided.\n- The guardian at check-in must provide the completed Unaccompanied Minor form to Naoero Airlines staff.\n- Children under 5 years of age cannot travel unless accompanied by an adult over the age of 15 years."
+        },
+        {
+            "key": "not-met",
+            "type": "notice",
+            "show_on": "both",
+            "heading": "If The Child Is Not Met At The Destination",
+            "body": "Naoero Airlines May Take Whatever Reasonable Steps It Considers Necessary, Which May Include Returning The Unaccompanied Minor To The Airport Of Departure. Naoero Airlines Will Take Reasonable Steps To Notify The Parent/Guardian Who Signed The Form.\n\nThe Parent/Guardian Is Responsible And Must Pay Naoero Airlines On Demand For Any Costs It Has Or May Reasonably Incur."
+        },
+        {
+            "key": "important-note",
+            "type": "notice",
+            "show_on": "both",
+            "heading": "Important Note",
+            "body": "The Maximum Number Of Unaccompanied Minors Travelling On Any Given Flight Is Eight."
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Destination",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/destinations",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "On Board",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

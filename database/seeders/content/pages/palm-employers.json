@@ -1,0 +1,114 @@
+{
+    "slug": "palm-employers",
+    "title": "PALM Employers",
+    "group": "pages",
+    "path": "/palm-employers",
+    "summary": "Connecting contingent workers from Pacific Island countries to Australia under the Pacific Australia Labour Mobility (PALM) scheme.",
+    "seo_title": "PALM Employers | Naoero Airlines",
+    "seo_description": "Scheduled and charter flights for Pacific Australia Labour Mobility (PALM) workers from Fiji, Kiribati, Naoero and seven more countries.",
+    "banner_key": "palm-employers",
+    "sort_order": 120,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "Agents > PALM Employers",
+            "heading": "PALM Employers",
+            "body": "Naoero Airlines is proud to play a vital role in connecting contingent workers from Pacific Island countries to Australia under the Pacific Australia Labour Mobility (PALM) scheme."
+        },
+        {
+            "key": "scheme",
+            "type": "steps",
+            "show_on": "both",
+            "heading": "PALM Scheme",
+            "body": "This initiative allows eligible Australian businesses to hire workers from nine Pacific Island countries and Timor-Leste when local workers are unavailable.\n\nJointly administered by the Australian Department of Employment and Workplace Relations (DEWR) and the Department of Foreign Affairs and Trade (DFAT), the PALM scheme supports two types of employment:",
+            "items": [
+                {
+                    "title": "Seasonal Workers",
+                    "text": "Short-term roles (up to 9 months)"
+                },
+                {
+                    "title": "Longer-term Workers",
+                    "text": "Unskilled, low-skilled, or semi-skilled roles (between 1 and 4 years)"
+                }
+            ]
+        },
+        {
+            "key": "services",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Our Services",
+            "body": "Naoero Airlines proudly operates regular scheduled flights connecting Australia with three PALM-eligible Pacific Island nations:",
+            "button_label": "View Our Schedule Here",
+            "button_url": "/travel-info/flight-schedule",
+            "items": [
+                {
+                    "title": "Fiji",
+                    "icon": "headphones"
+                },
+                {
+                    "title": "Kiribati",
+                    "icon": "file-bar-chart"
+                },
+                {
+                    "title": "Naoero",
+                    "icon": "naoero",
+                    "image": "seed:palm-employers/nauruicons.svg"
+                }
+            ]
+        },
+        {
+            "key": "charters",
+            "type": "list",
+            "show_on": "both",
+            "body": "Additionally, we offer ad-hoc and seasonal charter services to the remaining seven eligible countries:",
+            "items": [
+                {
+                    "title": "Papua New Guinea"
+                },
+                {
+                    "title": "Samoa"
+                },
+                {
+                    "title": "Solomon Islands"
+                },
+                {
+                    "title": "Timor-Leste"
+                },
+                {
+                    "title": "Tonga"
+                },
+                {
+                    "title": "Tuvalu"
+                },
+                {
+                    "title": "Vanuatu"
+                }
+            ]
+        },
+        {
+            "key": "contact",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Contact Us for PALM Scheme Travel",
+            "body": "For more information about travel arrangements for PALM workers with Naoero Airlines, please contact our local sales office:",
+            "button_label": "Contact Us",
+            "button_url": "/contact-us",
+            "items": [
+                {
+                    "icon": "mail",
+                    "title": "Email",
+                    "value": "reservations@naoeroairline.com.au",
+                    "link_url": "mailto:reservations@naoeroairline.com.au"
+                },
+                {
+                    "icon": "phone",
+                    "title": "Phone: International callers",
+                    "value": "+61 7 3229 6455",
+                    "link_url": "tel:+61732296455"
+                }
+            ]
+        }
+    ]
+}

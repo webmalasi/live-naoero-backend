@@ -1,0 +1,19 @@
+{
+ "FlightSummaries": [
+  {
+   "CityPair": {
+    "OriginCode": "BNE",
+    "DestinationCode": "INU"
+   },
+   "FlightNumber": "ON  092",
+   "ScheduledDepartureTime": "2026-10-28T06:20:00",
+   "RealDepartureTime": null,
+   "ScheduledArrivalTime": "2026-10-28T13:05:00",
+   "EstimatedArrivalTime": null,
+   "RealArrivalTime": null,
+   "AirportFlightStatusCode": "Scheduled",
+   "DelayReason": null,
+   "RevisedDepartureTime": null
+  }
+ ]
+}

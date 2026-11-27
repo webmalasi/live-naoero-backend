@@ -1,0 +1,164 @@
+{
+    "slug": "footer",
+    "title": "Website footer",
+    "group": "pages",
+    "path": "/",
+    "summary": "The footer of every page: newsletter sign-up, the link columns, social media and the line at the bottom.",
+    "seo_title": null,
+    "seo_description": null,
+    "banner_key": null,
+    "sort_order": 900,
+    "sections": [
+        {
+            "key": "newsletter",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Stay Updated!",
+            "body": "Subscribe to our newsletter and be the first to know about flight updates, travel tips and special offers",
+            "note": "We respect your privacy. Unsubscribe any time",
+            "button_label": "Subscribe"
+        },
+        {
+            "key": "columns",
+            "type": "cards",
+            "show_on": "website",
+            "heading": "Link columns (one line per link: Label | address)",
+            "items": [
+                {
+                    "title": "About",
+                    "list": [
+                        "Blog | /blog",
+                        "Careers | /career",
+                        "Gallery | /gallery",
+                        "News Hub | /news-hub",
+                        "Our team | /our-team",
+                        "Our fleet | /our-fleet",
+                        "Privacy Policy | /privacy-policy",
+                        "Specials | /specials",
+                        "Terms of Use | /terms-of-use",
+                        "Social Media | /social-media"
+                    ]
+                },
+                {
+                    "title": "Travel",
+                    "list": [
+                        "Destinations | /destinations",
+                        "Flight Schedule | /travel-info/flight-schedule",
+                        "Manage Booking",
+                        "Flight Status",
+                        "Specials | /specials",
+                        "Check-in | /travel-info/before-you-fly/check-in-times",
+                        "Confirm Booking | /return-main"
+                    ]
+                },
+                {
+                    "title": "Services",
+                    "list": [
+                        "Freight | /freight",
+                        "Freight Packaging | /freight-packaging",
+                        "Charter Flights | /charter",
+                        "ACMI | /acmi",
+                        "Group Bookings | /group-bookings",
+                        "On Board | /on-board"
+                    ]
+                },
+                {
+                    "title": "Travel Information",
+                    "list": [
+                        "Flight Schedule | /travel-info/flight-schedule",
+                        "Baggage | /travel-info/baggage",
+                        "Additional Baggage | /travel-info/additional-baggage",
+                        "Dangerous Goods | /travel-info/dangerous-goods",
+                        "Conditions of Carriage | /travel-info/conditions-of-carriage",
+                        "FAQs | /travel-info/faqs",
+                        "Contact Us | /contact-us",
+                        "Feedback | /feedback"
+                    ]
+                },
+                {
+                    "title": "Business",
+                    "list": [
+                        "Agents",
+                        "Travel Agency Contacts | /travel-agency-contacts",
+                        "Agency Resources | /agency-resources",
+                        "PALM Employers | /palm-employers"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "social",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Follow Us On",
+            "items": [
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link_url": "https://www.facebook.com/nauruairlines/"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link_url": "https://www.instagram.com/nauruairlines/"
+                },
+                {
+                    "title": "LinkedIn",
+                    "icon": "linkedin",
+                    "link_url": "https://www.linkedin.com/company/nauruairlines/"
+                },
+                {
+                    "title": "X",
+                    "icon": "x",
+                    "link_url": "https://x.com/nauruairlines"
+                },
+                {
+                    "title": "YouTube",
+                    "icon": "youtube",
+                    "link_url": "https://www.youtube.com/channel/UCIEappnl7uwS8Wgu5POyTiw"
+                }
+            ]
+        },
+        {
+            "key": "bottom",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Bottom bar",
+            "body": "© 2026 Naoero Airlines. All Rights Reserved.",
+            "items": [
+                {
+                    "title": "Privacy Policy",
+                    "link_url": "/privacy-policy"
+                },
+                {
+                    "title": "Terms of Use",
+                    "link_url": "/terms-of-use"
+                },
+                {
+                    "title": "Cookies",
+                    "link_url": "#"
+                },
+                {
+                    "title": "Accessibility",
+                    "link_url": "#"
+                }
+            ]
+        },
+        {
+            "key": "logins",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Login buttons",
+            "items": [
+                {
+                    "title": "Agent Login",
+                    "link_url": "#"
+                },
+                {
+                    "title": "Corporate Login",
+                    "link_url": "/corporate-login"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "slug": "terms-of-use",
+    "title": "Terms of Use",
+    "group": "pages",
+    "path": "/terms-of-use",
+    "summary": "The information presented in this web site is provided in good faith and is for information only.",
+    "seo_title": "Terms of Use | Naoero Airlines",
+    "seo_description": "Terms governing the access, browsing, and use of the Naoero Airlines website.",
+    "banner_key": "terms-of-use",
+    "sort_order": 150,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About > Terms of Use",
+            "heading": "Terms of Use",
+            "body": "The information presented in this web site is provided in good faith and is for information only."
+        },
+        {
+            "key": "document",
+            "type": "feed",
+            "feed": "terms-of-use",
+            "show_on": "both"
+        },
+        {
+            "key": "closing",
+            "type": "text",
+            "show_on": "both",
+            "body": "By using this website, you acknowledge and accept these terms. If you do not agree with any part of these terms, please refrain from using this website.\n\nFor further inquiries, please contact us at privacy@naoeroairlines.com.au."
+        }
+    ]
+}

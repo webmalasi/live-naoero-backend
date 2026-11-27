@@ -1,0 +1,245 @@
+{
+    "slug": "charter",
+    "title": "Charter",
+    "group": "pages",
+    "path": "/charter",
+    "summary": "Passenger and cargo charters across Australia, New Zealand, the South and Central Pacific, and Asia.",
+    "seo_title": "Charter Flights | Naoero Airlines",
+    "seo_description": "Passenger and cargo aircraft charters on Boeing 737 aircraft, with a 24/7 Rapid Response Charter Team.",
+    "banner_key": "charter",
+    "sort_order": 10,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Charter",
+            "body": "Naoero Airlines offers charters to our clients to various locations in Australia, New Zealand and the South/Central Pacific, and Asia. We have a choice of aircraft available including Boeing 737-300, Boeing 737-700 and Boeing 737-800 aircraft available."
+        },
+        {
+            "key": "personalised-solutions",
+            "type": "image_text",
+            "show_on": "website",
+            "heading": "Personalized Charter Solutions",
+            "body": "Naoero Airlines operates under an Australian Air Operator's Certificate and upholds the highest aviation standards using our fleet of Boeing 737 aircraft. As one of Australia's most experienced charter operators in the Pacific region, we take pride in our flexibility, exceptional service, and ability to deliver tailored aviation solutions for leading resource, labour, and contracting companies worldwide.\n\nWith over 55 years of experience, we specialize in providing reliable air travel solutions, often with short turnaround times, thanks to our dedicated 24/7 Rapid Response Charter Team. Our diverse clientele includes government agencies, educational and religious organisations, emergency response service providers, corporate entities, and other transportation partners.",
+            "image_alt": "Naoero Airlines aircraft above the clouds",
+            "image": "seed:charter/chartersolution.png"
+        },
+        {
+            "key": "why-choose",
+            "type": "cards",
+            "show_on": "website",
+            "heading": "Why Choose Naoero Airlines",
+            "items": [
+                {
+                    "title": "24/7 Rapid Response Charter Team",
+                    "icon": "24x7",
+                    "image": "seed:charter/24x7.svg"
+                },
+                {
+                    "title": "Proven Track Record",
+                    "icon": "track-record",
+                    "image": "seed:charter/trackrecord.svg"
+                },
+                {
+                    "title": "Rapid Deployment",
+                    "icon": "naoero",
+                    "image": "seed:charter/nauruicons.svg"
+                },
+                {
+                    "title": "Short and Long term solutions",
+                    "icon": "short-long-term",
+                    "image": "seed:charter/shortlongtermsolution.svg"
+                },
+                {
+                    "title": "Competitive Pricing",
+                    "icon": "competitive-pricing",
+                    "image": "seed:charter/competitivepricing.svg"
+                },
+                {
+                    "title": "Rapid Deployment",
+                    "icon": "rapid",
+                    "image": "seed:charter/rapid.svg"
+                }
+            ]
+        },
+        {
+            "key": "charter-types",
+            "type": "cards",
+            "show_on": "website",
+            "body": "Naoero Airlines can tailor and personalise a cost effective travel experience to suit your requirements, be it for a corporate event, meeting/conference, investor hospitality, special staff function, sporting event, wedding or a getaway with friends.",
+            "items": [
+                {
+                    "title": "Passenger Charters",
+                    "list": [
+                        "ACMI Charter Solutions",
+                        "Corporate Travel",
+                        "Emergency Response Government",
+                        "Music Tours and Roadshows",
+                        "Sporting Events and Teams"
+                    ],
+                    "text": "- **Specialist Charter** - Custom travel solutions for private groups, events, music tours and roadshows. Humanitarian and repatriation flights.\n- **Large Groups** - Efficient and bespoke travel for defense, Emergency Response Teams, Government and NGO's.\n- **Leisure Charters** - Transportation for sporting groups, special tour operations and large family gatherings.",
+                    "link_label": "Passenger Charter",
+                    "link_url": "#charter-form",
+                    "image": "seed:charter/chartersolution.png"
+                },
+                {
+                    "title": "Cargo Charters",
+                    "list": [
+                        "AOG Solutions",
+                        "Humanitarian Relief",
+                        "Frequent Movements"
+                    ],
+                    "text": "- **AOG Solutions** - From engines, nose cones to avionics equipment and specialist parts, we provide 'Immediate Deployment' cargo aircraft charter.\n- **Humanitarian Relief** - Rapid deployment for urgent situations and delivering aid to often logistically challenging destinations.\n- **Frequent Movements** - Tailored freight charter services to individual client needs offering repeat schedules and multi-stop routings.",
+                    "link_label": "Cargo Charter",
+                    "link_url": "#charter-form",
+                    "image": "seed:charter/chartersolution.png"
+                }
+            ]
+        },
+        {
+            "key": "charter-form",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Freight or Passenger Aircraft Charter Enquiry Form",
+            "subheading": "Complete the **Charter Request Form** below and a member of our 24/7 Rapid Response Charter Team will contact you shortly",
+            "note": "Note: Empty Flights require a ballast of 880kg"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Fly Your Way.\nCharter Your Journey.",
+            "body": "Flexible aircraft solutions for groups, businesses, events, government and specialist missions.",
+            "button_label": "Request A Charter"
+        },
+        {
+            "key": "app-request",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Charters"
+        },
+        {
+            "key": "app-solutions",
+            "type": "list",
+            "show_on": "app",
+            "heading": "Charter Solutions",
+            "items": [
+                {
+                    "title": "Passenger Charters"
+                },
+                {
+                    "title": "Cargo Charters"
+                },
+                {
+                    "title": "ACMI Charters"
+                },
+                {
+                    "title": "Corporate Travel"
+                },
+                {
+                    "title": "Government & Emergency"
+                }
+            ]
+        },
+        {
+            "key": "app-why",
+            "type": "stats",
+            "show_on": "app",
+            "heading": "Why Naoero Airlines?",
+            "body": "Experienced charter operation with flexible solutions built around your requirement",
+            "items": [
+                {
+                    "value": "50+ Years",
+                    "title": "Proven aviation experience"
+                },
+                {
+                    "value": "24/7 Response",
+                    "title": "Rapid Response Team"
+                },
+                {
+                    "value": "Rapid Deployment",
+                    "title": "Quick turnaround solution"
+                },
+                {
+                    "value": "Flexible",
+                    "title": "Short & long-term solution"
+                }
+            ]
+        },
+        {
+            "key": "app-fleet",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Our Charter Fleet",
+            "subheading": "BOEING 737 FLEET",
+            "body": "Passenger and freighter aircraft available for tailored charter requirement",
+            "button_label": "Explore Fleet",
+            "button_url": "/our-fleet",
+            "items": [
+                {
+                    "title": "737-300"
+                },
+                {
+                    "title": "737-700"
+                },
+                {
+                    "title": "737-800"
+                }
+            ]
+        },
+        {
+            "key": "app-faqs",
+            "type": "faq",
+            "show_on": "app",
+            "heading": "Charter FAQs",
+            "items": [
+                {
+                    "title": "What types of charters are available?",
+                    "text": "We offer passenger, cargo, ACMI, corporate and specialist government/emergency charters tailored to your requirements."
+                },
+                {
+                    "title": "Can I request a cargo charter?",
+                    "text": "Yes, our fleet supports freighter configurations for dedicated cargo charters."
+                },
+                {
+                    "title": "How does the charter request work?",
+                    "text": "Submit your request with your route, dates and requirements and our team will respond with a tailored proposal."
+                },
+                {
+                    "title": "Can I request a specialist charter?",
+                    "text": "Yes, we support specialist missions including government, emergency and event charters on request."
+                }
+            ]
+        }
+    ]
+}

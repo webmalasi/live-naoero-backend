@@ -1,0 +1,178 @@
+{
+    "slug": "freight-packaging",
+    "title": "Freight Packaging",
+    "group": "pages",
+    "path": "/freight-packaging",
+    "summary": "Everything you need to know about packing your cargo safely and correctly for air freight with Naoero Airlines.",
+    "seo_title": "Freight Packaging | Naoero Airlines",
+    "seo_description": "Top tips for packing goods for carriage as air freight: dimensions, security, sturdy packing, labelling and dangerous goods.",
+    "banner_key": "freight-packaging",
+    "sort_order": 30,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Freight Packaging",
+            "body": "Everything you need to know about packing your cargo safely and correctly for air freight with Naoero Airlines.",
+            "button_label": "Track Freight"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Freight > Freight Packaging",
+            "heading": "Essential Guidelines For Packing Air Freight",
+            "body": "Packing is essential when transporting goods via air freight to ensure your items are safely carried without being damaged.",
+            "button_label": "Track Freight"
+        },
+        {
+            "key": "app-tips-intro",
+            "type": "text",
+            "show_on": "app",
+            "body": "Proper packaging protects your cargo throughout its journey and helps avoid delays or damage in transit. Please review the guidelines below before presenting your freight for carriage, and tap on each topic to read the full details."
+        },
+        {
+            "key": "tips",
+            "type": "faq",
+            "show_on": "both",
+            "heading": "Top Tips For Packing Your Goods For Carriage As Air Freight",
+            "items": [
+                {
+                    "slug": "cargo-dimensions",
+                    "title": "Cargo Dimensions",
+                    "text": "**Freighter Aircraft**\n- Cargo can be shipped in a unit load device (ULD), as a palletised shipment, on a freighter aircraft.\n- The maximum dimensions for standard air freight are 224cm x 317cm.\n- You can certainly transport longer or wider cargo, but these may need to be packed on special equipment - please refer to your local Cargo Agent.\n\n**Where your Suppliers pack on pallets, please ensure they use:**\n- Pallet size 120cm x 100cm (avoid 117cm x 117cm - these require repacking to suit our aircraft).\n- B737-300F - Maximum Height 198cm\n- B737-800F - Maximum Height 198cm\n\n**Passenger Aircraft**\nFreight can be shipped as loose cargo when shipping via standard air freight, on a passenger aircraft.\n- Maximum weight 60kg\n- B737-300 - Maximum Height 86cm\n- B737-700 - Maximum Height 86cm\n- B737-800 - Maximum Height 86cm",
+                    "link_label": "Cargo Agents Contacts",
+                    "link_url": "/freight"
+                },
+                {
+                    "slug": "security-regulations",
+                    "title": "Security Regulations",
+                    "text": "Air freight security regulations define that your cargo must be examined before export.\n\nYour cargo may be inspected, as a piece-level examination - where each individual box, carton or other item is inspected by a Regulated Air Cargo Agent (RACA).\n\nEnsure you declare an accurate description of goods for carriage as air freight.\n- **Customs Compliance**: Accurate descriptions help ensure compliance with customs regulations, preventing delays and penalties. A false declaration could lead to a customs infringement penalty, civil proceedings and/or a criminal offence.\n- **Safety**: Providing precise details helps handlers identify any hazardous materials, ensuring safe handling and transport.\n- **Efficiency**: Clear labelling expedites processing and reduces the risk of mismanagement or loss during transit."
+                },
+                {
+                    "slug": "sturdy-packing",
+                    "title": "Use Sturdy Packing",
+                    "text": "- **Use Sturdy Boxes for Air Cargo**: Select high-quality corrugated cardboard boxes for packing. Double-walled or triple-walled boxes, which consist of multiple layers of corrugated cardboard, are ideal for added strength and durability. These boxes are robust enough to be stacked and offer excellent protection for your goods, especially for fragile items.\n- **Labelling Space on Boxes**: Ensure that your boxes have ample space for labelling. Use plain boxes without any brands, logos, or visible branding from previous content or weight. This reduces the risk of theft and confusion. If reusing a box, make sure to remove all previous hazard labels to prevent any delays.\n- **Individually Wrap Items and Use Void Fillers**: To protect your cargo during transit, wrap each item individually. Use void fillers such as foam peanuts or bubble wrap to prevent movement and damage while in transit.\n- **Consider Weight Restrictions**: Be aware of the weight limitations set by the aircraft used for transport. These restrictions depend on the aircraft's maximum take-off weight (MTOW), so check the limits before packing your cargo.\n- **Guard Against Moisture Damage**: Account for factors that might cause moisture damage, including humidity, leaks, or temperature fluctuations. Use moisture-resistant packaging and materials to keep your cargo safe during transport.\n\n**Packaging That Is Not Acceptable**\nOpen topped boxes, cardboard, styrofoam, or plastic, such as fruit and vegetable boxes. These boxes MUST have a lid, and be shrink-wrapped to prevent spillage and/or damage to contents\n\nUnboxed items are at greater risk of damage. They can shift, collide with other cargo, or get harmed due to improper handling or turbulence during the flight, posing safety risks for both the cargo and the aircraft. Whenever possible, use original manufacturer packaging or sturdy boxes. While some items may not come with a box, it's crucial to have appropriate packaging to protect them during transit. This includes using end caps for poles, among other measures.\n\nItems wrapped in black plastic - are unsuitable for cargo transport due to several reasons.\n1. **Security**: The lack of visibility makes it difficult to inspect the contents, raising security risks.\n2. **Regulations**: Black plastic wrapping can hinder proper inspection, potentially violating transportation regulations.\n3. **Structural Weakness**: Plastic wrapping lacks the support that boxes or crates offer, increasing the risk of damage during transit.\n4. **Increased Damage Risk**: Plastic is prone to tearing, leading to potential damage to the wrapped items and surrounding cargo.\n5. **Poor Stacking**: Plastic-wrapped items are less stable, leading to inefficient stacking and loading.\n6. **Labelling Issues**: Black plastic can obscure important labels, resulting in handling or routing errors.\n\nIf goods are presented with insufficient or incorrect packaging, the responsibility lies with the sender, not the carrier or Cargo Agent. To obtain packaging materials, contact your local Cargo Agent. Please note that this will incur additional charges.",
+                    "link_label": "Cargo Agent contact details",
+                    "link_url": "/freight",
+                    "gallery": []
+                },
+                {
+                    "slug": "tape-gun",
+                    "title": "Use a tape gun",
+                    "text": "- Secure your cargo in packaging using strong, high-quality packing tape.\n- Use tape made of good material and design to ensure proper adhesion.\n- Avoid using poor-quality tape, as it may lose stickiness during transit, increasing the risk of boxes falling apart."
+                },
+                {
+                    "slug": "label-cargo",
+                    "title": "Label Cargo Clearly",
+                    "text": "It is critical that you are completely across the labelling requirements of each type of cargo you are sending overseas.\n- If your items are fragile, top load only, or perishable, clearly label these details on the packaging.\n- Dangerous goods must be labelled according to international regulations. Please refer to a Dangerous Goods Specialist.\n- If your cargo is classified as hazardous, labelling and documentation requirements are governed by international air transport regulations - often referencing the appropriate Safety Data Sheet (SDS), as well as a Dangerous Goods Declaration and MSDS.\n\nBe aware of hidden dangerous goods in everyday items that can be a common cause for confusion or delay. Common items, such as batteries, battery-powered devices, aerosols, perfumes, and certain chemicals, can be hazardous if not properly handled or declared.\n\nIt is essential to be aware of these hidden dangers and understand the regulations surrounding their transportation. Failure to declare or handle these appropriately can lead to serious safety hazards, delays, fines, or damage. Therefore, the sender should take precautions to identify and disclose any potentially dangerous items they are carrying."
+                },
+                {
+                    "slug": "dangerous-goods",
+                    "title": "Dangerous Goods that Must be declared",
+                    "text": "- Mobile phones\n- Fireworks, ammunition, sporting ammunition or explosives\n- Cylinders of compressed air or liquid petroleum gas (LPG) of any type\n- Aerosol cans (e.g. deodorant, shaving cream, hair sprays, paints, etc.)\n- Camping stoves, cigarette lighters or cigarette lighter refills\n- Nail polish, colognes, perfumes, paint, nail or paint thinners\n- Matches\n- Dry ice, specimens or samples\n- Detergents, bleaches, drain or oven cleaners\n- Fibreglass repair kits, adhesives & puncture repair kits\n- Medicines containing alcohol\n- Any type of chemical, pesticides, herbicides etc.\n- Camping equipment\n- Diving equipment\n- Machinery with internal combustion engines such as chainsaws, lawnmowers or garden trimmers\n- Any electrical items containing batteries"
+                },
+                {
+                    "slug": "incorrect-packaging",
+                    "title": "What happens if your cargo is not packaged correctly?",
+                    "text": "If your cargo is not packed properly, there's a risk that:\n1. Your cargo will be damaged\n2. Your cargo will be unsafe for transportation\n3. Your cargo may be rejected by the Carrier and/or Cargo Agent, causing expense and delays for you\n\nOur goal is to ensure your cargo reaches its destination intact, and we need your assistance to make this happen, giving you peace of mind as it travels through the skies.\n\nFor freight enquiries, please complete the form below, or email our team: freight@naoeroairlines.com.au"
+                }
+            ]
+        },
+        {
+            "key": "pictures-cargo-dimensions",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures: Cargo Dimensions (one for each block of text)",
+            "items": [
+                {
+                    "image": "seed:freight-packaging/Frame 1171276375.png",
+                    "title": "Naoero Airlines freighter aircraft"
+                },
+                {
+                    "image": "seed:freight-packaging/Frame 1171276374.png",
+                    "title": "Naoero Airlines aircraft on the tarmac"
+                },
+                {
+                    "image": "seed:freight-packaging/Frame 1171276373.png",
+                    "title": "Naoero Airlines passenger aircraft above the clouds"
+                }
+            ]
+        },
+        {
+            "key": "pictures-sturdy-packing",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures: Use Sturdy Packing",
+            "items": [
+                {
+                    "image": "seed:freight-packaging/image 89.png",
+                    "title": "Corrugated cardboard boxes for extra strength"
+                },
+                {
+                    "image": "seed:freight-packaging/image 90.png",
+                    "title": "Sturdy Boxes with room for labelling"
+                },
+                {
+                    "image": "seed:freight-packaging/image 91.png",
+                    "title": "Open topped fruit boxes are not acceptable"
+                },
+                {
+                    "image": "seed:freight-packaging/image 90.png",
+                    "title": "Boxes MUST have a lid"
+                },
+                {
+                    "image": "seed:freight-packaging/image 92.png",
+                    "title": "Unboxed items are not acceptable"
+                },
+                {
+                    "image": "seed:freight-packaging/image 93.png",
+                    "title": "End caps must be used for poles."
+                }
+            ]
+        },
+        {
+            "key": "pictures-tape-gun",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Picture: Use a tape gun",
+            "items": [
+                {
+                    "image": "seed:freight-packaging/Frame 1171276377.png",
+                    "title": "Packing tape gun"
+                }
+            ]
+        },
+        {
+            "key": "pictures-dangerous-goods",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures: Dangerous Goods that Must be declared",
+            "items": [
+                {
+                    "image": "seed:freight-packaging/image 89.png",
+                    "title": "Boxes of dangerous goods that must be declared"
+                },
+                {
+                    "image": "seed:freight-packaging/image 90.png",
+                    "title": "Boxes of dangerous goods that must be declared"
+                }
+            ]
+        },
+        {
+            "key": "freight-quote",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Request A Freight Quote",
+            "image": "seed:shared/0936aa78-banner.jpg",
+            "image_alt": "Naoero Airlines freight aircraft on the tarmac"
+        },
+        {
+            "key": "app-enquiry",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Naoero Airlines - Freight Enquiry"
+        }
+    ]
+}

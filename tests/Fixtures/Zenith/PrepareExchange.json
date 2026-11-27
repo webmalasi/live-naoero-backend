@@ -1,0 +1,2604 @@
+{
+ "Booking": {
+  "FareInfo": {
+   "SaleCurrencyAmountToPay": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   },
+   "SaleCurrencyAmountToPayInAccount": 0,
+   "EMDTicketFares": [],
+   "SaleCurrencyAmountTotal": {
+    "DiscountAmount": 0,
+    "BaseAmount": 1298.5,
+    "TaxAmount": 314.66,
+    "TotalAmount": 1613.16,
+    "MilesAmount": 0
+   },
+   "Itineraries": [
+    {
+     "Ref": "IT_0",
+     "AirOriginDestinations": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefFareRule": null,
+       "AirCoupons": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490338",
+         "BookingClassCode": "K"
+        },
+        {
+         "CouponOrder": 2,
+         "RefSegment": "490339",
+         "BookingClassCode": "K"
+        }
+       ]
+      }
+     ],
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 1298.5,
+      "TaxAmount": 314.66,
+      "TotalAmount": 1613.16,
+      "MilesAmount": 0
+     },
+     "RefExchangingItin": null,
+     "ValidatingAirlineDesignator": null
+    }
+   ],
+   "FareRules": [],
+   "SaleCurrencyCode": "AUD",
+   "ETTicketFares": [
+    {
+     "Taxes": [
+      {
+       "CountryCode": "AU",
+       "Code": "WG",
+       "SaleCurrencyAmount": 6.29
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "AU",
+       "SaleCurrencyAmount": 70
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "WY",
+       "SaleCurrencyAmount": 36
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YR",
+       "SaleCurrencyAmount": 15
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YQ",
+       "SaleCurrencyAmount": 106.42
+      },
+      {
+       "CountryCode": "NR",
+       "Code": "YR",
+       "SaleCurrencyAmount": 10
+      },
+      {
+       "CountryCode": "NR",
+       "Code": "YQ",
+       "SaleCurrencyAmount": 70.95
+      }
+     ],
+     "OriginDestinationFares": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefWebClass": null,
+       "CouponFares": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490338",
+         "BookingClassCode": "K",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 23,
+           "CarryOn": false,
+           "TotalWeight": 23
+          }
+         ],
+         "FareBasisCode": "KECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 779.1,
+          "TaxAmount": 233.71,
+          "TotalAmount": 1012.81,
+          "MilesAmount": 0
+         },
+         "AmountDetails": null
+        },
+        {
+         "CouponOrder": 2,
+         "RefSegment": "490339",
+         "BookingClassCode": "K",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 23,
+           "CarryOn": false,
+           "TotalWeight": 23
+          }
+         ],
+         "FareBasisCode": "KECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 519.4,
+          "TaxAmount": 80.95,
+          "TotalAmount": 600.35,
+          "MilesAmount": 0
+         },
+         "AmountDetails": null
+        }
+       ],
+       "RefFareRule": null
+      }
+     ],
+     "RefPassenger": "237588",
+     "RefItinerary": "IT_0",
+     "Ref": "15404488",
+     "CreatedDateGMT": null,
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 1298.5,
+      "TaxAmount": 314.66,
+      "TotalAmount": 1613.16,
+      "MilesAmount": 0
+     },
+     "AmountDetails": null
+    }
+   ],
+   "SaleCurrencyTravelerAmountToPay": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   },
+   "SaleCurrencyTravelerAmountToPayInAccount": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   }
+  },
+  "TicketInfo": {
+   "ETTickets": [
+    {
+     "ExchangedDocumentNumber": null,
+     "ConjunctiveTicketNumbers": [],
+     "Coupons": [
+      {
+       "CouponOrder": 1,
+       "StatusCode": "O",
+       "FinalStatusInfo": null,
+       "SegmentSold": {
+        "CabinClassCode": "Y",
+        "BookingClassCode": "K",
+        "PnrCode": "003PVE",
+        "OperatingBookingClassCode": "K",
+        "OperatingPnrCode": "003PVE",
+        "ContinuationElements": [
+         "ON017K09NOVINUNANHK1/21000010"
+        ],
+        "ArrivalElement": null,
+        "AirlineDesignator": "ON",
+        "FlightInfo": {
+         "OriginAirportTerminal": null,
+         "DestinationAirportTerminal": null,
+         "FlightNumber": "002",
+         "OperatingAirlineDesignator": "ON",
+         "OperatingFlightNumber": "002",
+         "CodeShareAgreementTypeCode": null,
+         "EquipmentCode": "733",
+         "EquipmentText": "Boeing 737-300 Passenger",
+         "DurationMinutes": 405,
+         "DepartureDate": "2026-11-09T12:30:00",
+         "Stops": null,
+         "ArrivalDate": "2026-11-09T19:15:00",
+         "Remarks": null
+        },
+        "OriginCode": "BNE",
+        "DestinationCode": "INU"
+       },
+       "Details": null
+      },
+      {
+       "CouponOrder": 2,
+       "StatusCode": "O",
+       "FinalStatusInfo": null,
+       "SegmentSold": {
+        "CabinClassCode": "Y",
+        "BookingClassCode": "K",
+        "PnrCode": "003PVE",
+        "OperatingBookingClassCode": "K",
+        "OperatingPnrCode": "003PVE",
+        "ContinuationElements": [],
+        "ArrivalElement": "ON002K09NOVBNEINUHK1/12301915",
+        "AirlineDesignator": "ON",
+        "FlightInfo": {
+         "OriginAirportTerminal": null,
+         "DestinationAirportTerminal": null,
+         "FlightNumber": "017",
+         "OperatingAirlineDesignator": "ON",
+         "OperatingFlightNumber": "017",
+         "CodeShareAgreementTypeCode": null,
+         "EquipmentCode": "738",
+         "EquipmentText": "Boeing 737-800 Passenger",
+         "DurationMinutes": 190,
+         "DepartureDate": "2026-11-09T21:00:00",
+         "Stops": null,
+         "ArrivalDate": "2026-11-10T00:10:00",
+         "Remarks": null
+        },
+        "OriginCode": "INU",
+        "DestinationCode": "NAN"
+       },
+       "Details": null
+      }
+     ],
+     "RefETTicketFare": "15404488",
+     "RefPassenger": "237588",
+     "Details": null,
+     "RefIssuedByVendor": "2383",
+     "CreatedGMT": "2026-10-27T12:28:53.697",
+     "DocumentNumber": "1232415191663",
+     "OriginalDocumentNumber": "1232415191663",
+     "Created": "2026-10-27T22:28:53.697"
+    }
+   ],
+   "EMDTickets": [],
+   "Fops": [
+    {
+     "Ref": "82691",
+     "RefClient": null,
+     "Code": "NAB",
+     "Text": "[NAB] : Cash-in transaction for PNR 003PVE (173498)",
+     "Amount": 1613.16,
+     "RedirectInfo": null,
+     "BankTransferInfo": null,
+     "CheckInfo": null,
+     "MiscInfo": {
+      "RecordReferenceNumber": "202289-202289/20261027"
+     },
+     "UnsecureCardInfo": null,
+     "SecureCardInfo": null,
+     "MCOInfo": null,
+     "ECouponsInfo": null
+    }
+   ]
+  },
+  "MiscInfo": {
+   "BoardingPassList": [],
+   "IsPendingExchange": false,
+   "PendingRefundRequest": null,
+   "ExchangeableOriginDestinations": [
+    {
+     "RefItinerary": "IT_0",
+     "OriginDestinationOrder": 1,
+     "ETTicketFareTargets": [
+      {
+       "RefETTicketFare": "15404488",
+       "CouponOrders": [
+        1,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "CancelInfo": {
+    "CanCancel": true,
+    "CanVoid": false,
+    "CanRefund": true,
+    "CanRequestRefund": false
+   },
+   "TicketPrintHttpLink": "/Zenith/TTI.PublicApi.Services/JsonSaleEngineService.svc/TicketPrintLink?arg=_JEAAAAGkJL2DoWq8qqiVBsFmzUQ1Ie22a1OUusV45Ud6qn8F_E_EIqXyEOGiiyGzkqGVbUx6vGRhe0VyJpOKvEzTXnOJQoU60ZdubCovLykoDELGC_EJA18ReIABV1a2QHQhb_RorQGvwFnWeW3zDa8Dgw0eXM1LMopz23m9QLZ2Hhug0tVTC9YvwsuBvxmmvBcapt5Oc_R9aaPgL3wYyAoHP4ZYuDoMns6HDOa7iPlJey8Ia1ClQb",
+   "DCSCoupons": [],
+   "ContainsIssuableTickets": false,
+   "HasPendingPayment": false,
+   "HasPendingRefund": false,
+   "IsSalesClosingReached": false
+  },
+  "PnrInformation": {
+   "PnrCode": "003PVE",
+   "PnrStatusCode": "Issued",
+   "TimeLimit": "2026-10-28T12:28:00",
+   "MissingTravelerRecordLocator": false,
+   "RefCustomer": "10027345",
+   "CreatedDateGMT": "2026-10-27T12:28:00",
+   "ModifiedDateGMT": "2026-10-28T11:38:04.85",
+   "IsServiceBooking": false,
+   "PartnerInformation": {
+    "HasPartners": false,
+    "AllowNameElementChange": false
+   }
+  },
+  "Segments": [
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "HK"
+    },
+    "TimeLimit": null,
+    "Ref": "490338",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "002",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "002",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "733",
+     "EquipmentText": "Boeing 737-300 Passenger",
+     "DurationMinutes": 285,
+     "DepartureDate": "2026-11-09T12:30:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-09T19:15:00",
+     "Remarks": null
+    },
+    "OriginCode": "BNE",
+    "DestinationCode": "INU"
+   },
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "HK"
+    },
+    "TimeLimit": null,
+    "Ref": "490339",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "017",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "017",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "738",
+     "EquipmentText": "Boeing 737-800 Passenger",
+     "DurationMinutes": 130,
+     "DepartureDate": "2026-11-09T21:00:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-10T00:10:00",
+     "Remarks": "ON017 NAURU-NADI DIRECT FLIGHT | NAURU AIRLINES (NW26)"
+    },
+    "OriginCode": "INU",
+    "DestinationCode": "NAN"
+   }
+  ],
+  "Passengers": [
+   {
+    "Ref": "237588",
+    "RefClient": "237588",
+    "PassengerQuantity": 1,
+    "PassengerTypeCode": "AD",
+    "NameElement": {
+     "CivilityCode": "MS",
+     "Firstname": "Anna",
+     "Middlename": "",
+     "Surname": "Tester"
+    }
+   }
+  ],
+  "SpecialServices": [
+   {
+    "Text": "TESTER/////",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": {
+      "ContactFullName": "Tester",
+      "ContactEmail": null,
+      "ContactCellPhone": null,
+      "ContactHomePhone": null,
+      "ContactWorkPhone": null,
+      "ContactFaxNumber": null
+     },
+     "Ectc": null,
+     "Bill": null,
+     "Fields": null
+    },
+    "Status": null,
+    "RefPassenger": null,
+    "RefSegment": null,
+    "Code": "PCTC",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "naoero.e2e.1792066724@example.com",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCE",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400123456",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCH",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400123456",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCM",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "PP/NR/PN1234567/NR/14Mar1992/F/09Jan2032//Tester/Anna",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": {
+      "Documents": [
+       {
+        "IssueCountryCode": "NR",
+        "NationalityCountryCode": "NR",
+        "DateOfBirth": "1992-03-14T00:00:00",
+        "Gender": "F",
+        "DocumentExpiryDate": "2032-01-09T00:00:00",
+        "DocumentIssuanceDate": null,
+        "Firstname": "Anna",
+        "Surname": "Tester",
+        "DocumentTypeCode": "PP",
+        "DocumentNumber": "PN1234567"
+       }
+      ],
+      "AllowedDocumentTypeCodes": [
+       "PP"
+      ]
+     },
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Fields": [
+      "Documents[0].DocumentTypeCode",
+      "Documents[0].DocumentNumber",
+      "Documents[0].NationalityCountryCode",
+      "Documents[0].DocumentExpiryDate",
+      "Documents[0].IssueCountryCode"
+     ]
+    },
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "DOCS",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "14Mar1992",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": {
+      "DateOfBirth": "1992-03-14T00:00:00",
+      "RefPassengerWithSeat": null
+     },
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Fields": [
+      "DateOfBirth"
+     ]
+    },
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "EXT-ADOB",
+    "TechnicalType": null,
+    "Available": null
+   }
+  ]
+ },
+ "Segments": [
+  {
+   "BookingClass": {
+    "CabinClassCode": "Y",
+    "Code": "K",
+    "OperatingCode": "K",
+    "Quantity": 9,
+    "StatusCode": "HK"
+   },
+   "TimeLimit": null,
+   "Ref": "-35047",
+   "AirlineDesignator": "ON",
+   "FlightInfo": {
+    "OriginAirportTerminal": "",
+    "DestinationAirportTerminal": "",
+    "FlightNumber": "002",
+    "OperatingAirlineDesignator": "ON",
+    "OperatingFlightNumber": "002",
+    "CodeShareAgreementTypeCode": "",
+    "EquipmentCode": "738",
+    "EquipmentText": "Boeing 737-800 Passenger",
+    "DurationMinutes": 285,
+    "DepartureDate": "2026-11-23T12:30:00",
+    "Stops": [],
+    "ArrivalDate": "2026-11-23T19:15:00",
+    "Remarks": null
+   },
+   "OriginCode": "BNE",
+   "DestinationCode": "INU"
+  },
+  {
+   "BookingClass": {
+    "CabinClassCode": "Y",
+    "Code": "K",
+    "OperatingCode": "K",
+    "Quantity": 9,
+    "StatusCode": "HK"
+   },
+   "TimeLimit": null,
+   "Ref": "-35048",
+   "AirlineDesignator": "ON",
+   "FlightInfo": {
+    "OriginAirportTerminal": "",
+    "DestinationAirportTerminal": "",
+    "FlightNumber": "017",
+    "OperatingAirlineDesignator": "ON",
+    "OperatingFlightNumber": "017",
+    "CodeShareAgreementTypeCode": "",
+    "EquipmentCode": "738",
+    "EquipmentText": "Boeing 737-800 Passenger",
+    "DurationMinutes": 130,
+    "DepartureDate": "2026-11-23T21:00:00",
+    "Stops": [],
+    "ArrivalDate": "2026-11-24T00:10:00",
+    "Remarks": "ON017 NAURU-NADI DIRECT FLIGHT | NAURU AIRLINES (NW26)"
+   },
+   "OriginCode": "INU",
+   "DestinationCode": "NAN"
+  }
+ ],
+ "SpecialServices": [],
+ "OptionalSpecialServices": [
+  {
+   "Text": null,
+   "Data": {
+    "Doca": null,
+    "Doco": null,
+    "Docs": null,
+    "Foid": null,
+    "Fqtv": null,
+    "Inft": null,
+    "Chld": null,
+    "Umnr": null,
+    "Adof": null,
+    "Seat": {
+     "Upgrades": null,
+     "SeatRow": 0,
+     "SeatLetter": null
+    },
+    "Pctc": null,
+    "Ectc": null,
+    "Bill": null,
+    "Fields": null
+   },
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "SEAT",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": {
+    "Doca": null,
+    "Doco": null,
+    "Docs": null,
+    "Foid": null,
+    "Fqtv": null,
+    "Inft": null,
+    "Chld": null,
+    "Umnr": null,
+    "Adof": null,
+    "Seat": {
+     "Upgrades": null,
+     "SeatRow": 0,
+     "SeatLetter": null
+    },
+    "Pctc": null,
+    "Ectc": null,
+    "Bill": null,
+    "Fields": null
+   },
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "SEAT",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ADTK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ED25",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ED50",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNX",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "PETC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "AVML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "BIKE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "BLND",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "JD95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "EB95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "YB95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "BULK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "CHML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "CLID",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "COUR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "DEAF",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "DEPA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "DEPU",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "DBML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "DPNA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "XBAG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "EXST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "CBBG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "FRAV",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "FRAG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "FPML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "GFML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "GRPF",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "GPST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "GRPK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ADOC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "HNML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ED90",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ED95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "BBML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "KSML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "LNGE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNM",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "MEDA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "MAAS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "UNZZ",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "MOML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NAME",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NSSA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NSSB",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NSSR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NSST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "NSSW",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCOB",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "OXYG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCHC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCHR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "GRPS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "ESAN",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "RLOC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "SFML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "SEMN",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "LANG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "SPML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "SPEQ",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "STBY",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "STCR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKNA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TKTL",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TCP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "TWOV",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "VLML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "VGML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "VIPO",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "VVIP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "VVML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCMP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCBW",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCBD",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "WCHS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35047",
+   "Code": "YPTA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ADTK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ED25",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ED50",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNX",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "PETC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "AVML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "BIKE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "BLND",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "JD95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "EB95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "YB95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "BULK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "CHML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "CLID",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "COUR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "DEAF",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "DEPA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "DEPU",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "DBML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "DPNA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "XBAG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "EXST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "CBBG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "FRAV",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "FRAG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "FPML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "GFML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "GRPF",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "GPST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "GRPK",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ADOC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "HNML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ED90",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ED95",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "BBML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "KSML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "LNGE",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNM",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "MEDA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "MAAS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "UNZZ",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "MOML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NAME",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NSSA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NSSB",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NSSR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NSST",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "NSSW",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCOB",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "OXYG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCHC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCHR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "GRPS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "ESAN",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "RLOC",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "SFML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "SEMN",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "LANG",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "SPML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "SPEQ",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "STBY",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "STCR",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKNA",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TKTL",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TCP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "TWOV",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "VLML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "VGML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "VIPO",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "VVIP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "VVML",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCMP",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCBW",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCBD",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "WCHS",
+   "TechnicalType": null,
+   "Available": null
+  },
+  {
+   "Text": null,
+   "Data": null,
+   "Status": null,
+   "RefPassenger": "237588",
+   "RefSegment": "-35048",
+   "Code": "YPTA",
+   "TechnicalType": null,
+   "Available": null
+  }
+ ],
+ "FareInfo": {
+  "EMDTicketFareOptions": [],
+  "EMDTicketFares": [
+   {
+    "RefPassenger": "237588",
+    "RefSegment": "490338",
+    "Label": "Penalty",
+    "AssociatedSpecialServiceCode": null,
+    "AncillaryCode": null,
+    "RefItinerary": "IT_0",
+    "Ref": "Pen_0_0",
+    "CreatedDateGMT": "2026-10-28T11:38:33.6616573",
+    "SaleCurrencyAmount": {
+     "DiscountAmount": 0,
+     "BaseAmount": 80,
+     "TaxAmount": 0,
+     "TotalAmount": 80,
+     "MilesAmount": 0
+    },
+    "AmountDetails": null
+   },
+   {
+    "RefPassenger": "237588",
+    "RefSegment": "490339",
+    "Label": "Penalty",
+    "AssociatedSpecialServiceCode": null,
+    "AncillaryCode": null,
+    "RefItinerary": "IT_0",
+    "Ref": "Pen_1_0",
+    "CreatedDateGMT": "2026-10-28T11:38:33.6616573",
+    "SaleCurrencyAmount": {
+     "DiscountAmount": 0,
+     "BaseAmount": 80,
+     "TaxAmount": 0,
+     "TotalAmount": 80,
+     "MilesAmount": 0
+    },
+    "AmountDetails": null
+   }
+  ],
+  "SaleCurrencyAmountTotal": {
+   "DiscountAmount": 0,
+   "BaseAmount": 1298.5,
+   "TaxAmount": 314.66,
+   "TotalAmount": 1613.16,
+   "MilesAmount": 0
+  },
+  "Itineraries": [
+   {
+    "Ref": "IT_New",
+    "AirOriginDestinations": [
+     {
+      "OriginDestinationOrder": 1,
+      "RefFareRule": "IT_New_1",
+      "AirCoupons": [
+       {
+        "CouponOrder": 1,
+        "RefSegment": "-35047",
+        "BookingClassCode": "K"
+       },
+       {
+        "CouponOrder": 2,
+        "RefSegment": "-35048",
+        "BookingClassCode": "K"
+       }
+      ]
+     }
+    ],
+    "SaleCurrencyAmount": {
+     "DiscountAmount": 0,
+     "BaseAmount": 1298.5,
+     "TaxAmount": 314.66,
+     "TotalAmount": 1613.16,
+     "MilesAmount": 0
+    },
+    "RefExchangingItin": null,
+    "ValidatingAirlineDesignator": null
+   }
+  ],
+  "FareRules": [
+   {
+    "Ref": "IT_New_1",
+    "VoluntaryChangeCode": "WithPenalties",
+    "VoluntaryRefundCode": "Forbidden",
+    "Details": {
+     "ExchangePenalties": [
+      {
+       "FromHours": 0,
+       "ToHours": 10000,
+       "Amount": {
+        "TotalAmount": 380,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": -48,
+       "ToHours": 0,
+       "Amount": {
+        "TotalAmount": 380,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": -10000,
+       "ToHours": -48,
+       "Amount": {
+        "TotalAmount": 160,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": null,
+       "ToHours": null,
+       "Amount": {
+        "TotalAmount": 240,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": true
+      }
+     ],
+     "RefundPenalties": [
+      {
+       "FromHours": 0,
+       "ToHours": 10000,
+       "Amount": {
+        "TotalAmount": 1298.5,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": -48,
+       "ToHours": 0,
+       "Amount": {
+        "TotalAmount": 1298.5,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": -10000,
+       "ToHours": -48,
+       "Amount": {
+        "TotalAmount": 1298.5,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": false
+      },
+      {
+       "FromHours": null,
+       "ToHours": null,
+       "Amount": {
+        "TotalAmount": 1298.5,
+        "MilesAmount": 0
+       },
+       "IsNoShowPenalty": true
+      }
+     ],
+     "MinimumStay": 0,
+     "MaximumStay": 365,
+     "DayOffNightStay": false,
+     "AdvancePurchaseDays": 0
+    },
+    "FareConditionText": {
+     "Text": "General terms and conditions of sale",
+     "Value": "One way",
+     "Children": [
+      {
+       "Text": "Fare basis code",
+       "Value": "K - Pacific Super Saver Fare",
+       "Children": []
+      },
+      {
+       "Text": "Status",
+       "Value": "HK",
+       "Children": []
+      },
+      {
+       "Text": "Available seat(s)",
+       "Value": "9",
+       "Children": []
+      },
+      {
+       "Text": "One way",
+       "Value": "allowed",
+       "Children": []
+      },
+      {
+       "Text": "Open ticket",
+       "Value": "allowed",
+       "Children": []
+      },
+      {
+       "Text": "The duration of the stay must be included between 0 and 365 days",
+       "Value": null,
+       "Children": []
+      },
+      {
+       "Text": "Ticket",
+       "Value": "Modifiable with fee",
+       "Children": [
+        {
+         "Text": "Until 2 day(s)* before the flight",
+         "Value": "160 AUD",
+         "Children": []
+        },
+        {
+         "Text": "From 2 day(s)* until flight",
+         "Value": "380 AUD",
+         "Children": []
+        },
+        {
+         "Text": "After the flight",
+         "Value": "380 AUD",
+         "Children": []
+        },
+        {
+         "Text": "Additional penalty in case of no-show",
+         "Value": "240 AUD",
+         "Children": []
+        }
+       ]
+      },
+      {
+       "Text": "Ticket",
+       "Value": "Non-refundable",
+       "Children": []
+      },
+      {
+       "Text": "Bag allowance",
+       "Value": null,
+       "Children": [
+        {
+         "Text": "AD",
+         "Value": "23 Kg",
+         "Children": []
+        }
+       ]
+      },
+      {
+       "Text": "days are divided in increments of 24 hours and governed by the flight departure time",
+       "Value": "*",
+       "Children": []
+      }
+     ]
+    }
+   }
+  ],
+  "SaleCurrencyCode": "AUD",
+  "ETTicketFares": [
+   {
+    "Taxes": [
+     {
+      "CountryCode": "AU",
+      "Code": "WG",
+      "SaleCurrencyAmount": 6.29
+     },
+     {
+      "CountryCode": "AU",
+      "Code": "AU",
+      "SaleCurrencyAmount": 70
+     },
+     {
+      "CountryCode": "AU",
+      "Code": "WY",
+      "SaleCurrencyAmount": 36
+     },
+     {
+      "CountryCode": "AU",
+      "Code": "YR",
+      "SaleCurrencyAmount": 15
+     },
+     {
+      "CountryCode": "AU",
+      "Code": "YQ",
+      "SaleCurrencyAmount": 106.42
+     },
+     {
+      "CountryCode": "NR",
+      "Code": "YR",
+      "SaleCurrencyAmount": 10
+     },
+     {
+      "CountryCode": "NR",
+      "Code": "YQ",
+      "SaleCurrencyAmount": 70.95
+     }
+    ],
+    "OriginDestinationFares": [
+     {
+      "OriginDestinationOrder": 1,
+      "RefWebClass": null,
+      "CouponFares": [
+       {
+        "CouponOrder": 1,
+        "RefSegment": "-35047",
+        "BookingClassCode": "K",
+        "Taxes": null,
+        "BagAllowances": [
+         {
+          "Quantity": null,
+          "WeightMeasureQualifier": "Kg",
+          "Weight": 23,
+          "CarryOn": false,
+          "TotalWeight": 23
+         }
+        ],
+        "FareBasisCode": "KECO",
+        "SaleCurrencyAmount": {
+         "DiscountAmount": 0,
+         "BaseAmount": 779.1,
+         "TaxAmount": 233.71,
+         "TotalAmount": 1012.81,
+         "MilesAmount": 0
+        },
+        "AmountDetails": null
+       },
+       {
+        "CouponOrder": 2,
+        "RefSegment": "-35048",
+        "BookingClassCode": "K",
+        "Taxes": null,
+        "BagAllowances": [
+         {
+          "Quantity": null,
+          "WeightMeasureQualifier": "Kg",
+          "Weight": 23,
+          "CarryOn": false,
+          "TotalWeight": 23
+         }
+        ],
+        "FareBasisCode": "KECO",
+        "SaleCurrencyAmount": {
+         "DiscountAmount": 0,
+         "BaseAmount": 519.4,
+         "TaxAmount": 80.95,
+         "TotalAmount": 600.35,
+         "MilesAmount": 0
+        },
+        "AmountDetails": null
+       }
+      ],
+      "RefFareRule": null
+     }
+    ],
+    "RefPassenger": "237588",
+    "RefItinerary": "IT_New",
+    "Ref": "ET_0",
+    "CreatedDateGMT": null,
+    "SaleCurrencyAmount": {
+     "DiscountAmount": 0,
+     "BaseAmount": 1298.5,
+     "TaxAmount": 314.66,
+     "TotalAmount": 1613.16,
+     "MilesAmount": 0
+    },
+    "AmountDetails": null
+   }
+  ]
+ }
+}

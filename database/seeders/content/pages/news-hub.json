@@ -1,0 +1,37 @@
+{
+    "slug": "news-hub",
+    "title": "News Hub",
+    "group": "news",
+    "path": "/news-hub",
+    "summary": "The words on the News Hub page. The stories themselves are under Posts.",
+    "seo_title": "News Hub | Naoero Airlines",
+    "seo_description": "The latest news, announcements and highlights from Naoero Airlines.",
+    "banner_key": "news-hub",
+    "sort_order": 180,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "About > News Hub",
+            "heading": "News Hub",
+            "body": "Stay updated with latest new, announcement and highlights from Naoero Airlines.",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean"
+        },
+        {
+            "key": "intro",
+            "type": "image_text",
+            "show_on": "website",
+            "body": "Welcome to the Naoero Airlines News Hub. Your go-to source for the latest updates, announcements, and insights from the airline of the Central Pacific. Stay informed about our new routes, service enhancements, special promotions, industry developments, and community initiatives.\n\nAt Naoero Airlines, we are committed to keeping our passengers, partners, and stakeholders up to date with everything happening across our network. Whether it's new destinations, operational improvements, or exciting events, you'll find all the important news right here.",
+            "image": "seed:news-hub/about.png",
+            "image_alt": "Naoero Airlines cabin crew member with a tablet"
+        },
+        {
+            "key": "latest",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Latest News",
+            "button_label": "Know More"
+        }
+    ]
+}

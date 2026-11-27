@@ -1,0 +1,208 @@
+{
+    "slug": "baggage",
+    "title": "Baggage",
+    "group": "travel-info",
+    "path": "/travel-info/baggage",
+    "summary": "We want you to have an enjoyable flight experience! Please take note of our baggage allowances before you fly.",
+    "seo_title": "Baggage Allowance | Naoero Airlines",
+    "seo_description": "Carry-on and checked baggage allowances by fare, restricted items, excess baggage and unaccompanied baggage.",
+    "banner_key": "baggage",
+    "sort_order": 200,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Travel Info > Baggage",
+            "heading": "Baggage",
+            "body": "We want you to have an enjoyable flight experience! Please take note of our baggage allowances before you fly.",
+            "image_alt": "Naoero Airlines aircraft flying above the clouds"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Travel Info > Baggage",
+            "heading": "Baggage",
+            "body": "Everything you need to know about your baggage before you fly."
+        },
+        {
+            "key": "app-allowance",
+            "type": "stats",
+            "show_on": "app",
+            "subheading": "YOUR BASIC ALLOWANCE",
+            "heading": "Economy",
+            "body": "Naoero Airlines international travel",
+            "items": [
+                {
+                    "title": "CARRY-ON",
+                    "value": "7 KG",
+                    "text": "48 × 34 × 23 cm"
+                },
+                {
+                    "title": "CHECKED",
+                    "value": "23 KG",
+                    "text": "Pacific Saver / Sale"
+                }
+            ]
+        },
+        {
+            "key": "important",
+            "type": "notice",
+            "show_on": "both",
+            "heading": "Important Baggage Information",
+            "body": "Naoero Airlines will no longer accept the following when carried as checked or carry-on baggage:\n- Samsung Galaxy Note 7 Mobile Phones\n- Self-Balancing Boards\n- ALL Apple MacBooks Must Be Placed In Carry-On Baggage Only And Must Be Turned Off."
+        },
+        {
+            "key": "carry",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Carry Baggage",
+            "body": "Carry on or hand baggage consists of light items that you may need in-flight. It may include for ladies, a handbag or for men, a briefcase, a small laptop computer/Tablet and reading material. It also includes infant's food for consumption in flight.\n\nThe following maximum baggage allowances apply for Carry-on Baggage for all Naoero Airlines International Travel:\n- Hand baggage should be shown to the check-in agent to ensure it is suitable to take on-board. Hand luggage in excess of your allowance will be removed at the boarding gate. You should be aware that excess hand luggage may not travel on the same flight as you.\n- Additional charges will be payable if your excess hand luggage, when added to your checked baggage weight, exceeds your permitted allowance.\n\n**Business**: 10kg, 48(l) x 34(h) x 23(d) cm\n\n**Economy**: 7kg, 48(l) x 34(h) x 23(d) cm"
+        },
+        {
+            "key": "additional-allowances",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Additional Allowances At Our Absolute Discretion May Include:",
+            "body": "- A handbag, pocketbook or purse which is appropriate to normal travelling dress and is not being used as a container for the transportation of articles which could otherwise be regarded as Baggage;\n- An overcoat or wrap\n- An umbrella (pointed and/or sharp prohibited) or walking stick;\n- A small camera and/or pair of binoculars;\n- A reasonable amount of reading matter for the flight;\n- infant's food for consumption in flight;\n- A small amount of duty-free goods"
+        },
+        {
+            "key": "non-rigid",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Non-Rigid Baggage",
+            "body": "- For non-rigid Baggage such as a garment bag the maximum dimensions permitted are 60(l) x 114(h) x 11(d) cm.",
+            "note": "**Note 1**: Medical assistance items (crutches, wheelchairs etc) are exempt from this requirement. Please refer to our section on Mobility Aids.\n\n**Note 2**: Carry-on hand baggage must not include any prohibited items, liquids, aerosols or gels (LAGS) that exceed the maximum quantity permitted. Any prohibited items and/or LAGS items in excess of the maximum quantity permitted will be removed at the screening point by the airport operator or screening agency. There is no provision to hold these items for you."
+        },
+        {
+            "key": "what-can-i-bring",
+            "type": "text",
+            "show_on": "both",
+            "heading": "What Can I Bring On The Plane?",
+            "body": "Planning ahead and packing properly can facilitate the screening process and ease your travel experience at the airport. Know what you can pack in your carry-on and checked baggage before arriving at the airport by reviewing the lists below. Even if an item is generally permitted, it may be subject to additional screening or not allowed through the checkpoint if it triggers an alarm during the screening process, appears to have been tampered with, or poses other security concerns.",
+            "note": "Learn about what you can bring on the plane by **clicking here.**\n\nYou can download a helpful fact sheet here than contains helpful baggage packing tips:",
+            "button_label": "What Can I Bring On The Plane",
+            "button_url": "#"
+        },
+        {
+            "key": "checked",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Checked Baggage",
+            "body": "Please ensure your bags that you pack with your luggage are of a suitable type and of sound construction to protect its content. Naoero Airlines is not responsible for repair or replacement of bags that are presented at check-in that are not adequate or suitable to protect the contents from damage.\n\nFor International Travel on Naoero Airlines flights the following baggage allowances are included in your Fare. All other Baggage which is larger and/or heavier than your allowance will constitute excess and/or oversized Baggage. Pooling of baggage is only permitted where passengers are part of a family group and have been booked on the same booking reference number (PNR). Fees are payable for any excess baggage and must be paid for at the time of check-in.\n\nNaoero Airlines does not accept the following items as Checked Baggage and does not accept liability for their loss or damage unless the items are identified to Naoero Airlines and it has, in its absolute discretion, given its written acceptance for carriage and accepted liability in writing for their loss or damage:\n- Cash, credit cards, deeds, passports and other travel documents, securities, business documents or other valuable documents;\n- Jewellery, antiques, precious metals or similar valuable items;\n- Any item of a delicate, fragile or brittle nature e.g. glassware, sports equipment, musical instruments;\n- Any item of a perishable nature e.g. seafood;\n- Medicines;\n- Electrical or electronic components e.g. computers, cameras;\n- Any item that has insufficient packaging to withstand the normal circumstances and effects of carriage by air.\n\nThe following baggage related claims are not covered by Naoero Airlines:\n- scratches, dents or minor cuts to pieces of baggage\n- damage to or loss of straps, hooks or belts\n- broken wheels or feet\n- damage to zips or locks\n- damage to retractable or fixed baggage handles\n- damage as a result of over-packing.",
+            "note": "The Maximum Weight Per Piece Of Baggage Must Not Exceed 32 Kilograms\n\nTotal Dimensions Of Baggage Must Not Exceed 270cm With No One Piece Exceeding 158cm. To Calculate: Length + Width + Height = Total Dimension\n\nIf The Total Dimension Is Greater Than 270cm It Must Be Carried As Freight."
+        },
+        {
+            "key": "fare-allowances",
+            "type": "table",
+            "show_on": "both",
+            "heading": "Checked baggage allowance by fare",
+            "columns": [
+                "Fare Type",
+                "Weight Allowance"
+            ],
+            "items": [
+                {
+                    "cells": [
+                        "Premium Business",
+                        "45kg"
+                    ]
+                },
+                {
+                    "cells": [
+                        "Full flexible",
+                        "45kg"
+                    ]
+                },
+                {
+                    "cells": [
+                        "Flexi Saver",
+                        "30kg"
+                    ]
+                },
+                {
+                    "cells": [
+                        "Pacific Saver",
+                        "23kg"
+                    ]
+                },
+                {
+                    "cells": [
+                        "Sale/other",
+                        "23kg"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "united-states",
+            "type": "faq",
+            "show_on": "both",
+            "heading": "Flights To The United States",
+            "items": [
+                {
+                    "title": "What is the baggage allowance for infants?",
+                    "text": "Adults accompanying infants are entitled to check-in one stroller, bassinet or car seat. If used to board the aircraft these items will be removed at the departure gate and stowed in the aircraft hold. They will be returned to you at the destination port. Please refer to our section regarding Travelling with Children and Infants for more information."
+                },
+                {
+                    "title": "How much are excess baggage charges?",
+                    "text": "Adults accompanying infants are entitled to check-in one stroller, bassinet or car seat. If used to board the aircraft these items will be removed at the departure gate and stowed in the aircraft hold. They will be returned to you at the destination port. Please refer to our section regarding Travelling with Children and Infants for more information.",
+                    "link_label": "Refer To Our Section On Excess Baggage For Charges.",
+                    "link_url": "/travel-info/additional-baggage"
+                },
+                {
+                    "title": "How do I send unaccompanied baggage?",
+                    "text": "Adults accompanying infants are entitled to check-in one stroller, bassinet or car seat. If used to board the aircraft these items will be removed at the departure gate and stowed in the aircraft hold. They will be returned to you at the destination port. Please refer to our section regarding Travelling with Children and Infants for more information."
+                },
+                {
+                    "title": "What is unaccompanied baggage",
+                    "text": "Adults accompanying infants are entitled to check-in one stroller, bassinet or car seat. If used to board the aircraft these items will be removed at the departure gate and stowed in the aircraft hold. They will be returned to you at the destination port. Please refer to our section regarding Travelling with Children and Infants for more information.\n\nIt Does NOT Include Combustion/Electric Engines, Motor Parts And Tools Of Trade."
+                },
+                {
+                    "title": "Pre-purchased Additional Baggage",
+                    "text": "Adults accompanying infants are entitled to check-in one stroller, bassinet or car seat. If used to board the aircraft these items will be removed at the departure gate and stowed in the aircraft hold. They will be returned to you at the destination port. Please refer to our section regarding Travelling with Children and Infants for more information.",
+                    "link_label": "Refer To Our Section On Additional Pre-Purchased Baggage For More Details",
+                    "link_url": "/travel-info/additional-baggage"
+                }
+            ]
+        },
+        {
+            "key": "tsa",
+            "type": "notice",
+            "show_on": "both",
+            "body": "What Can I Bring? All I Transportation Security Administration. Liquids, Aerosols, and Gels Rule I Transportation Security Administration",
+            "button_label": "What Can I Bring On The Plane",
+            "button_url": "#"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Destination",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/destinations",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "On Board",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

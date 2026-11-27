@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+    <Event>
+        <AirlineDesignator>ON</AirlineDesignator>
+        <FlightNumber>411</FlightNumber>
+        <OriginCode>EWR</OriginCode>
+        <DestinationCode>DUS</DestinationCode>
+        <NewDepartureDate>2027-04-28T22:00:00</NewDepartureDate>
+        <OldDepartureDate>2027-04-28T21:00:00</OldDepartureDate>
+        <NewArrivalDate>2027-04-29T09:50:00</NewArrivalDate>
+        <OldArrivalDate>2027-04-29T09:50:00</OldArrivalDate>
+        <NewEquipmentText>Airbus A321neo</NewEquipmentText>
+        <OldEquipmentText>Airbus A321neo</OldEquipmentText>
+        <OriginAirportTerminal>TB</OriginAirportTerminal>
+        <DestinationAirportTerminal></DestinationAirportTerminal>
+        <RefSegment>398386</RefSegment>
+    </Event>
+    <Data Format="Json" Source="CRM">
+        <Customer>
+            <Ref>60182280</Ref>
+            <TypeCode>EndCustomer</TypeCode>
+            <Firstname>Firstname</Firstname>
+            <Surname>Lastname</Surname>
+            <Emails>
+                <CustomerEmail>
+                    <Email>test@test.com</Email>
+                </CustomerEmail>
+            </Emails>
+            <Phones>
+                <CustomerPhone>
+                    <PhoneNumber>+39675823956</PhoneNumber>
+                </CustomerPhone>
+            </Phones>
+        </Customer>
+        <LoadBookingRequest>
+            <UniqueID>
+                <TypeCode>PnrCode</TypeCode>
+                <ID>004DUX</ID>
+            </UniqueID>
+            <Verification>
+                <PassengerName>Lastname</PassengerName>
+                <RefCustomer>60182280</RefCustomer>
+            </Verification>
+        </LoadBookingRequest>
+    </Data>

@@ -1,0 +1,105 @@
+{
+    "slug": "destinations",
+    "title": "Destinations",
+    "group": "pages",
+    "path": "/destinations",
+    "summary": "The words on the Destinations page. Each destination (picture, description, details) is under Destinations.",
+    "seo_title": "Destinations | Naoero Airlines",
+    "seo_description": "Explore destinations across Australia and the Pacific served by Naoero Airlines.",
+    "banner_key": "destinations",
+    "sort_order": 170,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Home > Destinations",
+            "heading": "Destinations",
+            "body": "Explore destinations across Australia and the Pacific, discover local experiences, compare routes, and find the perfect destination for your next journey with Naoero Airlines.",
+            "image_alt": "Overwater bungalows in a Pacific lagoon"
+        },
+        {
+            "key": "where-we-fly",
+            "type": "cards",
+            "show_on": "website",
+            "heading": "Where We Fly",
+            "body": "We currently service Australia, Republic of Naoero, Fiji, Republic of Kiribati, and the Republic of the Marshall Islands. We look forward to adding even more exciting destinations in the future! The first step in planning your ideal holiday in the Pacific is deciding what type of vacation is best for you. Who are you going with? Whether you're travelling solo, with friends, family or a partner, once you've decided that, it's time to pick the style of vacation you're after. The Pacific truly has something to suit everyone.",
+            "subheading": "Best Destinations",
+            "items": [
+                {
+                    "title": "Relaxation",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Nadi",
+                        "Brisbane"
+                    ],
+                    "image": "seed:destinations/relaxation.png"
+                },
+                {
+                    "title": "Adventure",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Nadi",
+                        "Brisbane",
+                        "Majuro"
+                    ],
+                    "image": "seed:destinations/adventure.png"
+                },
+                {
+                    "title": "Deep Sea Fishing",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Nadi",
+                        "Majuro"
+                    ],
+                    "image": "seed:destinations/deepsea.png"
+                },
+                {
+                    "title": "Surfing",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Majuro",
+                        "Brisbane"
+                    ],
+                    "image": "seed:destinations/surfing.png"
+                },
+                {
+                    "title": "Snorkelling & Scuba Diving",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Nadi",
+                        "Brisbane",
+                        "Majuro"
+                    ],
+                    "image": "seed:destinations/Snorkelling & Scuba Diving.png"
+                },
+                {
+                    "title": "War History",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Nadi",
+                        "Tarawa",
+                        "Majuro"
+                    ],
+                    "image": "seed:destinations/warhistory.png"
+                },
+                {
+                    "title": "Local Culture",
+                    "text": "Unwind on tropical beaches, island escapes and peaceful coastal retreats.",
+                    "list": [
+                        "Tarawa",
+                        "Fiji"
+                    ],
+                    "image": "seed:destinations/localculture.png"
+                }
+            ]
+        },
+        {
+            "key": "explore",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Explore Our Destinations",
+            "button_label": "Know More"
+        }
+    ]
+}

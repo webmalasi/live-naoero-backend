@@ -1,0 +1,135 @@
+{
+    "slug": "airport-lounge",
+    "title": "Airport Lounge",
+    "group": "pages",
+    "path": "/airport-lounge",
+    "summary": "Relax, refresh and enjoy a premium experience before you fly.",
+    "seo_title": "Airport Lounge | Naoero Airlines",
+    "seo_description": "The Naoero Airlines lounge at Naoero International Airport: opening hours, access, food, Wi-Fi and facilities.",
+    "banner_key": "airport-lounge",
+    "sort_order": 60,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About Naoero Airlines",
+            "heading": "Airport Lounge",
+            "body": "Relax, Relief and enjoy a premium experience before you fly",
+            "button_label": "Book Your Flight",
+            "button_url": "/",
+            "image": "seed:shared/0936aa78-banner.jpg",
+            "image_alt": "Naoero Airlines aircraft flying over a Pacific island"
+        },
+        {
+            "key": "experience",
+            "type": "image_text",
+            "show_on": "both",
+            "subheading": "Your Lounge Experience",
+            "heading": "Designed for your Comfort",
+            "body": "Our Lounge offers the perfect environment to relax, work or unwind before your journey, with modern amenities and warm hospitality.",
+            "image_alt": "Naoero Airlines cabin crew",
+            "image": "seed:shared/0734d683-whoweare.png"
+        },
+        {
+            "key": "details",
+            "type": "cards",
+            "show_on": "both",
+            "items": [
+                {
+                    "icon": "map-pin",
+                    "title": "Location",
+                    "text": "Naoero International Airport Departure Area"
+                },
+                {
+                    "icon": "clock",
+                    "title": "Opening Hours",
+                    "text": "Daily 6:00AM - 10:00PM"
+                },
+                {
+                    "icon": "users",
+                    "title": "Access",
+                    "text": "Eligible Passenger Lounge Program Members"
+                },
+                {
+                    "icon": "plane-takeoff",
+                    "title": "Available for",
+                    "text": "Domestic and International flight"
+                }
+            ]
+        },
+        {
+            "key": "features",
+            "type": "list",
+            "show_on": "both",
+            "items": [
+                {
+                    "title": "Comfort & Relaxation",
+                    "text": "Spacious seating and a calm space to unwind."
+                },
+                {
+                    "title": "Food & Refreshment",
+                    "text": "Complimentary snacks, meals and beverages during your stay."
+                },
+                {
+                    "title": "Stay Connected",
+                    "text": "High-speed Wi-Fi to keep you connected."
+                },
+                {
+                    "title": "Premium Facilities",
+                    "text": "Shower, entertainment and reading materials."
+                }
+            ]
+        },
+        {
+            "key": "access",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Who can Access?",
+            "button_label": "View Access Details",
+            "items": [
+                {
+                    "title": "Business Class passengers"
+                },
+                {
+                    "title": "Premium economy passengers (on select routes)"
+                },
+                {
+                    "title": "Naoero Airlines Lounge program members"
+                },
+                {
+                    "title": "Pay-at-the door access (subject to availability)"
+                }
+            ]
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Destination",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/destinations",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "On Board",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

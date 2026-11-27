@@ -1,0 +1,88 @@
+{
+    "slug": "check-in-times",
+    "title": "Check-In Times",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/check-in-times",
+    "summary": "Here at Naoero Airlines, we try to make your check-in experience as smooth as possible.",
+    "seo_title": "Check-In Times | Naoero Airlines",
+    "seo_description": "When check-in opens and closes at each Naoero Airlines port, boarding and connecting to another carrier.",
+    "banner_key": "check-in-times",
+    "sort_order": 280,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "Travel Info > Before You Fly > Check In Times",
+            "heading": "Check-In Times",
+            "body": "Here at Naoero Airlines, we try to make your check-in experience as smooth as possible.",
+            "image_alt": "Naoero Airlines aircraft flying above the clouds",
+            "image": "seed:check-in-times/hero.jpg"
+        },
+        {
+            "key": "times",
+            "type": "feed",
+            "feed": "check-in-times",
+            "show_on": "both",
+            "heading": "Naoero Airlines Check-In Times",
+            "subheading": "New Check-in Times for Tarawa, Majuro and Pohnpei - Effective 6th November 2025"
+        },
+        {
+            "key": "important",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Important Information",
+            "body": "We ask that you arrive at the airport to complete check-in and immigration formalities as early as possible to allow plenty of time for a smooth transition through the airport to your gate.\n\nIf you require additional assistance due to mobility or special needs, please contact us prior to departure.\n\nAt Check-in you will be asked to show a ticket that shows you travelling on that date. Tickets showing any other date will not be accepted. All flight changes must be made with Reservations in line with the conditions attached to your fare. A copy of the conditions are sent with every e-ticket purchased.\n\nAs some ports require a return ticket, you may also be required to present a ticket showing your onward journey.\n\nTickets may be presented either on paper or on an electronic device."
+        },
+        {
+            "key": "boarding",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Boarding",
+            "body": "You will also need to be at the boarding gate no later than 30 minutes before the stated departure time. This will assist us in ensuring an on-time departure and minimize delays and inconvenience to all passengers."
+        },
+        {
+            "key": "assistance",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Need any assistance with your reservations or have any questions about checking in ?",
+            "body": "Please contact reservations on **+61 7 3229 6455** or email us at **reservations@naoeroair.com**."
+        },
+        {
+            "key": "connecting",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Connecting To Another Carrier",
+            "body": "You will need to collect all of your checked baggage when you arrive at the port where you will join your flight. Once you have completed Customs, Immigration and Quarantine formalities you should then proceed to our check-in counters to check-in for your flight.\n- You will receive your Boarding Pass and checked Baggage receipts for every bag that you check in for your Naoero Airlines flight.\n- Check-in opens 3 hours before your flight is scheduled to depart.\n- Check-in closes 1 hour before the scheduled departure time.\n\nPlease ensure you allow sufficient time to complete check-in, government and immigration formalities so that you are at the boarding gate 1 hour before departure. While we make every effort to ensure your luggage is uplifted, we cannot guarantee uplift if you are connecting from another carrier with a short connection time. We will uplift your baggage on the next available flight.\n\nYou will need to collect all of your checked baggage when you arrive at the port where you complete your Naoero Airlines flight. Once you have completed Customs, Immigration and Quarantine formalities, you are ready to continue your journey on your chosen airline."
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Destination",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/destinations",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "On Board",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

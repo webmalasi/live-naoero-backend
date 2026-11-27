@@ -1,0 +1,139 @@
+{
+    "slug": "mobility-assistance",
+    "title": "Mobility Assistance",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/mobility-assistance",
+    "summary": "Whether you're travelling with a wheelchair, mobility aid, or require additional assistance, we're committed to making your journey safe, comfortable, and stress-free.",
+    "seo_title": "Mobility Assistance | Naoero Airlines",
+    "seo_description": "Travelling with a wheelchair or mobility aid: booking, size restrictions, equipment allowance, check-in and on the aircraft.",
+    "banner_key": "mobility-assistance",
+    "sort_order": 230,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Before You Fly > Mobility Assistance",
+            "heading": "Mobility Assistance",
+            "body": "Whether you're travelling with a wheelchair, mobility aid, or require additional assistance, we're committed to making your journey safe, comfortable, and stress-free from check-in to arrival.",
+            "button_label": "Learn More",
+            "image_alt": "A flight attendant assisting a passenger in a wheelchair at the airport",
+            "image": "seed:mobility-assistance/hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Before You Fly > Mobility Assistance",
+            "heading": "Travel With The Assistance You Need."
+        },
+        {
+            "key": "booking",
+            "type": "text",
+            "show_on": "both",
+            "heading": "When Making A Booking",
+            "body": "To ensure a consistent service is provided, we ask that you make us aware of what level of assistance you require from us at the time of booking.\n\nTo allow us to best manage your travel requirements, it is important that you give us as much information as possible at the time of booking.\n\nKey information we will need to know includes:\n- the type of mobility aid you are travelling with (electric or non-electric),\n- if the mobility aid is electric, what type of battery is used (gel cell (dry), wet non-spillable or wet spillable battery),\n- whether the mobility aid is collapsible,\n- the dimensions (in adjusted or disassembled state) and the weight of the mobility aid,\n- whether any medical assistance will be required, and\n- whether you are travelling alone or with an escort or career."
+        },
+        {
+            "key": "aids",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Mobility Aids And Wheelchairs",
+            "body": "To ensure a consistent service is provided, we ask that you make us aware of what level of assistance you require from us at the time of booking.\n\nKey information we will need to know includes:\n- the type of mobility aid you are travelling with (electric or non-electric),\n- if the mobility aid is electric, what type of battery is used (gel cell (dry), wet non-spillable or wet spillable battery),\n- whether the mobility aid is collapsible,\n- the dimensions (in adjusted or disassembled state) and the weight of the mobility aid,\n- whether any medical assistance will be required, and\n- whether you are travelling alone or with an escort or career."
+        },
+        {
+            "key": "frames",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Walking Frames, Walking Canes And Crutches",
+            "body": "Walking canes and crutches may be carried in the aircraft cabin. You may use your cane or crutches to the departure gate and carry it on board the aircraft where it will be stowed in an overhead locker or alternative storage space. If your walking frame is collapsible and cabin crew can stow it safely, your walking frame can be stowed in the aircraft cabin. For safety reasons, non-collapsible walking frames are not permitted in the aircraft cabin. You can surrender your walking frame at check-in. You will then be transferred to the departure gate in an Naoero Airlines wheelchair or people mover.\n\nAlternatively, you can use your frame to the departure gate where it can be surrendered for stowage in the aircraft hold.\n\nIf your travel includes a transit, we may request for your transit time to be extended in order to facilitate the transfer of your mobility aid.\n\nIf you book via the Internet, contact your local Naoero Airlines office or Sales Agent immediately after you have purchased your ticket to confirm specific arrangements. Alternatively, you can e-mail your specific arrangements through to reservations@naoeroairlines.com.au.\n\nIf you are booking by telephone, please discuss your needs with your Sales Consultant."
+        },
+        {
+            "key": "size",
+            "type": "table",
+            "show_on": "both",
+            "heading": "Mobility Aid Size Restrictions",
+            "body": "In accordance with manufacturer recommendations and to reduce any risk of damage to your mobility aid, all electric wheelchairs, including power assist wheelchairs, must travel in the upright position (folded or unfolded) in the free wheel mode. To facilitate this requirement, size restrictions (set out in the table below) apply to the acceptance of mobility aids on our aircraft.\n\nAll manual wheelchairs must fit within the size restrictions in the upright position (folded or unfolded). If the wheelchair fits within the size restrictions but not in the upright position, the wheelchair can only be carried if it weighs less than 32 Kgs and the manufacturer has confirmed that the wheelchair can be stored and transported on its side. Otherwise, the wheelchair must fit within the size restrictions to be carried.",
+            "columns": [
+                "Aircraft",
+                "Width",
+                "Height",
+                "Length"
+            ],
+            "items": [
+                {
+                    "cells": [
+                        "Boeing 737-300",
+                        "100cm",
+                        "84cm",
+                        "125cm"
+                    ]
+                }
+            ],
+            "note": "If your mobility aid does not fit within these allowable dimensions (after being adjusted or disassembled), you may wish to travel with an alternative mobility aid, such as a manual wheelchair, that fits within the dimensions of our aircraft."
+        },
+        {
+            "key": "allowance",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Mobility Equipment Allowance",
+            "body": "Your Mobility Equipment includes both Mobility Aids and Assistive Devices. Mobility Aids include (but are not limited to) items such as wheelchairs (day or sports), electric wheelchairs and electric scooters.\n\nAdditionally, Assistive Devices include (but are not limited to) items such as walking frames, hoists, shower chairs and commodes.\n\nPlease note that:\n- two (2) pieces of Mobility Equipment per person will be carried free of charge as checked baggage in addition to your other checked baggage.\n- each piece must not exceed 32kg, except Mobility Equipment which can travel in the upright position in the free wheel mode.\n- items above 32kg which cannot travel in the upright position in free wheel mode must be carried as freight at standard freight rates.\n- the equipment must be for your own use and adhere to the dimensions set out above; and\n- if you wish to check in more than two pieces of Mobility Equipment, the additional pieces will form part of your checked baggage allowance and excess charges will apply if your applicable allowance is exceeded."
+        },
+        {
+            "key": "check-in",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Check-In And Boarding",
+            "body": "To Allow Naoero Airlines To Provide Appropriate Levels Of Assistance, Passengers With Mobility Limitations Must Allow Sufficient Time For Check-In And Boarding. If Your Mobility Aid Needs To Be Adjusted Or Broken Down, You Are Responsible For Assembling And Disassembling Your Mobility Aid Where You Are Able To Do So.\n\nWhere Assistance Is Required, Airport Ground Staff May Ask You To Explain, Instruct And Supervise The Assembling, Or Disassembling Of Your Mobility Aid(S). This May Include Disconnection And Connection Of The Battery."
+        },
+        {
+            "key": "airport",
+            "type": "cards",
+            "show_on": "both",
+            "body": "If We Can Provide You With Any Other Assistance, Please Don't Hesitate To Let Us Know!",
+            "items": [
+                {
+                    "title": "Arriving at the Airport",
+                    "text": "For all departures, passengers who require mobility aid assistance are required to be at the airport:\n- A minimum of 2 hours before departure\n\nFor departures from overseas ports, check with the local Naoero Airlines office or Sales Agent and allow an extra 30 minutes in addition to the normal check-in time.\n\nPassengers may surrender their mobility aid at check-in or at the departure gate. If you choose to surrender your mobility aid at check-in, you will be transferred to a Naoero Airlines wheelchair and assisted to the departure gate by an Naoero Airlines staff member."
+                },
+                {
+                    "title": "On the Aircraft",
+                    "text": "Passengers may not take their own mobility aids into the aircraft cabin. Naoero Airlines staff will provide assistance to passengers with mobility limitations, where required, including transferring passengers to and from their mobility aids and the aircraft seat.\n\nOnboard wheelchairs are not available on Naoero Airlines. Where you are not travelling with an escort or carer, cabin crew can assist you to walk to and from the door of the aircraft toilet. Due to Occupational Health and Safety requirements, crew will not be able to lift you"
+                },
+                {
+                    "title": "At the Airport",
+                    "text": "At all Airport terminals within Australia, Naoero Airlines through their ground handling agents may provide kerbside mobility aid assistance, subject to the availability of wheelchairs and staff. Due to Occupational Health & Safety regulations, however, Naoero Airlines contracted staff are unable to provide passenger transfer assistance to and from vehicles.\n\nUpon arrival at the airport, the passenger must be accompanied by someone who can advise Naoero Airlines staff that a wheelchair is required kerbside. Wheelchairs are to remain within the terminal building and are not permitted in the airport car parks."
+                }
+            ]
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "FAQs",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/faqs",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Contact Us!",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/contact-us",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

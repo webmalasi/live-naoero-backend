@@ -1,0 +1,111 @@
+{
+    "slug": "flying-while-pregnant",
+    "title": "Flying While Pregnant",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/flying-while-pregnant",
+    "summary": "We understand you may want or need to travel while pregnant. Please read the below information to ensure we can help make your journey as comfortable and safe as possible.",
+    "seo_title": "Flying While Pregnant | Naoero Airlines",
+    "seo_description": "Travel eligibility, medical clearance and certificates for pregnant passengers and travel after delivery.",
+    "banner_key": "flying-while-pregnant",
+    "sort_order": 220,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Travel Info > Before You Fly > Flying While Pregnant",
+            "heading": "Flying While Pregnant",
+            "body": "We understand you may want or need to travel while pregnant. Please read the below information to ensure we can help make your journey as comfortable and safe as possible.",
+            "image_alt": "A pregnant woman seated by an aircraft window",
+            "image": "seed:flying-while-pregnant/hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Travel Info > Before You Fly > Flying While Pregnant",
+            "heading": "Flying While Pregnant",
+            "body": "Important information to help you prepare for your journey. Please read the below information to ensure we can help make your journey as comfortable and safe as possible."
+        },
+        {
+            "key": "eligibility",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Travel Eligibility",
+            "subheading": "Routine Pregnancy",
+            "body": "The certificate or letter must be available on request and be carried with you at the airport and during the flight in your cabin baggage.\n\nMedical clearance is required if the pregnancy is not routine and you are experiencing any complications with your pregnancy.\n\nPlease call our reservations team on +61 7 3229 6455 for further details\n\n**Single Pregnancy**: up to the end of week 36\n\n**Multiple Pregnancy (e.g. twins)**: up to the end of week 32\n\nMedical clearance is required if you are travelling within 7 days after your delivery date. Infants cannot travel for 48 hours after delivery and need Medical clearance to travel between 3 and 7 days after delivery.\n\nSome countries place limitations on the entry of non-national pregnant women. It is best to check with the local consulate to confirm their country specific requirements."
+        },
+        {
+            "key": "after-28-weeks",
+            "type": "text",
+            "show_on": "both",
+            "heading": "After 28 Weeks",
+            "body": "After 28 weeks, you need to carry a certificate or letter from a registered medical practitioner or registered midwife confirming:\n- The estimated date of delivery\n- Whether it is a single or multiple pregnancy\n- That the pregnancy is a routine pregnancy and that there are no complications",
+            "note": "**Important**: The Certificate Or Letter Must Be Available On Request And Carried With You At The Airport And During The Flight In Your Cabin Baggage."
+        },
+        {
+            "key": "medical-clearance",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Medical Clearance",
+            "body": "Medical clearance is required if:\n- The pregnancy is not routine\n- You are experiencing complications with your pregnancy\n- You are travelling within 7 days after your delivery date\n\nReservations - +61 7 3229 6455"
+        },
+        {
+            "key": "after-delivery",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Travelling After Delivery",
+            "body": "- Infants cannot travel for 48 hours after delivery\n- Medical clearance is required to travel between 3 and 7 days after delivery"
+        },
+        {
+            "key": "advice",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Important Medical Advice",
+            "body": "You must seek advice from your own medical practitioner prior to your flight. The periods referred to above are only our minimum requirements.",
+            "items": [
+                {
+                    "title": "Check Your Destination",
+                    "text": "Some countries place limitations on the entry of non-national pregnant women."
+                },
+                {
+                    "title": "Before You Fly",
+                    "text": "You must seek advice from your own medical practitioner prior to your flight."
+                },
+                {
+                    "title": "Important Information",
+                    "text": "The periods referred to above are only our minimum requirements. Please ensure you speak with your medical practitioner before travelling."
+                }
+            ]
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Destination",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/destinations",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "On Board",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "slug": "specials",
+    "title": "Specials",
+    "group": "pages",
+    "path": "/specials",
+    "summary": "Looking for a great deal? Check back regularly to see relevant specials for your travels!",
+    "seo_title": "Specials | Naoero Airlines",
+    "seo_description": "Special fares and deals on Naoero Airlines flights.",
+    "banner_key": "specials",
+    "sort_order": 160,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About > Special",
+            "heading": "Specials",
+            "body": "Looking for a great deal? Check back regularly to see relevant specials for your travels!"
+        },
+        {
+            "key": "offers",
+            "type": "feed",
+            "feed": "specials",
+            "show_on": "both",
+            "heading": "Special Fares",
+            "button_label": "Know More"
+        }
+    ]
+}

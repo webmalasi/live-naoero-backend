@@ -1,0 +1,95 @@
+{
+    "slug": "our-fleet",
+    "title": "Our Fleet",
+    "group": "pages",
+    "path": "/our-fleet",
+    "summary": "The words on the Our Fleet page. The aircraft (registration, type, seats, pictures) are under Our Fleet.",
+    "seo_title": "Our Fleet | Naoero Airlines",
+    "seo_description": "The Naoero Airlines passenger and freight fleet.",
+    "banner_key": "our-fleet",
+    "sort_order": 160,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "About > Our Fleet",
+            "heading": "Our Fleet",
+            "body": "Our Fleet – Comfort Service Above the Clouds. Reliable, Comfortable, and Versatile"
+        },
+        {
+            "key": "intro",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Our Fleet – Comfort Service Above the Clouds. Reliable, Comfortable, and Versatile",
+            "body": "Our passenger aircraft feature a two class cabin layout, offering both Business Class and Economy Class to cater to a variety of travel preferences.\n\nAs a full service airline, we are committed to making your journey with us seamless, enjoyable, and truly exceptional. Whether you're flying for business, leisure, or an island getaway, we look forward to welcoming you onboard.",
+            "subheading": "What to Expect on Board:",
+            "items": [
+                {
+                    "title": "Spacious seating & comfortable cabin design"
+                },
+                {
+                    "title": "Exceptional inflight service from our dedicated cabin crew"
+                },
+                {
+                    "title": "Delicious onboard meals & refreshments"
+                },
+                {
+                    "title": "Full service experience, with generous baggage allowances"
+                }
+            ]
+        },
+        {
+            "key": "passenger",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Passenger Fleet",
+            "body": "We currently offer a two class layout with business and economy classes.\n\nFrom the food on board to our exceptional cabin crew, we aim to make every aspect of your journey exceptional.\n\nWe are a full service airline and look forward to welcoming you on board.",
+            "columns": [
+                "Registration",
+                "Type",
+                "Seating Configuration"
+            ]
+        },
+        {
+            "key": "freight",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Freight Fleet",
+            "columns": [
+                "Registration",
+                "Type",
+                "Configuration"
+            ]
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Travel Classes",
+                    "text": "We want you to have a relaxed and enjoyable experience while onboard with us",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Our Team",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/our-team",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

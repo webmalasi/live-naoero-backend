@@ -1,0 +1,84 @@
+{
+    "slug": "social-media",
+    "title": "Social Media",
+    "group": "pages",
+    "path": "/social-media",
+    "summary": "All our latest posts and reels from Naoero Airlines.",
+    "seo_title": "Social Media | Naoero Airlines",
+    "seo_description": "The latest posts and reels from Naoero Airlines.",
+    "banner_key": "social-media",
+    "sort_order": 140,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Social Media",
+            "body": "All our latest posts and reels from Naoero Airlines."
+        },
+        {
+            "key": "posts",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Posts and reels (a reel is a video address in the link field)",
+            "items": [
+                {
+                    "title": "Naoero Airlines reel",
+                    "link_url": "https://napacificbridge.info/videos/reelnaorero.mp4"
+                },
+                {
+                    "title": "Naoero Airlines post 1",
+                    "image": "seed:social-media/805696635_1525213456300638_3412271261258812355_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 2",
+                    "image": "seed:social-media/805752582_1525213576300626_4537037074658989410_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 3",
+                    "image": "seed:social-media/723197603_1448516137303704_8714032583004519940_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 4",
+                    "image": "seed:social-media/710782042_1434645745357410_2064428907070955931_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 5",
+                    "image": "seed:social-media/603908089_1301217095366943_4556482638936127191_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 6",
+                    "image": "seed:social-media/558897054_1239577484864238_8480886228021008389_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 7",
+                    "image": "seed:social-media/514406715_1154856113336376_6008462925592949405_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 8",
+                    "image": "seed:social-media/469709039_18352691665132886_168271892259400957_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 9",
+                    "image": "seed:social-media/485968018_1076080377880617_7207079716193214032_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 10",
+                    "image": "seed:social-media/484111944_1065678918920763_1778394216387023848_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 11",
+                    "image": "seed:social-media/560054223_1241549171333736_4286234530445716015_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 12",
+                    "image": "seed:social-media/476280154_1041998337955488_8712961884526517995_n.jpg"
+                },
+                {
+                    "title": "Naoero Airlines post 13",
+                    "image": "seed:social-media/476632238_2177338675994799_1708376223601827281_n.jpg"
+                }
+            ]
+        }
+    ]
+}

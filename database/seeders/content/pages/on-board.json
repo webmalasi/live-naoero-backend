@@ -1,0 +1,89 @@
+{
+    "slug": "on-board",
+    "title": "On Board",
+    "group": "pages",
+    "path": "/on-board",
+    "summary": "Here at Naoero Airlines, we're here to make your journey as comfortable as possible.",
+    "seo_title": "On Board | Naoero Airlines",
+    "seo_description": "Seat requests, food and drinks, in-flight entertainment and duty-free on Naoero Airlines flights.",
+    "banner_key": "on-board",
+    "sort_order": 70,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Services > On Board",
+            "heading": "On Board",
+            "body": "Here at Naoero Airlines, we're here to make your journey as comfortable as possible."
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Services > On-Board",
+            "heading": "Your Journey With Naoero Airlines",
+            "body": "Here at Naoero Airlines, we're here to make your journey as comfortable as possible."
+        },
+        {
+            "key": "faqs",
+            "type": "faq",
+            "show_on": "both",
+            "items": [
+                {
+                    "title": "Can I request a specific seat?",
+                    "text": "Passengers traveling on Flexi Saver and Business Class fares are eligible for pre-reserved seat selection. To request a specific seat within your booking class, please contact our reservations team as early as possible, and no later than 72 hours before departure. While we strive to accommodate seat requests, specific seating preferences cannot be guaranteed and are subject to availability.\n\nFor assistance, reach out to our reservations team today!"
+                },
+                {
+                    "title": "Can I bring food and drinks from outside on board?",
+                    "text": "Yes, you are welcome to bring your own food onboard; however, we kindly ask that you be mindful of fellow passengers and avoid consuming items with strong or unappealing odors. Please note that the consumption of outside alcohol is not permitted; only beverages served by our crew may be consumed during the flight.\n\nAs a full-service airline, we take pride in offering complimentary meals and snacks, and we hope you enjoy our onboard dining experience while traveling with us."
+                },
+                {
+                    "title": "Does the aircraft have in-flight entertainment?",
+                    "text": "While digital in-flight entertainment is not yet available on our flights, we are actively working on bringing this feature to you soon, so stay tuned!\n\nIn the meantime, sit back, relax, and enjoy our in-flight magazine, Pacific Island Living. Packed with engaging articles, travel inspiration, and destination highlights, it's the perfect companion for your journey across the Pacific."
+                },
+                {
+                    "title": "Can I buy duty-free items on board?",
+                    "text": "At this time, duty-free items are not available for purchase onboard. However, we are actively exploring this option for the future and look forward to enhancing your inflight experience. Stay tuned for updates!"
+                }
+            ]
+        },
+        {
+            "key": "app-travel-classes",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Travel classes",
+            "body": "Find out more about our full-service experience in Economy and Business Class.",
+            "button_label": "View Travel Classes"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "slug": "acmi",
+    "title": "ACMI",
+    "group": "pages",
+    "path": "/acmi",
+    "summary": "ACMI (Aircraft, Crew, Maintenance and Insurance) solutions for global carriers.",
+    "seo_title": "ACMI Leasing | Naoero Airlines",
+    "seo_description": "Boeing 737 ACMI (Aircraft, Crew, Maintenance and Insurance) leasing for network growth, seasonal capacity and AOG recovery.",
+    "banner_key": "acmi",
+    "sort_order": 50,
+    "sections": [
+        {
+            "key": "tagline",
+            "type": "text",
+            "show_on": "website",
+            "heading": "ACMI",
+            "subheading": "Flexible, Reliable, Safe",
+            "body": "We offer ACMI (Aircraft, Crew, Maintenance and Insurance) global carriers."
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "heading": "ACMI",
+            "body": "Aircraft, Crew, Maintenance & Insurance solutions designed to support your airline's evolving needs."
+        },
+        {
+            "key": "app-letters",
+            "type": "list",
+            "show_on": "app",
+            "items": [
+                {
+                    "value": "A",
+                    "title": "Aircraft"
+                },
+                {
+                    "value": "C",
+                    "title": "Crew"
+                },
+                {
+                    "value": "M",
+                    "title": "Maintenance"
+                },
+                {
+                    "value": "I",
+                    "title": "Insurance"
+                }
+            ]
+        },
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "heading": "ACMI Aircraft, Crew, Maintenance, Insurance",
+            "body": "We offer ACMI (Aircraft, Crew, Maintenance, and Insurance) solutions designed to support your airline's evolving needs. Whether you're looking to expand your network, manage seasonal demand, or respond to operational disruptions, we have the expertise and resources to ensure seamless operations. Our ACMI options provide access to Boeing 737-300, 737-800 (passenger and freighter) and 737-700 passenger aircraft without the investment of ownership. Since becoming an ACMI operator, Naoero Airlines has provided fully dedicated aircraft that are superbly crewed, maintained, and insured to both domestic and international passenger airlines and air freight operators."
+        },
+        {
+            "key": "benefits",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Benefits Of ACMI",
+            "body": "Leverage our extensive traffic rights and operational expertise, including ETOPS capabilities, to expand your reach and grow your market presence. Our ACMI services ensure optimal fleet utilisation during peak seasons or new route launches with our scalable and flexible aircraft leasing solutions. In the event of an AOG situation, our ACMI services provide rapid fleet support to keep your operations running smoothly, with a quick-response solution to minimise disruption.",
+            "image_alt": "Naoero Airlines aircraft above the clouds",
+            "items": [
+                {
+                    "title": "Route and Network Development",
+                    "text": "Leverage our extensive traffic rights and operational expertise, including ETOPS capabilities, to expand your reach and grow your market presence."
+                },
+                {
+                    "title": "Seasonal and Strategic Capacity",
+                    "text": "Scalable and flexible aircraft leasing solutions for peak seasons or new route launches."
+                },
+                {
+                    "title": "AOG (Aircraft on Ground) Recovery",
+                    "text": "Rapid fleet support to keep your operations running smoothly, with a quick-response solution to minimise disruption."
+                }
+            ],
+            "image": "seed:acmi/image.png"
+        },
+        {
+            "key": "app-aircraft",
+            "type": "cards",
+            "show_on": "app",
+            "heading": "Our ACMI Aircraft",
+            "body": "Access aircraft without the investment of ownership.",
+            "items": [
+                {
+                    "title": "Boeing 737-800",
+                    "text": "Available in passenger and freighter configurations."
+                }
+            ]
+        },
+        {
+            "key": "bespoke",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Bespoke ACMI Services",
+            "body": "We understand the importance of brand continuity, which is why we offer neutral-impact aircraft livery, allowing you to maintain your branding and passenger experience while benefiting from our operational support.\n\nWith decades of experience in regional and international operations, Naoero Airlines is committed to delivering efficient, reliable, and cost-effective ACMI leasing solutions that help airlines stay competitive and operationally resilient.",
+            "image_alt": "Naoero Airlines aircraft above the clouds",
+            "items": [
+                {
+                    "title": "Neutral/Minimal Aircraft Branding",
+                    "text": "Aircraft can be operated with minimal or neutral branding to suit your commercial needs."
+                },
+                {
+                    "title": "Neutral/Brand Unintrusive Uniforms",
+                    "text": "Crew uniforms can be kept neutral or tailored to fit your brand identity."
+                },
+                {
+                    "title": "Bespoke Services for Your Individual Needs",
+                    "text": "Flexible arrangements built around the specific requirements of your operation."
+                }
+            ],
+            "image": "seed:acmi/image.png"
+        },
+        {
+            "key": "enquiry-form",
+            "type": "text",
+            "show_on": "website",
+            "heading": "ACMI Aircraft, Crew, Maintenance Insurance Enquiry Form",
+            "note": "Note: Empty Flights require a ballast of 880kg"
+        },
+        {
+            "key": "app-enquiry",
+            "type": "text",
+            "show_on": "app",
+            "heading": "ACMI (Aircraft, Crew, Maintenance & Insurance) Enquiry Form",
+            "button_label": "ACMI Enquiry"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

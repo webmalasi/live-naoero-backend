@@ -1,0 +1,142 @@
+{
+    "slug": "additional-baggage",
+    "title": "Additional Baggage",
+    "group": "travel-info",
+    "path": "/travel-info/additional-baggage",
+    "summary": "Need extra baggage for your trip? Pre-purchase additional baggage allowance online and enjoy lower rates than at the airport!",
+    "seo_title": "Additional Baggage | Naoero Airlines",
+    "seo_description": "Pre-purchased additional baggage allowance and excess baggage: how it works, payment, check-in and rates.",
+    "banner_key": "additional-baggage",
+    "sort_order": 210,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Home > Travel Info > Additional Baggage",
+            "heading": "Additional Baggage",
+            "body": "Need extra baggage for your trip? Pre-purchase additional baggage allowance online at naoeroair.com and enjoy lower rates than at the airport!",
+            "image_alt": "Cargo being loaded onto a Naoero Airlines aircraft at sunset",
+            "image": "seed:additional-baggage/hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Travel Info > Additional Baggage",
+            "heading": "Need Extra Baggage?",
+            "body": "Pre-purchase additional baggage allowance online at oeroair.com and enjoy lower rates than at the airport!"
+        },
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Pre-Purchased Additional Baggage Allowance And Excess Baggage",
+            "body": "We offer a range of Pre-Purchased Additional Baggage Allowance and Excess Baggage options to give you more flexibility, extra space and peace of mind for your journey"
+        },
+        {
+            "key": "pre-purchase",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Pre-Purchased Additional Baggage And Save",
+            "subheading": "How It Works:",
+            "items": [
+                {
+                    "title": "Flexible Options",
+                    "text": "Purchase additional baggage in increments of 5kg, 10kg, 15kg, 20kg, or 25kg to suit your travel needs."
+                },
+                {
+                    "title": "Convenient Booking",
+                    "text": "Add extra baggage at the time of booking as an ancillary add-on, or log in to My Booking if you've already made your reservation."
+                },
+                {
+                    "title": "Save Money & Time",
+                    "text": "Avoid higher airport fees and ensure a smooth check-in experience."
+                }
+            ],
+            "note": "**Important:**\n- Booked through a Travel Agent? Please contact your agent for assistance with pre-purchased baggage.\n- Availability: Pre-purchased baggage is available up to 24 hours before departure, subject to space availability.\n\nPlan ahead and travel stress-free with Naoero Airlines!"
+        },
+        {
+            "key": "excess",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Excess Baggage",
+            "body": "We understand that sometimes you need to carry more than your standard baggage allowance. Here's what you need to know about excess baggage:",
+            "items": [
+                {
+                    "title": "Payment Options",
+                    "text": "Excess Baggage Can Be Paid For At The Airport Or Prepaid Through Your Booking Agent. Please Note That Prepaid Baggage Is Non-Refundable, Even If The Actual Baggage Weight Is Less Than What Was Paid For."
+                },
+                {
+                    "title": "Check-in Requirements",
+                    "text": "If You Are Traveling With Excess Or Overweight Baggage, We Kindly Ask You To Arrive Early To Allow Sufficient Time To Complete Check-In Formalities."
+                },
+                {
+                    "title": "Packing Guidelines",
+                    "text": "For Security And Safety Reasons, Please DO NOT Pack Perishables, Medicines, Or Valuables In Your Excess Luggage."
+                },
+                {
+                    "title": "Space-Available Basis",
+                    "text": "Excess Baggage Is Accepted Only If Space Permits And Is Subject To Aircraft Weight Limits. Fees For Excess Baggage Are Collected At The Airport At The Time Of Check-In."
+                },
+                {
+                    "title": "Carriage on Next Available Flight",
+                    "text": "If We Accept Your Excess Or Overweight Baggage, It May Not Be Transported On The Same Flight As You. We Will Make Every Effort To Send It On The Next Available Flight With Sufficient Load Capacity."
+                },
+                {
+                    "title": "No Guarantee of Carriage",
+                    "text": "Naoero Airlines Cannot Guarantee That Additional Baggage Will Be Transported. Acceptance Is At Our Sole Discretion And Subject To Aircraft Load Constraints."
+                }
+            ]
+        },
+        {
+            "key": "rates",
+            "type": "gallery",
+            "show_on": "both",
+            "heading": "Pre-purchased additional baggage and excess baggage rates per route",
+            "image_alt": "Naoero Airlines pre-purchased additional baggage and excess baggage rates per route",
+            "items": [
+                {
+                    "image": "seed:additional-baggage/rates.png",
+                    "title": "Pre-purchased additional baggage and excess baggage rates"
+                }
+            ]
+        },
+        {
+            "key": "important-note",
+            "type": "notice",
+            "show_on": "both",
+            "heading": "Important Note",
+            "body": "- Pre-purchased additional baggage allowance will be charged in your local currency. The table above displays prices in AUD for reference.\n- Airport baggage fees are also charged in local currency at the time of payment.\n- Prices are subject to change without prior notice.\n- For the most up-to-date rates, please check with your booking agent or contact Naoero Airlines directly."
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Baggage",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/baggage",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Dangerous Goods",
+                    "text": "We want you to have a relaxed and enjoyable experience while onboard with us",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/dangerous-goods",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

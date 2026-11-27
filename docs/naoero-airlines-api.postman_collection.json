@@ -1,0 +1,586 @@
+{
+	"info": {
+		"_postman_id": "naoero-airlines-api-collection-v1",
+		"name": "Naoero Airlines REST API Collection",
+		"description": "Complete REST API collection for Naoero Airlines backend including Master Dropdowns, Locations, Inquiries, Fleet, Destinations, Shop, and more.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "1. Dynamic Dropdowns",
+			"item": [
+				{
+					"name": "Get All Dropdowns (All Groups & Options)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns"]
+						},
+						"description": "Returns all active dropdown categories, metadata, and options."
+					}
+				},
+				{
+					"name": "Get Charter Types Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/charter_types",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "charter_types"]
+						}
+					}
+				},
+				{
+					"name": "Get Cargo Types Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/cargo_types",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "cargo_types"]
+						}
+					}
+				},
+				{
+					"name": "Get Travel Classes Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/travel_classes",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "travel_classes"]
+						}
+					}
+				},
+				{
+					"name": "Get Feedback Categories Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/feedback_categories",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "feedback_categories"]
+						}
+					}
+				},
+				{
+					"name": "Get Shop Categories Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/shop_categories",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "shop_categories"]
+						}
+					}
+				},
+				{
+					"name": "Get Fleet Types Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/fleet_types",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "fleet_types"]
+						}
+					}
+				},
+				{
+					"name": "Get Career Departments Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/career_departments",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "career_departments"]
+						}
+					}
+				},
+				{
+					"name": "Get Currencies Dropdown",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dropdowns/currencies",
+							"host": ["{{base_url}}"],
+							"path": ["api", "dropdowns", "currencies"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "2. Cascading Locations (Countries / States / Cities)",
+			"item": [
+				{
+					"name": "Get All Active Countries",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/countries",
+							"host": ["{{base_url}}"],
+							"path": ["api", "locations", "countries"]
+						}
+					}
+				},
+				{
+					"name": "Get States for a Country (by ISO2 code AU/NR/FJ)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/countries/AU/states",
+							"host": ["{{base_url}}"],
+							"path": ["api", "locations", "countries", "AU", "states"]
+						}
+					}
+				},
+				{
+					"name": "Get Cities for a Country (Direct)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/countries/AU/cities",
+							"host": ["{{base_url}}"],
+							"path": ["api", "locations", "countries", "AU", "cities"]
+						}
+					}
+				},
+				{
+					"name": "Get Cities by State ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/states/1/cities",
+							"host": ["{{base_url}}"],
+							"path": ["api", "locations", "states", "1", "cities"]
+						}
+					}
+				},
+				{
+					"name": "Get Locations Summary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/summary",
+							"host": ["{{base_url}}"],
+							"path": ["api", "locations", "summary"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "3. Destinations",
+			"item": [
+				{
+					"name": "Get All Destinations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/destinations",
+							"host": ["{{base_url}}"],
+							"path": ["api", "destinations"]
+						}
+					}
+				},
+				{
+					"name": "Get Featured Destinations (Explore Hub)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/destinations/featured",
+							"host": ["{{base_url}}"],
+							"path": ["api", "destinations", "featured"]
+						}
+					}
+				},
+				{
+					"name": "Get Single Destination by Slug",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/destinations/brisbane",
+							"host": ["{{base_url}}"],
+							"path": ["api", "destinations", "brisbane"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "4. Forms & Inquiries Submission",
+			"item": [
+				{
+					"name": "Submit Charter Flight Inquiry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"phone\": \"+61 400 123 456\",\n  \"charter_type\": \"Passenger Charter\",\n  \"departure\": \"Brisbane (BNE)\",\n  \"destination\": \"Nauru (INU)\",\n  \"passengers\": 50,\n  \"departure_date\": \"2026-10-15\",\n  \"return_date\": \"2026-10-22\",\n  \"message\": \"Looking for a private Boeing 737 passenger charter flight.\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/charter-inquiries",
+							"host": ["{{base_url}}"],
+							"path": ["api", "charter-inquiries"]
+						}
+					}
+				},
+				{
+					"name": "Submit ACMI Lease Inquiry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Robert\",\n  \"lastName\": \"Smith\",\n  \"email\": \"robert.smith@airline.com\",\n  \"phone\": \"+61 411 222 333\",\n  \"companyName\": \"Pacific Skies Aviation\",\n  \"country\": \"Australia\",\n  \"aircraftRequired\": \"Boeing 737-800\",\n  \"leaseType\": \"Wet Lease (ACMI)\",\n  \"startDate\": \"2026-11-01\",\n  \"duration\": \"6 Months\",\n  \"message\": \"Requesting ACMI lease quote for seasonal capacity boost.\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/acmi-inquiries",
+							"host": ["{{base_url}}"],
+							"path": ["api", "acmi-inquiries"]
+						}
+					}
+				},
+				{
+					"name": "Submit Freight / Cargo Inquiry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Alice Brown\",\n  \"email\": \"alice@logistics.com\",\n  \"phone\": \"+61 455 666 777\",\n  \"cargo_type\": \"Perishable Food\",\n  \"origin\": \"Brisbane\",\n  \"destination\": \"Nauru\",\n  \"weight_kg\": 1200,\n  \"message\": \"Urgent cold-chain fresh food consignment booking.\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/freight-inquiries",
+							"host": ["{{base_url}}"],
+							"path": ["api", "freight-inquiries"]
+						}
+					}
+				},
+				{
+					"name": "Submit General Contact Message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mark Wilson\",\n  \"email\": \"mark@example.com\",\n  \"subject\": \"General Flight Query\",\n  \"message\": \"Hello, I would like to inquire about excess baggage rates.\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/contact",
+							"host": ["{{base_url}}"],
+							"path": ["api", "contact"]
+						}
+					}
+				},
+				{
+					"name": "Submit Customer Feedback",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"David Lee\",\n  \"email\": \"david@example.com\",\n  \"category\": \"compliment\",\n  \"flight_number\": \"ON001\",\n  \"message\": \"Wonderful service and hospitable crew on my flight to Nauru!\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/feedback",
+							"host": ["{{base_url}}"],
+							"path": ["api", "feedback"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "5. Fleet & Airline Services",
+			"item": [
+				{
+					"name": "Get Fleet Aircraft List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/fleet",
+							"host": ["{{base_url}}"],
+							"path": ["api", "fleet"]
+						}
+					}
+				},
+				{
+					"name": "Get Airline Services",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/services",
+							"host": ["{{base_url}}"],
+							"path": ["api", "services"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "6. Shop & Merchandise",
+			"item": [
+				{
+					"name": "Get Shop Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/shop/products",
+							"host": ["{{base_url}}"],
+							"path": ["api", "shop", "products"]
+						}
+					}
+				},
+				{
+					"name": "Get Shop Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/shop/categories",
+							"host": ["{{base_url}}"],
+							"path": ["api", "shop", "categories"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "7. Global Settings & Banners",
+			"item": [
+				{
+					"name": "Get Global Site Settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/global-settings",
+							"host": ["{{base_url}}"],
+							"path": ["api", "global-settings"]
+						}
+					}
+				},
+				{
+					"name": "Get Page Banners",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/page-banners",
+							"host": ["{{base_url}}"],
+							"path": ["api", "page-banners"]
+						}
+					}
+				},
+				{
+					"name": "Get Notice Bar Alerts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/notice-bar",
+							"host": ["{{base_url}}"],
+							"path": ["api", "notice-bar"]
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+    "slug": "flight-schedule",
+    "title": "Flight Schedule",
+    "group": "travel-info",
+    "path": "/travel-info/flight-schedule",
+    "summary": "Our scheduled services across the Pacific, with printable schedules to download.",
+    "seo_title": "Flight Schedule | Naoero Airlines",
+    "seo_description": "Naoero Airlines flight schedules between Brisbane, Naoero, Tarawa, Majuro, Nadi and Suva, with printable versions.",
+    "banner_key": "flight-schedule",
+    "sort_order": 300,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "Home > Travel Info > Flight Schedule",
+            "heading": "Flight Schedule",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean"
+        },
+        {
+            "key": "overview",
+            "type": "image_text",
+            "show_on": "both",
+            "image_alt": "Family travelling through the airport",
+            "body": "**Welcoming FY2026-27 I Naoero Airlines Network:** As we welcome the start of the 2026-2027 financial year, Naoero Airlines proudly continues connecting Brisbane, Naoero, Tarawa, Majuro, Nadi and Suva through our scheduled services, while also operating the services between Tarawa and Kiritimati on behalf of Air Kiribati. Looking ahead, we remain focused on strengthening our operations, enhancing our services, and continuing to connect islands, people and communities across the Pacific, with more connections on the horizon.\n\nTo view and download a printable version of our schedules, click on the links below:",
+            "image": "seed:shared/f64ba3c7-family.png"
+        },
+        {
+            "key": "schedules",
+            "type": "feed",
+            "feed": "flight-schedules",
+            "show_on": "both",
+            "button_label": "Click here."
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3955 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Naoero Airlines website content API",
+    "version": "1.1.0",
+    "description": "The content API of the Naoero Airlines website and app: pages, banners, team, destinations, specials, schedules, legal text, news and forms. Everything here is edited in the admin panel (https://api.napacificbridge.info/admin) and read by the website and the app, so a change made there shows on both within seconds.\n\n**No sign-in is needed to read.** Replies are JSON, usually `{\"success\": true, \"data\": …}`; errors are `{\"success\": false, \"message\": …}`; form errors are `422` with `errors`.\n\n### How pages stay live\n1. Fetch `GET /api/pages/{slug}` and show it. Keep the `ETag`.\n2. While the page is open, ask `GET /api/content/versions` every 20-30 seconds (or `GET /api/pages/{slug}` with `If-None-Match`). A `304` costs almost nothing.\n3. When a version changed, fetch that page again and update the screen. Keep the page's built-in text as a fallback for a hidden page (`404`) or no connection.\n\nPages are built as a static site in the website project, so read the API in the browser (client-side), as the dynamic pages already do, instead of at build time.\n\nThe booking and account API for the app is documented separately at `/api/v1/docs`.",
+    "contact": {
+      "name": "Naoero Airlines",
+      "url": "https://napacificbridge.info"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.napacificbridge.info/api",
+      "description": "Production"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Pages (editable in the admin panel)",
+      "description": "Pages the client edits in the admin panel under **Website & App Pages**: Charter, Freight, Baggage and the rest. One endpoint serves any page; an edit is live within seconds."
+    },
+    {
+      "name": "Site-wide",
+      "description": "Logo, contacts, banners and notices."
+    },
+    {
+      "name": "Home and About",
+      "description": "Home page blocks, team, fleet, FAQs and careers."
+    },
+    {
+      "name": "Travel",
+      "description": "Destinations, specials, schedules and travel information."
+    },
+    {
+      "name": "Agents",
+      "description": "Travel agency contacts and resources."
+    },
+    {
+      "name": "Blog and News Hub",
+      "description": "Articles. The News Hub \"Media Release\" posts are ordinary news posts."
+    },
+    {
+      "name": "Legal",
+      "description": "Privacy policy, terms of use and conditions of carriage."
+    },
+    {
+      "name": "Forms",
+      "description": "Website forms. Every submission appears in the admin panel under Inquiries."
+    },
+    {
+      "name": "Reference data",
+      "description": "Dropdown lists and locations."
+    },
+    {
+      "name": "Shop",
+      "description": "Shop products and gift cards."
+    },
+    {
+      "name": "Staff sign-in",
+      "description": "Only for admin panel staff."
+    }
+  ],
+  "paths": {
+    "/pages": {
+      "get": {
+        "tags": [
+          "Pages (editable in the admin panel)"
+        ],
+        "summary": "List pages",
+        "responses": {
+          "200": {
+            "description": "Pages",
+            "headers": {
+              "ETag": {
+                "description": "The content version. Send it back as If-None-Match to get an empty 304 while nothing changed.",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "X-Content-Version": {
+                "description": "The same version without quotes.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageListEnvelope"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not modified: the copy you have (If-None-Match) is current. No body."
+          }
+        },
+        "description": "Every published page with its version. A page appears here as soon as it is published in the admin panel (Website & App Pages).",
+        "parameters": [
+          {
+            "name": "group",
+            "in": "query",
+            "required": false,
+            "description": "Only one group of pages.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pages",
+                "travel-info",
+                "news"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/pages/{slug}": {
+      "get": {
+        "tags": [
+          "Pages (editable in the admin panel)"
+        ],
+        "summary": "Get a page",
+        "responses": {
+          "200": {
+            "description": "The page",
+            "headers": {
+              "ETag": {
+                "description": "The content version. Send it back as If-None-Match to get an empty 304 while nothing changed.",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "X-Content-Version": {
+                "description": "The same version without quotes.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageEnvelope"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not modified: the copy you have (If-None-Match) is current. No body."
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "The page as the admin panel has it: title, search-engine text, the top banner and an ordered list of sections. Render each section by its `key` with your own design, or by its `type` for a section you do not know.\n\n**Live updates.** Every reply carries an `ETag`; ask again with `If-None-Match` and you get an empty `304` while nothing changed, so asking often is cheap. Do not cache the reply for longer than it takes to ask again (`Cache-Control: no-cache`). `GET /content/versions` tells you what changed across all pages in one small call.\n\n**Channels.** Some sections belong to one design only: `?channel=website` leaves out app-only sections, `?channel=app` leaves out website-only sections.\n\n**Text.** `body_html`, `note_html` and `text_html` carry the text ready to show (escaped; paragraphs, lists, bold and links). `body`, `note` and `text` are the plain text with the same marks, for apps that draw their own text.\n\nA page that is hidden or does not exist answers `404`: show the page's built-in text instead.",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "The page address, e.g. `charter`, `freight`, `baggage`.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "channel",
+            "in": "query",
+            "required": false,
+            "description": "Only the sections shown on this design.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "website",
+                "app"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/content/versions": {
+      "get": {
+        "tags": [
+          "Pages (editable in the admin panel)"
+        ],
+        "summary": "Versions of all content",
+        "responses": {
+          "200": {
+            "description": "Versions",
+            "headers": {
+              "ETag": {
+                "description": "The content version. Send it back as If-None-Match to get an empty 304 while nothing changed.",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "X-Content-Version": {
+                "description": "The same version without quotes.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VersionsEnvelope"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not modified: the copy you have (If-None-Match) is current. No body."
+          }
+        },
+        "description": "One small reply with the version of every page and of every other admin-managed list (team, specials, FAQs, banners …). Ask it every 20-30 seconds while a page is open and fetch again only what changed. This is how an edit in the admin panel reaches the website and the app within seconds.\n\n`collections.<name>.paths` lists the endpoints that serve that content, so a changed version tells you which calls to repeat."
+      }
+    },
+    "/global": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Site settings, logo, contacts, social links and top-bar links",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/global-settings": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Same as /global",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/settings": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Same as /global",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Update site settings (staff only)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not signed in"
+          }
+        },
+        "description": "Needs the bearer token from `POST /auth/login`.",
+        "requestBody": {
+          "required": true,
+          "description": "Any of the site settings.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "logo_url": {
+                    "type": "string"
+                  },
+                  "top_header_text": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/header": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Same as /global",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/banners": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Page banners",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Image, heading and description of the top banner of each page.",
+        "parameters": [
+          {
+            "name": "page_key",
+            "in": "query",
+            "required": false,
+            "description": "Only one page.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/page-banners": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Page banners (alias)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/banners/{identifier}": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "One banner",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Page key or route, e.g. `charter`.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/page-banners/{identifier}": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "One banner (alias)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Page key or route.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/notice-bar": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Notice bar",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "The active notice bar (flight alerts and announcements)."
+      }
+    },
+    "/notices": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Notices",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/notices/latest": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Latest notice",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/notices/{id}": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "One notice",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Notice id.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/why-fly": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Why fly with us cards",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/why-fly-with-us": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Why fly with us cards (alias)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/testimonials": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Passenger reviews",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/enhance-journey": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Enhance your journey cards",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/our-journey": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our journey timeline",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/journey": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our journey and enhance your journey",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/journey/all": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our journey and enhance your journey",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/journey/milestones": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our journey timeline",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/journey/enhance": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Enhance your journey cards",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shop/homepage": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Shop cards for the home page",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/why-fly/{id}": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "One why-fly card",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Card id.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/testimonials/{id}": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "One review",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Review id.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/team": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our Team members",
+        "responses": {
+          "200": {
+            "description": "Team members",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeamEnvelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Active members in the admin panel order.",
+        "parameters": [
+          {
+            "name": "department",
+            "in": "query",
+            "required": false,
+            "description": "Only one department.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/fleet": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Our fleet",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "passenger or cargo.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/fleet/{identifier}": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "One aircraft",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/services": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Services",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/{identifier}": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "One service",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/gallery": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Gallery",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Only one category.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/gallery/categories": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Gallery categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/faqs": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "FAQs",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Only one category.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/careers": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Job openings",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/careers/{identifier}": {
+      "get": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "One job opening",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/careers/{id}/apply": {
+      "post": {
+        "tags": [
+          "Home and About"
+        ],
+        "summary": "Apply for a job",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "description": "Multipart form with the CV.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Job id.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "email"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "cover_letter": {
+                    "type": "string"
+                  },
+                  "resume": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/destinations": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Destinations",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/destinations/featured": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Featured destinations",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/destinations/{identifier}": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "One destination",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "All the destination page text: quote, intro, why visit, background sections (`info_sections`), detailed information (`detailed_info`), things to do and where to stay.",
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug, e.g. `brisbane`.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/specials": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Special offers",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/specials/{identifier}": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "One special offer",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/flight-schedules": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Flight schedules and PDF timetables",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/flight-schedules/routes": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Scheduled routes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-info": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Travel information overview",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-info/helpful-information": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Travel information overview (alias)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-info/before-you-fly": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Before you fly cards",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-info/check-in-times": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Check-in times by port",
+        "responses": {
+          "200": {
+            "description": "Check-in times",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CheckInEnvelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Opening and closing of check-in at each port."
+      }
+    },
+    "/travel-info/before-you-fly/check-in-times": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Check-in times by port",
+        "responses": {
+          "200": {
+            "description": "Check-in times",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CheckInEnvelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Opening and closing of check-in at each port."
+      }
+    },
+    "/check-in-times": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Check-in times by port",
+        "responses": {
+          "200": {
+            "description": "Check-in times",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CheckInEnvelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Opening and closing of check-in at each port."
+      }
+    },
+    "/travel-info/dangerous-goods": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Dangerous goods quick reference",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "The quick reference table with heading and review dates."
+      }
+    },
+    "/dangerous-goods": {
+      "get": {
+        "tags": [
+          "Travel"
+        ],
+        "summary": "Dangerous goods quick reference",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "The quick reference table with heading and review dates."
+      }
+    },
+    "/agency-contacts": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Travel agency contacts",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agency-resources": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Agency resources and policies",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-agency-resources": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Agency resources (alias)",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agency-resources/{identifier}": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "One resource",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/blogs": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "Blog articles",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Only one category.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "description": "Words in title, summary or text.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "featured",
+            "in": "query",
+            "required": false,
+            "description": "true for featured only.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "required": false,
+            "description": "Page size.",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "Page number.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/blogs/categories": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "Blog categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/blogs/{identifier}": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "One blog article",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/news": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "News articles",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Only one category.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "description": "Words in title, summary or text.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "featured",
+            "in": "query",
+            "required": false,
+            "description": "true for featured only.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "required": false,
+            "description": "Page size.",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "Page number.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/news/categories": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "News categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/news/{identifier}": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "One news article",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/posts": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "All posts articles",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Only one category.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "description": "Words in title, summary or text.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "featured",
+            "in": "query",
+            "required": false,
+            "description": "true for featured only.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "required": false,
+            "description": "Page size.",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "Page number.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/posts/categories": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "All posts categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/posts/{identifier}": {
+      "get": {
+        "tags": [
+          "Blog and News Hub"
+        ],
+        "summary": "One all posts article",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/privacy-policy": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Privacy policy",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/privacy": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Privacy policy (alias)",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terms-of-use": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Terms of use",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terms": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Terms of use",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terms-and-conditions": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Terms of use",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/conditions-of-carriage": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Conditions of carriage",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/travel-info/conditions-of-carriage": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Conditions of carriage",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legal/{slug}": {
+      "get": {
+        "tags": [
+          "Legal"
+        ],
+        "summary": "Any legal document",
+        "responses": {
+          "200": {
+            "description": "Legal document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegalEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "privacy-policy, terms-of-use, conditions-of-carriage …",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/contact": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Contact message",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "message"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "International number, e.g. +61 7 3229 6455."
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "subject": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/feedback": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Passenger feedback",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "message"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "International number, e.g. +61 7 3229 6455."
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "feedbackCategory": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group-bookings": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Group booking request",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "contactName": {
+                    "type": "string"
+                  },
+                  "organizationName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "tripType": {
+                    "type": "string"
+                  },
+                  "destination": {
+                    "type": "string"
+                  },
+                  "departureDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "adultCount": {
+                    "type": "integer"
+                  },
+                  "childCount": {
+                    "type": "integer"
+                  },
+                  "infantCount": {
+                    "type": "integer"
+                  },
+                  "specialRequirements": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/charter-inquiries": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Charter request",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "International number, e.g. +61 7 3229 6455."
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "charterType": {
+                    "type": "string"
+                  },
+                  "departureLocation": {
+                    "type": "string"
+                  },
+                  "arrivalLocation": {
+                    "type": "string"
+                  },
+                  "departureDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "companyName": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acmi-inquiries": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "ACMI enquiry",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "International number, e.g. +61 7 3229 6455."
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "companyName": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  },
+                  "acmiType": {
+                    "type": "string"
+                  },
+                  "aircraftType": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/freight-inquiries": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Freight quote request",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "shipperName": {
+                    "type": "string"
+                  },
+                  "contactPerson": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "specialHandlingInstructions": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/newsletter/subscribe": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Subscribe to the newsletter",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/newsletter/unsubscribe": {
+      "post": {
+        "tags": [
+          "Forms"
+        ],
+        "summary": "Unsubscribe",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dropdowns": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "All dropdown lists",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dropdowns/{group}": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "One dropdown list",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "group",
+            "in": "path",
+            "required": true,
+            "description": "List name.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/locations/countries": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "Countries",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/locations/countries/{countryIdentifier}/states": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "States of a country",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "countryIdentifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or ISO code.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/locations/countries/{countryIdentifier}/cities": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "Cities of a country",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "countryIdentifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or ISO code.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/locations/states/{stateId}/cities": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "Cities of a state",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "stateId",
+            "in": "path",
+            "required": true,
+            "description": "State id.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/locations/summary": {
+      "get": {
+        "tags": [
+          "Reference data"
+        ],
+        "summary": "Counts",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shop/products": {
+      "get": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "Shop products",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "description": "Shop products Each product also has `options` (e.g. [{\"name\": \"Size\", \"values\": [\"S\", \"M\", \"L\"]}]) and `variants` (id, sku, title, options, price, inStock, stockLeft, maxQuantity); `stockQuantity` is what is available to sell across all variants. Orders are placed through the app API (POST /api/v1/shop/orders) with each line's `variantId`."
+      }
+    },
+    "/shop/categories": {
+      "get": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "Shop categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shop/products/{identifier}": {
+      "get": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "One product",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "path",
+            "required": true,
+            "description": "Id or slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "description": "One product Each product also has `options` (e.g. [{\"name\": \"Size\", \"values\": [\"S\", \"M\", \"L\"]}]) and `variants` (id, sku, title, options, price, inStock, stockLeft, maxQuantity); `stockQuantity` is what is available to sell across all variants. Orders are placed through the app API (POST /api/v1/shop/orders) with each line's `variantId`."
+      }
+    },
+    "/shop/orders": {
+      "post": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "Place a shop or gift card order (website)",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        },
+        "description": "The app places orders through its own API (`/api/v1/shop/orders`)."
+      }
+    },
+    "/gift-cards/order": {
+      "post": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "Order a gift card",
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/gift-cards/verify/{voucher_code}": {
+      "get": {
+        "tags": [
+          "Shop"
+        ],
+        "summary": "Check a gift card code",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "voucher_code",
+            "in": "path",
+            "required": true,
+            "description": "The code.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "Staff sign-in"
+        ],
+        "summary": "Staff sign-in",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Wrong details"
+          }
+        },
+        "description": "Gives the bearer token for staff-only calls such as `POST /settings`.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/me": {
+      "get": {
+        "tags": [
+          "Staff sign-in"
+        ],
+        "summary": "Signed-in staff member",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not signed in"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "tags": [
+          "Staff sign-in"
+        ],
+        "summary": "Sign out",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "This OpenAPI description",
+        "operationId": "siteOpenApi",
+        "description": "The OpenAPI 3 document you are reading, as JSON. Swagger UI for it is at `/api/docs`.",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "The OpenAPI document.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/docs": {
+      "get": {
+        "tags": [
+          "Site-wide"
+        ],
+        "summary": "Interactive documentation (Swagger UI)",
+        "operationId": "siteDocs",
+        "description": "A Swagger UI page that reads `/api/openapi.json`. Open it in a browser.",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "The Swagger UI page.",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": false
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ValidationError": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "errors": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Envelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {}
+        }
+      },
+      "ListEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "count": {
+            "type": "integer"
+          },
+          "data": {
+            "type": "array",
+            "items": {}
+          }
+        }
+      },
+      "PageBanner": {
+        "type": "object",
+        "properties": {
+          "page_key": {
+            "type": "string"
+          },
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "badge_text": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string",
+            "format": "uri"
+          },
+          "button_text": {
+            "type": "string"
+          },
+          "button_link": {
+            "type": "string"
+          }
+        }
+      },
+      "PageItem": {
+        "type": "object",
+        "description": "A card, list entry, question, figure, link or table row. Only the fields that have a value are present.",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "text_html": {
+            "type": "string",
+            "description": "text, ready to show."
+          },
+          "value": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string",
+            "format": "uri"
+          },
+          "gallery": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "link_label": {
+            "type": "string"
+          },
+          "link_url": {
+            "type": "string"
+          },
+          "list": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cells": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Table row."
+          }
+        }
+      },
+      "PageSection": {
+        "type": "object",
+        "required": [
+          "key",
+          "type"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "Stable name of the section, e.g. `personalised-solutions`. Render by key."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "text",
+              "image_text",
+              "cards",
+              "list",
+              "steps",
+              "faq",
+              "table",
+              "links",
+              "notice",
+              "gallery",
+              "stats",
+              "contacts",
+              "feed"
+            ],
+            "description": "How to show a section you have no design for."
+          },
+          "show_on": {
+            "type": "string",
+            "enum": [
+              "both",
+              "website",
+              "app"
+            ]
+          },
+          "heading": {
+            "type": "string"
+          },
+          "subheading": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string",
+            "description": "Plain text with marks: blank line = paragraph, `- ` list, `1. ` numbered list, `**bold**`, `[label](link)`."
+          },
+          "body_html": {
+            "type": "string",
+            "description": "body, escaped and ready to show."
+          },
+          "image": {
+            "type": "string",
+            "format": "uri",
+            "nullable": true
+          },
+          "image_alt": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PageItem"
+            }
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Table column titles."
+          },
+          "button": {
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          },
+          "note": {
+            "type": "string"
+          },
+          "note_html": {
+            "type": "string"
+          },
+          "feed": {
+            "type": "object",
+            "nullable": true,
+            "description": "For `feed` sections: the list shown here comes from this endpoint (team, check-in times, dangerous goods, terms, specials, careers …).",
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "endpoint": {
+                "type": "string",
+                "example": "/api/team"
+              },
+              "collection": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Page": {
+        "type": "object",
+        "required": [
+          "slug",
+          "title",
+          "version",
+          "sections"
+        ],
+        "properties": {
+          "version": {
+            "type": "string",
+            "description": "Changes whenever the page or its banner changes. Equals the ETag."
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string",
+            "enum": [
+              "pages",
+              "travel-info",
+              "news"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "description": "The website address, e.g. /charter."
+          },
+          "summary": {
+            "type": "string"
+          },
+          "seo": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          },
+          "banner": {
+            "$ref": "#/components/schemas/PageBanner",
+            "nullable": true
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PageSection"
+            }
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "PageEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Page"
+          }
+        }
+      },
+      "PageListItem": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endpoint": {
+            "type": "string",
+            "example": "/api/pages/charter"
+          }
+        }
+      },
+      "PageListEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PageListItem"
+            }
+          }
+        }
+      },
+      "VersionsEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string"
+              },
+              "pages": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "description": "slug → version."
+              },
+              "collections": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string"
+                    },
+                    "paths": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TeamMember": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          },
+          "photo_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sort_order": {
+            "type": "integer"
+          }
+        }
+      },
+      "TeamEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TeamMember"
+            }
+          }
+        }
+      },
+      "CheckInEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "port": {
+                  "type": "string"
+                },
+                "opens": {
+                  "type": "string"
+                },
+                "closes": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "LegalEnvelope": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "heading": {
+                "type": "string"
+              },
+              "subheading": {
+                "type": "string"
+              },
+              "badge_text": {
+                "type": "string"
+              },
+              "banner_image": {
+                "type": "string"
+              },
+              "pdf_url": {
+                "type": "string"
+              },
+              "contact_email": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "sections": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "heading": {
+                      "type": "string"
+                    },
+                    "content": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "content": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Staff token from POST /auth/login."
+      }
+    }
+  }
+}

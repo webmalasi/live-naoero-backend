@@ -1,0 +1,173 @@
+{
+    "slug": "about-new",
+    "title": "About Us",
+    "group": "pages",
+    "path": "/about-new",
+    "summary": "For over five decades, Naoero Airlines has proudly served Australia, the Central and South Pacific.",
+    "seo_title": "About Naoero Airlines",
+    "seo_description": "Connecting the Pacific for over 50 years with scheduled passenger services, freight and passenger aircraft charter and ACMI services.",
+    "banner_key": "about-new",
+    "sort_order": 90,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About Naoero Airlines",
+            "heading": "Connecting the Pacific for Over 50 Years",
+            "body": "For over five decades, Naoero Airlines has proudly served Australia, the Central and South Pacific with scheduled passenger services, freight and passenger aircraft charter and ACMI services.",
+            "button_label": "Explore More",
+            "button_url": "/destinations",
+            "image": "seed:about-new/bannerimage.jpg",
+            "image_alt": "Naoero Airlines aircraft flying over a Pacific island"
+        },
+        {
+            "key": "who-we-are",
+            "type": "image_text",
+            "show_on": "both",
+            "subheading": "Who We Are",
+            "heading": "Naoero Airline Pacific Connections Global Reach.",
+            "body": "Naoero Air Corporation is headquartered in Naoero, with its primary place of business in Brisbane, Australia. As the Airline of the Central Pacific, we take pride in connecting communities across the region with safe, reliable, and efficient air services.",
+            "image_alt": "Naoero Airlines pilots and cabin crew",
+            "image": "seed:shared/0734d683-whoweare.png"
+        },
+        {
+            "key": "who-we-are-images",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures: Who We Are (left, right)",
+            "items": [
+                {
+                    "image": "seed:about-new/whoweare-2.png",
+                    "title": "A quiet moment reading in a Brisbane park"
+                },
+                {
+                    "image": "seed:shared/0734d683-whoweare.png",
+                    "title": "Naoero Airlines pilots and cabin crew"
+                }
+            ]
+        },
+        {
+            "key": "journey",
+            "type": "feed",
+            "feed": "our-journey",
+            "show_on": "both",
+            "subheading": "Naoero Airlines",
+            "heading": "Our Journey",
+            "body": "From a single aircraft to a national carrier connecting the Pacific: four chapters that shaped who we are today."
+        },
+        {
+            "key": "why-fly",
+            "type": "feed",
+            "feed": "why-fly",
+            "show_on": "both",
+            "heading": "Why Fly With Us"
+        },
+        {
+            "key": "route-network",
+            "type": "stats",
+            "show_on": "website",
+            "heading": "Route Network",
+            "image": "seed:shared/2b26f9d3-routenetwork.png",
+            "image_alt": "Naoero Airlines route network map",
+            "items": [
+                {
+                    "icon": "users",
+                    "value": "50+",
+                    "title": "Years of Service"
+                },
+                {
+                    "icon": "users",
+                    "value": "8",
+                    "title": "Destinations"
+                },
+                {
+                    "icon": "users",
+                    "value": "100k+",
+                    "title": "Happy Passengers"
+                }
+            ]
+        },
+        {
+            "key": "app-why",
+            "type": "stats",
+            "show_on": "app",
+            "heading": "Why Naoero Airlines?",
+            "body": "Experienced charter operation with flexible solutions built around your requirement",
+            "items": [
+                {
+                    "value": "50+ Years",
+                    "title": "Proven aviation experience"
+                },
+                {
+                    "value": "8",
+                    "title": "Destinations"
+                },
+                {
+                    "value": "100k+",
+                    "title": "Happy Passengers"
+                },
+                {
+                    "value": "50+",
+                    "title": "Route Network"
+                }
+            ]
+        },
+        {
+            "key": "social",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Latest from Naoero Airlines",
+            "body": "Follow our latest social media posts and reels.",
+            "button_label": "View More",
+            "button_url": "/social-media"
+        },
+        {
+            "key": "app-before-you-fly",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Before You Fly",
+            "body": "Read more about our Before You Fly information before your journey.",
+            "button_label": "Know More",
+            "button_url": "/travel-info/before-you-fly"
+        },
+        {
+            "key": "app-cta",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Ready for next Journey?",
+            "body": "Explore our destinations and plan your next trip with Naoero Airlines.",
+            "button_label": "Explore Destinations",
+            "button_url": "/destinations"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "FAQs",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/faqs",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Contact Us!",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/contact-us",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,589 @@
+{
+ "Booking": {
+  "FareInfo": {
+   "SaleCurrencyAmountToPay": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   },
+   "SaleCurrencyAmountToPayInAccount": 0,
+   "EMDTicketFares": [],
+   "SaleCurrencyAmountTotal": {
+    "DiscountAmount": 0,
+    "BaseAmount": 1298.5,
+    "TaxAmount": 314.66,
+    "TotalAmount": 1613.16,
+    "MilesAmount": 0
+   },
+   "Itineraries": [
+    {
+     "Ref": "IT_0",
+     "AirOriginDestinations": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefFareRule": null,
+       "AirCoupons": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490338",
+         "BookingClassCode": "K"
+        },
+        {
+         "CouponOrder": 2,
+         "RefSegment": "490339",
+         "BookingClassCode": "K"
+        }
+       ]
+      }
+     ],
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 1298.5,
+      "TaxAmount": 314.66,
+      "TotalAmount": 1613.16,
+      "MilesAmount": 0
+     },
+     "RefExchangingItin": null,
+     "ValidatingAirlineDesignator": null
+    }
+   ],
+   "FareRules": [],
+   "SaleCurrencyCode": "AUD",
+   "ETTicketFares": [
+    {
+     "Taxes": [
+      {
+       "CountryCode": "AU",
+       "Code": "WG",
+       "SaleCurrencyAmount": 6.29
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "AU",
+       "SaleCurrencyAmount": 70
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "WY",
+       "SaleCurrencyAmount": 36
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YR",
+       "SaleCurrencyAmount": 15
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YQ",
+       "SaleCurrencyAmount": 106.42
+      },
+      {
+       "CountryCode": "NR",
+       "Code": "YR",
+       "SaleCurrencyAmount": 10
+      },
+      {
+       "CountryCode": "NR",
+       "Code": "YQ",
+       "SaleCurrencyAmount": 70.95
+      }
+     ],
+     "OriginDestinationFares": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefWebClass": null,
+       "CouponFares": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490338",
+         "BookingClassCode": "K",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 23,
+           "CarryOn": false,
+           "TotalWeight": 23
+          }
+         ],
+         "FareBasisCode": "KECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 779.1,
+          "TaxAmount": 233.71,
+          "TotalAmount": 1012.81,
+          "MilesAmount": 0
+         },
+         "AmountDetails": null
+        },
+        {
+         "CouponOrder": 2,
+         "RefSegment": "490339",
+         "BookingClassCode": "K",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 23,
+           "CarryOn": false,
+           "TotalWeight": 23
+          }
+         ],
+         "FareBasisCode": "KECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 519.4,
+          "TaxAmount": 80.95,
+          "TotalAmount": 600.35,
+          "MilesAmount": 0
+         },
+         "AmountDetails": null
+        }
+       ],
+       "RefFareRule": null
+      }
+     ],
+     "RefPassenger": "237588",
+     "RefItinerary": "IT_0",
+     "Ref": "15404488",
+     "CreatedDateGMT": null,
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 1298.5,
+      "TaxAmount": 314.66,
+      "TotalAmount": 1613.16,
+      "MilesAmount": 0
+     },
+     "AmountDetails": null
+    }
+   ],
+   "SaleCurrencyTravelerAmountToPay": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   },
+   "SaleCurrencyTravelerAmountToPayInAccount": {
+    "TotalAmount": 0,
+    "MilesAmount": 0
+   }
+  },
+  "TicketInfo": {
+   "ETTickets": [
+    {
+     "ExchangedDocumentNumber": null,
+     "ConjunctiveTicketNumbers": [],
+     "Coupons": [
+      {
+       "CouponOrder": 1,
+       "StatusCode": "O",
+       "FinalStatusInfo": null,
+       "SegmentSold": {
+        "CabinClassCode": "Y",
+        "BookingClassCode": "K",
+        "PnrCode": "003PVE",
+        "OperatingBookingClassCode": "K",
+        "OperatingPnrCode": "003PVE",
+        "ContinuationElements": [
+         "ON017K09NOVINUNANHK1/21000010"
+        ],
+        "ArrivalElement": null,
+        "AirlineDesignator": "ON",
+        "FlightInfo": {
+         "OriginAirportTerminal": null,
+         "DestinationAirportTerminal": null,
+         "FlightNumber": "002",
+         "OperatingAirlineDesignator": "ON",
+         "OperatingFlightNumber": "002",
+         "CodeShareAgreementTypeCode": null,
+         "EquipmentCode": "733",
+         "EquipmentText": "Boeing 737-300 Passenger",
+         "DurationMinutes": 405,
+         "DepartureDate": "2026-11-09T12:30:00",
+         "Stops": null,
+         "ArrivalDate": "2026-11-09T19:15:00",
+         "Remarks": null
+        },
+        "OriginCode": "BNE",
+        "DestinationCode": "INU"
+       },
+       "Details": null
+      },
+      {
+       "CouponOrder": 2,
+       "StatusCode": "O",
+       "FinalStatusInfo": null,
+       "SegmentSold": {
+        "CabinClassCode": "Y",
+        "BookingClassCode": "K",
+        "PnrCode": "003PVE",
+        "OperatingBookingClassCode": "K",
+        "OperatingPnrCode": "003PVE",
+        "ContinuationElements": [],
+        "ArrivalElement": "ON002K09NOVBNEINUHK1/12301915",
+        "AirlineDesignator": "ON",
+        "FlightInfo": {
+         "OriginAirportTerminal": null,
+         "DestinationAirportTerminal": null,
+         "FlightNumber": "017",
+         "OperatingAirlineDesignator": "ON",
+         "OperatingFlightNumber": "017",
+         "CodeShareAgreementTypeCode": null,
+         "EquipmentCode": "738",
+         "EquipmentText": "Boeing 737-800 Passenger",
+         "DurationMinutes": 190,
+         "DepartureDate": "2026-11-09T21:00:00",
+         "Stops": null,
+         "ArrivalDate": "2026-11-10T00:10:00",
+         "Remarks": null
+        },
+        "OriginCode": "INU",
+        "DestinationCode": "NAN"
+       },
+       "Details": null
+      }
+     ],
+     "RefETTicketFare": "15404488",
+     "RefPassenger": "237588",
+     "Details": null,
+     "RefIssuedByVendor": "2383",
+     "CreatedGMT": "2026-10-27T12:28:53.697",
+     "DocumentNumber": "1232415191663",
+     "OriginalDocumentNumber": "1232415191663",
+     "Created": "2026-10-27T22:28:53.697"
+    }
+   ],
+   "EMDTickets": [],
+   "Fops": [
+    {
+     "Ref": "82691",
+     "RefClient": null,
+     "Code": "NAB",
+     "Text": "[NAB] : Cash-in transaction for PNR 003PVE (173498)",
+     "Amount": 1613.16,
+     "RedirectInfo": null,
+     "BankTransferInfo": null,
+     "CheckInfo": null,
+     "MiscInfo": null,
+     "UnsecureCardInfo": {
+      "TransactionNumber": null,
+      "CardNumber": "XXX433...111"
+     },
+     "SecureCardInfo": null,
+     "MCOInfo": null,
+     "ECouponsInfo": null
+    }
+   ]
+  },
+  "MiscInfo": {
+   "BoardingPassList": [],
+   "IsPendingExchange": false,
+   "PendingRefundRequest": null,
+   "ExchangeableOriginDestinations": [
+    {
+     "RefItinerary": "IT_0",
+     "OriginDestinationOrder": 1,
+     "ETTicketFareTargets": [
+      {
+       "RefETTicketFare": "15404488",
+       "CouponOrders": [
+        1,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "CancelInfo": {
+    "CanCancel": true,
+    "CanVoid": false,
+    "CanRefund": true,
+    "CanRequestRefund": false
+   },
+   "TicketPrintHttpLink": "/Zenith/TTI.PublicApi.Services/JsonSaleEngineService.svc/TicketPrintLink?arg=_JEAAAAN0xk1Hs8j7RFL8ssGUvBle5bqogkG8_E_EsN2ltrWte9j3vdB_EiendSqXcL6eHaRsxHlixjr1uHs_EeRmqGPmyzaSafzYPeO2iZ8v78BQx3slx5AK9wX3WruFUWPVR3G1nRUaafdmVXOgaki5BfdWckxoOMGHtIhOicT1HqWfWoxm2xE5KiQsNuS3eP6fc_RSt7rq9_RUMQ_RC7IFWjT9O4wwKdg07DrLPkGujM_RFF7a_EdGCf",
+   "DCSCoupons": [],
+   "ContainsIssuableTickets": false,
+   "HasPendingPayment": false,
+   "HasPendingRefund": false,
+   "IsSalesClosingReached": false
+  },
+  "PnrInformation": {
+   "PnrCode": "003PVE",
+   "PnrStatusCode": "Issued",
+   "TimeLimit": "2026-10-29T11:38:37.16",
+   "MissingTravelerRecordLocator": false,
+   "RefCustomer": "10027345",
+   "CreatedDateGMT": "2026-10-27T12:28:00",
+   "ModifiedDateGMT": "2026-10-28T11:38:41.803",
+   "IsServiceBooking": false,
+   "PartnerInformation": {
+    "HasPartners": false,
+    "AllowNameElementChange": false
+   }
+  },
+  "Segments": [
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "HK"
+    },
+    "TimeLimit": null,
+    "Ref": "490338",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "002",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "002",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "733",
+     "EquipmentText": "Boeing 737-300 Passenger",
+     "DurationMinutes": 285,
+     "DepartureDate": "2026-11-09T12:30:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-09T19:15:00",
+     "Remarks": null
+    },
+    "OriginCode": "BNE",
+    "DestinationCode": "INU"
+   },
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "HK"
+    },
+    "TimeLimit": null,
+    "Ref": "490339",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "017",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "017",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "738",
+     "EquipmentText": "Boeing 737-800 Passenger",
+     "DurationMinutes": 130,
+     "DepartureDate": "2026-11-09T21:00:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-10T00:10:00",
+     "Remarks": "ON017 NAURU-NADI DIRECT FLIGHT | NAURU AIRLINES (NW26)"
+    },
+    "OriginCode": "INU",
+    "DestinationCode": "NAN"
+   },
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "XX"
+    },
+    "TimeLimit": "2026-10-29T11:38:37.16",
+    "Ref": "490358",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "002",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "002",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "738",
+     "EquipmentText": "Boeing 737-800 Passenger",
+     "DurationMinutes": 285,
+     "DepartureDate": "2026-11-23T12:30:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-23T19:15:00",
+     "Remarks": null
+    },
+    "OriginCode": "BNE",
+    "DestinationCode": "INU"
+   },
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "K",
+     "OperatingCode": "K",
+     "Quantity": 1,
+     "StatusCode": "XX"
+    },
+    "TimeLimit": "2026-10-29T11:38:37.16",
+    "Ref": "490359",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "017",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "017",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "738",
+     "EquipmentText": "Boeing 737-800 Passenger",
+     "DurationMinutes": 130,
+     "DepartureDate": "2026-11-23T21:00:00",
+     "Stops": [],
+     "ArrivalDate": "2026-11-24T00:10:00",
+     "Remarks": "ON017 NAURU-NADI DIRECT FLIGHT | NAURU AIRLINES (NW26)"
+    },
+    "OriginCode": "INU",
+    "DestinationCode": "NAN"
+   }
+  ],
+  "Passengers": [
+   {
+    "Ref": "237588",
+    "RefClient": null,
+    "PassengerQuantity": 1,
+    "PassengerTypeCode": "AD",
+    "NameElement": {
+     "CivilityCode": "MS",
+     "Firstname": "Anna",
+     "Middlename": "",
+     "Surname": "Tester"
+    }
+   }
+  ],
+  "SpecialServices": [
+   {
+    "Text": "TESTER/////",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": {
+      "ContactFullName": "Tester",
+      "ContactEmail": null,
+      "ContactCellPhone": null,
+      "ContactHomePhone": null,
+      "ContactWorkPhone": null,
+      "ContactFaxNumber": null
+     },
+     "Ectc": null,
+     "Bill": null,
+     "Fields": null
+    },
+    "Status": null,
+    "RefPassenger": null,
+    "RefSegment": null,
+    "Code": "PCTC",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "naoero.e2e.1792066724@example.com",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCE",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400123456",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCH",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400123456",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "CTCM",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "PP/NR/PN1234567/NR/14Mar1992/F/09Jan2032//Tester/Anna",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": {
+      "Documents": [
+       {
+        "IssueCountryCode": "NR",
+        "NationalityCountryCode": "NR",
+        "DateOfBirth": "1992-03-14T00:00:00",
+        "Gender": "F",
+        "DocumentExpiryDate": "2032-01-09T00:00:00",
+        "DocumentIssuanceDate": null,
+        "Firstname": "Anna",
+        "Surname": "Tester",
+        "DocumentTypeCode": "PP",
+        "DocumentNumber": "PN1234567"
+       }
+      ],
+      "AllowedDocumentTypeCodes": null
+     },
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Fields": null
+    },
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "DOCS",
+    "TechnicalType": null,
+    "Available": null
+   },
+   {
+    "Text": "14Mar1992",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": {
+      "DateOfBirth": "1992-03-14T00:00:00",
+      "RefPassengerWithSeat": null
+     },
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Fields": null
+    },
+    "Status": null,
+    "RefPassenger": "237588",
+    "RefSegment": null,
+    "Code": "EXT-ADOB",
+    "TechnicalType": null,
+    "Available": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+    "slug": "special-requests-and-assistance",
+    "title": "Special Requests And Assistance",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/special-requests-and-assistance",
+    "summary": "Please let us know in advance if there is anything we can do to make your journey more comfortable.",
+    "seo_title": "Special Requests And Assistance | Naoero Airlines",
+    "seo_description": "Assistance for passengers with special needs, dietary requests, seating and medical clearance.",
+    "banner_key": "special-requests-and-assistance",
+    "sort_order": 240,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Before You Fly > Special Requests And Assistance",
+            "heading": "Special Requests And Assistance",
+            "body": "Please let us know in advance if there is anything we can do to make your journey more comfortable.",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean",
+            "image": "seed:shared/9093b1c7-hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Before You Fly > Special Request",
+            "heading": "We're Here To Make Your Journey Easier."
+        },
+        {
+            "key": "faqs",
+            "type": "faq",
+            "show_on": "both",
+            "items": [
+                {
+                    "icon": "accessibility",
+                    "title": "How can Naoero Airlines assist passengers travelling with special needs or reduced mobility?",
+                    "text": "We offer a range of assistance for passengers with special needs or reduced mobility, including wheelchair assistance, priority boarding, and help with connections. Please let us know your requirements at the time of booking so we can arrange the appropriate support."
+                },
+                {
+                    "icon": "accessibility",
+                    "title": "Can Naoero Airlines provide priority boarding to passengers with special needs?",
+                    "text": "Yes, passengers with special needs are welcome to board ahead of general boarding. Please make yourself known to our ground staff at the gate and we will assist you onto the aircraft first."
+                },
+                {
+                    "icon": "utensils",
+                    "title": "Is Naoero Airlines able to cater to special dietary requirements?",
+                    "text": "We can accommodate a range of special dietary requirements, including allergies, medical and religious diets, when requested at least 48 hours prior to departure. Please contact our reservations team to arrange your meal."
+                },
+                {
+                    "icon": "armchair",
+                    "title": "Is it possible to request a specific seat?",
+                    "text": "Seat requests, including bulkhead or extra legroom seating for passengers with special needs, can be made at the time of booking or by contacting our reservations team. Requests are subject to availability and aircraft configuration."
+                }
+            ]
+        },
+        {
+            "key": "medical-clearance",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Medical Clearance",
+            "body": "Medical clearance is required for passengers who:",
+            "items": [
+                {
+                    "title": "Have been in hospital during two weeks prior to travel"
+                },
+                {
+                    "title": "Currently suffering from a medical condition"
+                },
+                {
+                    "title": "Are travelling in order to receive medical attention"
+                },
+                {
+                    "title": "Appear to be obviously physically ill or have unstable medical conditions"
+                },
+                {
+                    "title": "Have undergone significant recent surgery"
+                },
+                {
+                    "title": "Require oxygen in-flight"
+                },
+                {
+                    "title": "Are pregnant and beyond 28 weeks of their pregnancy"
+                },
+                {
+                    "title": "Have an infectious disease"
+                },
+                {
+                    "title": "Have a psychological disorder"
+                }
+            ]
+        },
+        {
+            "key": "infectious",
+            "type": "text",
+            "show_on": "both",
+            "image_alt": "Family travelling through the airport",
+            "body": "Passengers with infectious diseases (e.g. measles, chicken pox) intending to travel, must seek medical clearance. They must be issued with a medical certificate to indicate they are no longer suffering from a communicable disease at an infective stage.\n\nPersons suffering from an active infectious disease will not be accepted for travel.\n\nThe passenger will be advised to present the medical clearance at check-in.\n\nPassengers who require medical clearance to travel, must obtain a letter from a qualified medical practitioner indicating the passenger's fitness to travel. The letter must be written on a surgery letterhead within the previous 48 hours. Your doctor will need to complete the Medical Clearance Form for assessment up to 72 hours before travel. Once completed forward to Naoero Airlines Reservations reservations@naoeroairlines.com.au.\n\nAny further questions please call our Reservations Team +61 7 3229 6455.",
+            "image": "seed:special-requests-and-assistance/family.png"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "FAQs",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/faqs",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Contact Us!",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/contact-us",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

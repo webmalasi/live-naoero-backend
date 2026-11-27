@@ -1,0 +1,52 @@
+{
+    "slug": "corporate-login",
+    "title": "Corporate Login",
+    "group": "pages",
+    "path": "/corporate-login",
+    "summary": "Government Request Form Login",
+    "seo_title": "Government Request Form Login | Naoero Airlines",
+    "seo_description": "Login to fill out the Naoero Airlines government travel order form.",
+    "banner_key": "corporate-login",
+    "sort_order": 130,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "Corporate Login",
+            "heading": "Government Request Form Login",
+            "body": "Please login below to fill out our travel order form.",
+            "image": "seed:corporate-login/bannerimageteam.jpg",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

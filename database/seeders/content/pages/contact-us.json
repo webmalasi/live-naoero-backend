@@ -1,0 +1,89 @@
+{
+    "slug": "contact-us",
+    "title": "Contact Us",
+    "group": "pages",
+    "path": "/contact-us",
+    "summary": "Addresses, phone numbers and the words around the contact form.",
+    "seo_title": "Contact Us | Naoero Airlines",
+    "seo_description": "Contact Naoero Airlines: head office, operations office, reservations and phone numbers.",
+    "banner_key": "contact-us",
+    "sort_order": 150,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Service / Contact Us",
+            "heading": "Contact Us",
+            "body": "We're here to help. Please let us know if we can assist with anything before, during or after your flight.",
+            "image_alt": "Naoero Airlines freight aircraft on the runway at sunset"
+        },
+        {
+            "key": "addresses",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Addresses",
+            "note": "The head office and operations office addresses, the reservations email and the phone numbers follow Site Settings when those are filled in.",
+            "items": [
+                {
+                    "slug": "head-office",
+                    "title": "Head office",
+                    "text": "Naoero International Airport , PO Box 40 Republic of Naoero"
+                },
+                {
+                    "slug": "postal",
+                    "title": "Postal address",
+                    "text": "PO Box 10355 Adelaide Street , Brisbane QLD 4000"
+                },
+                {
+                    "slug": "operations",
+                    "title": "Operations office",
+                    "text": "Level 2, 99 Creek Street , Brisbane QLD 4000"
+                },
+                {
+                    "slug": "reservations",
+                    "title": "Reservation Team",
+                    "text": "You can also email our reservations team at {email}."
+                }
+            ]
+        },
+        {
+            "key": "more-contacts",
+            "type": "text",
+            "show_on": "website",
+            "body": "For further contacts, including travel agents, please click [here](/travel-agency-contacts)."
+        },
+        {
+            "key": "numbers",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Contact numbers",
+            "body": "Our call centres are available during business hours from Monday to Friday to take your bookings and answer your travel questions.",
+            "items": [
+                {
+                    "slug": "australia",
+                    "title": "Within Australia",
+                    "value": "1300 369 044"
+                },
+                {
+                    "slug": "naoero",
+                    "title": "Within Naoero",
+                    "value": "+674-557-7000"
+                },
+                {
+                    "slug": "international",
+                    "title": "International callers",
+                    "value": "+61 7 3229 6455"
+                }
+            ]
+        },
+        {
+            "key": "form",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Contact Us",
+            "image": "seed:shared/02c4a632-form.png",
+            "image_alt": "Naoero Airlines freight aircraft being loaded"
+        }
+    ]
+}

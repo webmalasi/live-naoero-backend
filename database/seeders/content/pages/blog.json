@@ -1,0 +1,72 @@
+{
+    "slug": "blog",
+    "title": "Blog",
+    "group": "news",
+    "path": "/blog",
+    "summary": "The words on the Blog page and its side panel. The articles themselves are under Posts.",
+    "seo_title": "Blog | Naoero Airlines",
+    "seo_description": "Stories and travel insights from Naoero Airlines.",
+    "banner_key": "blog",
+    "sort_order": 190,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "About Us > Blog",
+            "heading": "Our Blog",
+            "body": "For over five decades, Naoero Airlines has proudly served Australia, the Central and South Pacific with scheduled passenger services, freight and passenger aircraft charter and ACMI services.",
+            "image_alt": "Naoero Airlines aircraft flying at sunset"
+        },
+        {
+            "key": "recent",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Recent Post",
+            "button_label": "Find Out More"
+        },
+        {
+            "key": "sidebar",
+            "type": "list",
+            "show_on": "website",
+            "heading": "Search Articles",
+            "subheading": "Categories",
+            "body": "Archives",
+            "items": [
+                {
+                    "title": "October 2025"
+                },
+                {
+                    "title": "May 2025"
+                },
+                {
+                    "title": "April 2025"
+                },
+                {
+                    "title": "March 2025"
+                },
+                {
+                    "title": "February 2025"
+                },
+                {
+                    "title": "June 2024"
+                },
+                {
+                    "title": "September 2022"
+                },
+                {
+                    "title": "December 2020"
+                },
+                {
+                    "title": "March 2020"
+                },
+                {
+                    "title": "June 2019"
+                },
+                {
+                    "title": "March 2019"
+                }
+            ]
+        }
+    ]
+}

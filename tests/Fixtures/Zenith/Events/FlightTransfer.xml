@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+    <Event>
+        <NewAirlineDesignator>ON</NewAirlineDesignator>
+        <OldAirlineDesignator>ON</OldAirlineDesignator>
+        <NewFlightNumber>300</NewFlightNumber>
+        <OldFlightNumber>300</OldFlightNumber>
+        <NewOriginCode>MXP</NewOriginCode>
+        <OldOriginCode>MXP</OldOriginCode>
+        <NewDestinationCode>EWR</NewDestinationCode>
+        <OldDestinationCode>EWR</OldDestinationCode>
+        <NewDepartureDate>2026-12-10T12:05:00</NewDepartureDate>
+        <OldDepartureDate>2026-12-06T12:05:00</OldDepartureDate>
+        <NewArrivalDate>2026-12-10T15:40:00</NewArrivalDate>
+        <OldArrivalDate>2026-12-06T15:40:00</OldArrivalDate>
+        <NewEquipmentText>Airbus A321neo</NewEquipmentText>
+        <OldEquipmentText>Airbus A321neo</OldEquipmentText>
+        <TransferReason>test</TransferReason>
+    </Event>
+    <Data Format="Json" Source="CRM">
+        <Customer>
+            <Ref>60148330</Ref>
+            <TypeCode>EndCustomer</TypeCode>
+            <Firstname>Firstname</Firstname>
+            <Surname>Lastname</Surname>
+            <Emails>
+                <CustomerEmail>
+                    <Email>test@test.com</Email>
+                </CustomerEmail>
+            </Emails>
+            <Phones>
+                <CustomerPhone>
+                    <PhoneNumber>141244767</PhoneNumber>
+                </CustomerPhone>
+            </Phones>
+        </Customer>
+        <LoadBookingRequest>
+            <UniqueID>
+                <TypeCode>PnrCode</TypeCode>
+                <ID>004DL6</ID>
+            </UniqueID>
+            <Verification>
+                <PassengerName>Lastname</PassengerName>
+                <RefCustomer>60148330</RefCustomer>
+            </Verification>
+        </LoadBookingRequest>
+    </Data>

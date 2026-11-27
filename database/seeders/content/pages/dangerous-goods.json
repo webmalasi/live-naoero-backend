@@ -1,0 +1,232 @@
+{
+    "slug": "dangerous-goods",
+    "title": "Dangerous Goods",
+    "group": "travel-info",
+    "path": "/travel-info/dangerous-goods",
+    "summary": "Important passenger safety guidelines and regulated materials.",
+    "seo_title": "Dangerous Goods | Naoero Airlines",
+    "seo_description": "What you can and cannot pack: batteries, vapes, aerosols, fuel-powered equipment and items accepted with conditions.",
+    "banner_key": "dangerous-goods",
+    "sort_order": 270,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "Home > Travel Info > Dangerous Goods",
+            "heading": "Dangerous Goods",
+            "body": "Updated: 18 August 2026",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean",
+            "image": "seed:shared/9093b1c7-hero.jpg"
+        },
+        {
+            "key": "intro",
+            "type": "notice",
+            "show_on": "both",
+            "subheading": "Next scheduled regulatory review: 1 January 2027",
+            "heading": "IMPORTANT: Declare dangerous goods during online or airport check-in.",
+            "body": "Dangerous goods are items or substances that may endanger the safety of an aircraft or people on board. Some everyday products contain batteries, gases, flammable substances or other materials that are subject to aviation restrictions.\n\nRules can vary depending on the item, battery rating, packaging, route and applicable State or operator requirements. Before travelling, search for your item using [CASA's Pack Right tool](https://www.casa.gov.au) and check the latest [IATA Dangerous Goods Guidance for Passengers](https://www.iata.org).\n\n**Check before you fly:** CASA Pack Right - search what you can pack and where it should be carried.",
+            "image": "seed:dangerous-goods/family.png",
+            "image_alt": "Family travelling through the airport"
+        },
+        {
+            "key": "quick-reference",
+            "type": "feed",
+            "feed": "dangerous-goods",
+            "show_on": "both",
+            "heading": "Quick reference",
+            "note": "This table is a quick guide only. Restrictions may vary by battery capacity, configuration, item type, route and operator variation. Always check the specific item before travelling."
+        },
+        {
+            "key": "batteries",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Power banks and spare batteries",
+            "body": "Power banks and spare lithium batteries must be carried in carry-on baggage and must not be packed in checked baggage. Protect spare batteries from short circuit and accidental damage.\n\nNaoero Airlines does not accept certain power banks or battery-powered devices that are prohibited under applicable requirements. Use the current banned power-bank list before travelling.\n\nIf your carry-on baggage is transferred to the aircraft hold, you must remove all power banks, spare batteries and vapes/e-cigarettes before the bag is placed in checked baggage. Keep these items with you in the cabin."
+        },
+        {
+            "key": "vapes",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Vapes and electronic cigarettes",
+            "body": "Vapes and electronic cigarettes must not be packed in checked baggage. Where permitted by local law, they must be carried in carry-on baggage or kept on the passenger's person. They must not be used or charged on board the aircraft.\n\nVapes and e-cigarettes may be prohibited by law at some destinations. Check the laws that apply at your departure, transit and destination airports."
+        },
+        {
+            "key": "recalled",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Recalled batteries and electronic devices",
+            "body": "Naoero Airlines does not permit power banks, battery-powered devices or electronic items that are subject to a manufacturer, supplier or government safety recall because of fire, overheating, battery defects or similar safety risks.\n\nIf an item has been recalled, do not carry it unless it has been repaired, replaced or otherwise made safe in accordance with the manufacturer's instructions."
+        },
+        {
+            "key": "smart-luggage",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Smart luggage",
+            "body": "Smart luggage containing a lithium battery may be subject to restrictions. If the battery is removable, it may need to be removed before the bag is checked. Smart luggage with a non-removable battery may not be accepted as checked baggage. Check the battery rating and contact Naoero Airlines before travel if you are unsure."
+        },
+        {
+            "key": "e-bikes",
+            "type": "text",
+            "show_on": "both",
+            "heading": "E-bikes and e-scooters",
+            "body": "E-bikes, e-scooters and similar personal transport devices are generally not accepted as passenger baggage because their batteries may exceed passenger baggage limits. Contact Naoero Airlines before travelling with any battery-powered personal transport device."
+        },
+        {
+            "key": "trackers",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Bluetooth trackers",
+            "body": "Bluetooth trackers used to locate baggage are generally permitted when they comply with applicable battery requirements. Check the battery type and rating before travel."
+        },
+        {
+            "key": "cpap",
+            "type": "text",
+            "show_on": "both",
+            "heading": "CPAP machines and medical equipment",
+            "body": "CPAP machines are generally permitted. If the equipment has a lithium battery or spare battery, additional requirements may apply. Passengers who need to travel with battery-powered medical equipment should contact Naoero Airlines in advance."
+        },
+        {
+            "key": "mobility-aids",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Battery-powered mobility aids",
+            "body": "Wheelchairs and other battery-powered mobility aids can be carried subject to specific dangerous goods requirements. Advance arrangements are required so that the battery type, dimensions and handling requirements can be confirmed before travel."
+        },
+        {
+            "key": "aerosols",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Aerosols and toiletries",
+            "body": "Reasonable quantities of common personal toiletry items such as deodorant, hairspray, perfume and shaving products may be permitted in carry-on or checked baggage, subject to applicable quantity and container limits. Aerosol valves must be protected against accidental release.\n\nOther aerosols, including industrial or sporting products, may be subject to additional restrictions. Check the specific item before travel."
+        },
+        {
+            "key": "fuel-equipment",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Fuel-powered equipment",
+            "body": "Petrol- or gas-powered equipment such as chainsaws, lawnmowers and lawn trimmers may be prohibited. Equipment that has contained fuel may also present a fire risk because of residual fuel or vapour. Contact Naoero Airlines before travelling with fuel-powered equipment."
+        },
+        {
+            "key": "other",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Other dangerous goods",
+            "body": "The following items are prohibited or restricted and must not be carried unless specifically permitted under applicable dangerous goods requirements:\n- Explosives and fireworks\n- Flammable liquids and fuels\n- Gas cylinders and compressed gases\n- Corrosive or toxic substances\n- Security or disabling devices containing dangerous goods\n- Electro-shock weapons or similar prohibited devices\n\nSome prohibited or restricted items may not be listed on this page. If you are unsure whether an item is permitted, contact Naoero Airlines before travelling. Passengers must declare dangerous goods during check-in."
+        },
+        {
+            "key": "alcohol",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Alcohol",
+            "body": "Alcoholic beverages are subject to dangerous goods limits based on alcohol strength and packaging. The previous blanket 2.5-litre statement should not be used without confirming Naoero Airlines' current operator requirements and the applicable route regulations.\n\nBefore publishing a specific quantity, Naoero Airlines should validate the allowance against the current IATA Dangerous Goods Regulations and applicable State/operator variations."
+        },
+        {
+            "key": "conditions",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Items That May Be Accepted With Specific Conditions",
+            "items": [
+                {
+                    "icon": "dry-ice",
+                    "title": "Dry ice",
+                    "text": "For packing perishables - airline approval and quantity/packaging conditions apply."
+                },
+                {
+                    "icon": "safety",
+                    "title": "Safety matches or a small permitted lighter",
+                    "text": "Restrictions apply and these items must be carried on one's person where permitted."
+                },
+                {
+                    "icon": "flame",
+                    "title": "Hair curlers containing hydrocarbon gas",
+                    "text": "Conditions apply; spare cartridges are not permitted."
+                },
+                {
+                    "icon": "radio",
+                    "title": "EPIRBs and personal locator beacons",
+                    "text": "Battery type and rating determine whether airline approval is required."
+                },
+                {
+                    "icon": "cylinder",
+                    "title": "Medical oxygen cylinders",
+                    "text": "Advance approval and specific equipment requirements apply."
+                }
+            ]
+        },
+        {
+            "key": "cabin-bag-moved",
+            "type": "text",
+            "show_on": "both",
+            "heading": "What to do if your cabin bag is moved to the hold",
+            "body": "If an airline representative asks you to place your carry-on baggage in the aircraft hold, open the bag first and remove:\n- Power banks\n- Spare lithium batteries\n- Vapes and electronic cigarettes\n\nKeep these items with you in the cabin and do not place them in checked baggage."
+        },
+        {
+            "key": "help",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Need help?",
+            "body": "For questions about dangerous goods, contact Naoero Airlines before travelling.",
+            "items": [
+                {
+                    "icon": "phone",
+                    "title": "Reservations",
+                    "value": "+61 7 3229 6455",
+                    "link_url": "tel:+61732296455"
+                }
+            ]
+        },
+        {
+            "key": "resources",
+            "type": "links",
+            "show_on": "both",
+            "heading": "Useful resources",
+            "items": [
+                {
+                    "title": "CASA Pack Right",
+                    "text": "search your item before you fly.",
+                    "link_url": "https://www.casa.gov.au"
+                },
+                {
+                    "title": "IATA Dangerous Goods Guidance for Passengers",
+                    "text": "current passenger guidance and Table 2.3.A.",
+                    "link_url": "https://www.iata.org"
+                },
+                {
+                    "title": "Naoero Airlines - Dangerous Goods",
+                    "text": "terms and operator-specific requirements.",
+                    "link_url": "/travel-info/conditions-of-carriage"
+                }
+            ]
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "Schedule",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/flight-schedule",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Cargo",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/freight",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

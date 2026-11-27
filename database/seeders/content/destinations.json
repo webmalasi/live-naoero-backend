@@ -1,0 +1,564 @@
+{
+  "brisbane": {
+    "why_visit": [
+      {
+        "title": "Stunning Weather",
+        "description": "Enjoy endless blue skies and a warm, sub-tropical climate year-round. Summer temperatures can reach the high 30sÂ°C, perfect for exploring the great outdoors."
+      },
+      {
+        "title": "Proximity to Iconic Destinations",
+        "description": "The Sunshine Coast (north) and Gold Coast (south) are nearby, offering pristine beaches, national parks, and attractions."
+      },
+      {
+        "title": "Nature & Outdoor Adventures",
+        "description": "From the scenic Brisbane River to the lush rainforests of the hinterland, Queensland provides hiking, wildlife encounters, surfing, and island experiences."
+      },
+      {
+        "title": "Thriving City Experience",
+        "description": "Brisbane is home to bustling markets, world-class dining, arts, and cultural festivals, making it a dynamic destination for both relaxation and exploration."
+      },
+      {
+        "title": "Money & Payments",
+        "description": "Brisbane and the rest of Australia use the Australian Dollar (AUD). Credit cards are widely accepted, and cash can be withdrawn from ATMs and banks in the city and populated areas."
+      },
+      {
+        "title": "Tipping Culture",
+        "description": "Tipping is not expected in Australia, but locals sometimes tip to recognise exceptional service."
+      },
+      {
+        "title": "What to Pack?",
+        "description": "We recommend packing light, breathable clothing suitable for hot weather. A hat and sunscreen are essential, as UV levels are high year-round, even on cloudy days and during winter"
+      }
+    ]
+  },
+  "naoero": {
+    "why_visit": [
+      {
+        "title": "A Landscape Shaped by History",
+        "description": "Naoero's rugged terrain is a striking contrast of lush jungle and jagged limestone pinnacles, remnants of the island's phosphate mining era."
+      },
+      {
+        "title": "Language & Visa Requirements",
+        "items": [
+          {
+            "label": "Languages Spoken:",
+            "text": "Naoeroan & English"
+          },
+          {
+            "label": "Visa Requirements:",
+            "text": "All visitors must apply for a visa before arriving in Naoero. Ensure your visa is approved in advance to enjoy a seamless travel experience."
+          }
+        ]
+      },
+      {
+        "title": "Climate",
+        "description": "Located just 40 kilometres south of the equator, Naoero enjoys a tropical climate with warm temperatures year-round."
+      },
+      {
+        "title": "What to Pack?",
+        "checklist": [
+          "Light, conservative clothing suitable for warm weather",
+          "Sunscreen, hats, and insect repellent for sun and bug protection"
+        ]
+      },
+      {
+        "title": "Getting Around",
+        "description": "Naoero is one of the few countries in the world where you can walk around the entire nation in just a few hours! Early morning exploration is recommended to beat the heat."
+      },
+      {
+        "title": "Currency & Payment Methods",
+        "description": "Naoero uses the Australian Dollar (AUD). Cash is preferred and credit cards are rarely accepted."
+      }
+    ]
+  },
+  "kiritimati": {
+    "why_visit": [
+      {
+        "title": "A Rich History & Natural Wonder",
+        "description": "Discovered by British Captain James Cook on Christmas Eve in 1777, the island remains deeply connected to its holiday namesake. Today, Kiritimati is celebrated for its unspoiled beauty, world-class fishing, and remote island charmâ€”offering travelers an authentic and unforgettable Pacific experience."
+      },
+      {
+        "title": "Airports",
+        "checklist": [
+          "Kiritimati Island (Cassidy International Airport) serves as the main gateway.",
+          "Fanning Island (Tabuaeran) & Teraina (Washington Island) have smaller airports."
+        ]
+      },
+      {
+        "title": "Entry Requirements & Visa Information",
+        "checklist": [
+          "Citizens from Australia, New Zealand, USA, Canada, Japan, UK, and several European countries can visit visa-free for up to 30 days.",
+          "Visitors from non-visa waiver countries must apply for a visa in advance.",
+          "More details: Kiribati Visa Information"
+        ]
+      },
+      {
+        "title": "Airport Departure Tax",
+        "checklist": [
+          "Fanning & Washington Islands to Kiritimati: $20 per person, payable at departure.",
+          "Fishing Visitor Fee: $50 per angler, payable at Cassidy Airport upon arrival."
+        ]
+      },
+      {
+        "title": "Money & Payments",
+        "checklist": [
+          "Currency: Australian Dollar (AUD$) is the official currency, with some places accepting USD$.",
+          "Bank & ATM: ANZ Bank of Kiribati is located in Ronton (London), Kiritimati Island, with ATM access.",
+          "Credit Cards: Visa, MasterCard, UnionPay, and JCB are accepted at some locations, but cash is recommended, especially when traveling to Fanning and Teraina Islands."
+        ]
+      },
+      {
+        "title": "Climate & What to Pack",
+        "description": "With its tropical climate, temperatures range between 24Â°C â€“ 34Â°C year-round, moderated by refreshing sea breezes."
+      },
+      {
+        "title": "Packing Essentials:",
+        "checklist": [
+          "Light, breathable clothing (modest attire recommended in villages & religious areas)",
+          "Sunscreen, hats, and insect repellent",
+          "Sarong or lavalava for women when visiting local villages",
+          "Sturdy footwear for exploring the islandâ€™s terrain"
+        ]
+      },
+      {
+        "title": "Getting Around",
+        "checklist": [
+          "No public transport is availableâ€”visitors must rent a car, motorbike, or bicycle.",
+          "Rental rates: Cars: $70â€“$100/day | Motorbikes: $30/day",
+          "Driving: Keep left and always wear seatbelts or helmets (for motorbikes)."
+        ]
+      },
+      {
+        "title": "Communication & Internet",
+        "checklist": [
+          "2G/3G/4G mobile service is available via Vodafone Kiribati.",
+          "SIM cards & data plans can be purchased locally.",
+          "Limited Wi-Fi is available in some hotels and internet cafÃ©s."
+        ]
+      },
+      {
+        "title": "Medical & Emergency Services",
+        "checklist": [
+          "Medical facilities are limited â€“ visitors should have emergency medical evacuation insurance.",
+          "Bring essential medication as local pharmacies have limited supplies.",
+          "Emergency Contacts:",
+          "Police: Dial 192 / VHF Ch.12",
+          "Hospital: VHF Ch.10"
+        ]
+      },
+      {
+        "title": "Shopping & Business Hours",
+        "checklist": [
+          "Shops & supermarkets are primarily in Ronton (London), Kiritimati.",
+          "Opening hours: Mondayâ€“Sunday: 7 AM â€“ 8 PM (limited hours or closed on Sundays).",
+          "Popular stores: JMB, Punjas Limited, San BJ Enterprises, Betty Trading, Tarati Plaza.",
+          "VAT: Kiribati charges 12.5% goods & service tax."
+        ]
+      },
+      {
+        "title": "Dining & Local Culture",
+        "checklist": [
+          "Local cuisine features fresh seafood, coconut-based dishes, and tropical fruits.",
+          "Visitors are encouraged to respect local customsâ€”modest dress is recommended in villages and religious areas."
+        ]
+      },
+      {
+        "title": "More Information & Local Contacts",
+        "checklist": [
+          "Kiritimati Urban Council (Tabwakea, Kiritimati): (686) 75381210 | xmasclerk@internalaffairs.gov.ki",
+          "Ministry of Line & Phoenix Islands Development (MLPID): (686) 75381214 | enquire@mlpid.gov.ki"
+        ]
+      }
+    ]
+  },
+  "majuro": {
+    "why_visit": [
+      {
+        "title": "A Unique Island Nation",
+        "description": "An atoll is a ring-shaped coral or volcanic land formation that rises from the ocean, encircling a lagoon filled with crystal-clear waters. This distinctive geography makes Majuro a paradise for marine life, diving, and ocean exploration."
+      },
+      {
+        "title": "Language & Population",
+        "checklist": [
+          "Population: Over 60,000 people call the Marshall Islands home.",
+          "Language: Marshallese is the national language, though English is also widely spoken."
+        ]
+      },
+      {
+        "title": "Currency & Economy",
+        "checklist": [
+          "Official Currency: US Dollar (USD$)",
+          "In February 2018, the Marshall Islands passed a bill recognizing a cryptocurrency called Sovereign (SOV) as legal tender, though the US Dollar remains the official currency used throughout the country."
+        ]
+      },
+      {
+        "title": "Climate & Weather",
+        "checklist": [
+          "Year-round tropical climate: Hot and humid with little seasonal variation.",
+          "Average temperature: 21Â°C â€“ 34Â°C, with warm waters perfect for thriving marine ecosystems.",
+          "December to March: The islands experience cooling breezes, offering a more comfortable climate."
+        ]
+      },
+      {
+        "title": "Travel Advisory â€“ Measles Vaccination Requirement",
+        "description": "The Republic of the Marshall Islands (RMI) requires all visitors to present an up-to-date measles vaccination certificate upon arrival in Majuro. Please refer to the following official travel advisory documents for more information:",
+        "checklist": [
+          "Measles International Travel Advisory",
+          "RMI Entry Form"
+        ],
+        "highlight": "Approximately one-third of the atolls are uninhabited."
+      }
+    ]
+  },
+  "nadi": {
+    "info_sections": [
+      {
+        "leadingHighlight": "Fiji is actually made up of over 300 islands and is recognised worldwide for its sandy beaches, palm-trees and lagoons.",
+        "paragraphs": [
+          "The three main languages spoken in Fiji are Fijian, English and Hindi and over 900,000 people live in Fiji.",
+          "Fiji has the perfect climate for relaxing beach holidays. It is generally warm all year round and has average temperatures of approximately 26 degrees Celsius to 32 degrees Celsius."
+        ]
+      },
+      {
+        "paragraphs": [
+          "Wet season is from about November to April, and it is generally warm and humid at this time of year too. However, the showers are generally short and should still allow plenty of sunshine!",
+          "Fiji uses the Fijian Dollar. ATMs are common in cities, however not in the rural areas, so be sure to have cash with you if you are heading further afield. There is often a credit card charge to use your card.",
+          "Fiji has a warm, tropical climate, so we recommend packing for summery conditions. Take cool clothing for warm days, as well as a hat, sunscreen and bug repellant."
+        ]
+      }
+    ]
+  },
+  "palau": {
+    "detailed_info": [
+      {
+        "heading": "1. Airport",
+        "paragraphs": [
+          "Palau International Airport (ROR) is the main international gateway, located on Babeldaob Island, about 5km southwest of Koror, and easily reached by taxi or shuttle.",
+          "The airport is relatively small but offers all essential facilities - check-in counters, immigration and customs, baggage claim, and a few shops and restaurants.",
+          "Taxis take about 20-30 minutes to reach Koror, and some hotels offer shuttle services by prior arrangement. Several car rental agencies have counters at the airport, and free Wi-Fi is available while you wait for your flight.",
+          "A number of airlines fly to and from Palau, mostly connecting via major Asian cities and Guam."
+        ]
+      },
+      {
+        "heading": "2. Airport Departure Tax",
+        "paragraphs": [
+          "Naoero Airlines includes your departure tax in your ticket purchase."
+        ]
+      },
+      {
+        "heading": "3. Banks & ATMs",
+        "paragraphs": [
+          "Banks and ATMs are readily available, mainly in Koror. Major banks include Bank of Hawaii and Bank of Guam, offering standard financial services and foreign exchange.",
+          "ATMs are widely available in Koror and other populated areas - let your bank know your travel dates to avoid card issues.",
+          "Bank hours generally run Monday to Friday, around 9am-4pm, with some limited Saturday hours. Hotels and the airport also offer currency exchange, though usually at less favourable rates than the banks.",
+          "It's worth carrying some cash, especially for areas with limited banking facilities such as the Rock Islands."
+        ]
+      },
+      {
+        "heading": "4. Biosecurity & Quarantine",
+        "paragraphs": [
+          "Palau has strict biosecurity measures to protect its unique ecosystem. Declare all agricultural and wildlife products on arrival, and check the Ministry of Health and Human Services' guidelines for current quarantine requirements."
+        ]
+      },
+      {
+        "heading": "5. Business Hours & Shopping",
+        "paragraphs": [
+          "Typical business hours are 8am-5pm, Monday to Friday. Most shopping is in Koror, with stores generally open 8am-9pm, Monday to Saturday (some close briefly over lunch)."
+        ]
+      },
+      {
+        "heading": "6. Country Code",
+        "paragraphs": [
+          "Palau's international dialling code is +680."
+        ]
+      },
+      {
+        "heading": "7. Credit Cards Accepted",
+        "paragraphs": [
+          "Visa and Mastercard are widely accepted at hotels, major restaurants and shops, but it's a good idea to carry some cash for smaller purchases."
+        ]
+      },
+      {
+        "heading": "8. Currency",
+        "paragraphs": [
+          "The official currency of Palau is the US Dollar (USD)."
+        ]
+      },
+      {
+        "heading": "9. Currency Exchange",
+        "paragraphs": [
+          "Currency exchange is available at the airport and major banks, though bank rates are generally more favourable."
+        ]
+      },
+      {
+        "heading": "10. Customs & Duty-Free",
+        "paragraphs": [
+          "Duty-free shopping is available, but there are limits on the quantity of duty-free items - check the customs regulations before you travel."
+        ]
+      },
+      {
+        "heading": "11. Climate",
+        "paragraphs": [
+          "Palau has a tropical climate with high humidity. The best time to visit is the dry season, from November to April."
+        ]
+      },
+      {
+        "heading": "12. Communications & Internet",
+        "paragraphs": [
+          "Mobile coverage is good and local SIM cards are available. Free Wi-Fi can be found at the airport and some hotels."
+        ]
+      },
+      {
+        "heading": "13. Driving",
+        "paragraphs": [
+          "Driving is on the right side of the road, and international driving licence holders can rent cars. Many roads lack footpaths and have limited shoulders, and the national speed limit is 40km/h, with overtaking slow vehicles prohibited."
+        ]
+      },
+      {
+        "heading": "14. Electricity",
+        "paragraphs": [
+          "Palau uses 120V/60Hz electricity with Type A and Type B sockets - bring a suitable adapter if needed."
+        ]
+      },
+      {
+        "heading": "15. Local Government Offices & Authorities",
+        "paragraphs": [
+          "For emergencies or specific enquiries, local government offices and authorities can be reached via local directories or online."
+        ]
+      },
+      {
+        "heading": "16. Medical Information",
+        "paragraphs": [
+          "Koror has several private medical clinics as well as the Belau National Hospital, which handles outpatient and emergency care and operates a hyperbaric chamber for diving-related emergencies (+680 488 2552/2553).",
+          "Serious medical conditions may require evacuation, so travel insurance covering medical emergencies is strongly recommended."
+        ]
+      },
+      {
+        "heading": "17. Palau Entry Form",
+        "paragraphs": [
+          "All visitors must complete the Palau Entry Form within 72 hours of arrival (in English) - families and solo travellers only need to submit one form each."
+        ]
+      },
+      {
+        "heading": "18. The Palau Pledge",
+        "paragraphs": [
+          "On arrival, every visitor reads and signs the Palau Pledge - a commitment to responsible tourism built around preserving the environment, respecting local culture, and mindful, low-impact exploration.",
+          "Responsible travel tips include respecting marine life and using reef-safe products, minimising waste, supporting local and sustainable businesses, and learning about and engaging with Palauan culture and communities."
+        ]
+      },
+      {
+        "heading": "19. Phone Directory",
+        "paragraphs": [
+          "Local phone directories are available, along with online directories for contact information."
+        ]
+      },
+      {
+        "heading": "20. Sunscreen",
+        "paragraphs": [
+          "Since January 2020, Palau became the first nation to ban sunscreens that are harmful to coral reefs. Only sunscreens using zinc oxide and/or titanium dioxide as their sole active ingredients (free of certain other chemicals) are permitted - reef-safe options are widely available locally if you're unsure about what you've brought."
+        ]
+      },
+      {
+        "heading": "21. VAT",
+        "paragraphs": [
+          "Since January 2023, most goods and services in Palau are subject to a 10% Palau Goods and Services Tax (PGST), which is usually already included in listed prices."
+        ]
+      },
+      {
+        "heading": "22. Visa & Travel Requirements",
+        "paragraphs": [
+          "Visa requirements vary by nationality - most visitors receive a 30-day tourist visa on arrival. Check the Palau Visitors Association website for current visa and passport requirements."
+        ]
+      },
+      {
+        "heading": "23. Visitor Fees",
+        "paragraphs": [
+          "A Pristine Paradise Environmental Fee (PPEF) of US$100 applies to all visitors and is payable on departure, though it is included in the price of your airline ticket.",
+          "The PPEF funds conservation of marine and terrestrial ecosystems, waste management, and sustainable tourism development across Palau, as part of the country's commitment to environmental preservation.",
+          "See the Palau Visitors Association website for further details."
+        ]
+      }
+    ],
+    "why_visit": [
+      {
+        "title": "The Rock Islands â€“ A UNESCO World Heritage Site",
+        "description": "Palau's Rock Islands are a maze of limestone formations, hidden coves and vibrant coral reefs, perfect for kayaking, diving and exploring remote beaches."
+      },
+      {
+        "title": "World-Class Diving & Marine Adventures",
+        "description": "Palau is one of the top diving destinations in the world.",
+        "checklist": [
+          "Jellyfish Lake â€“ swim among millions of stingless jellyfish in this one-of-a-kind marine sanctuary.",
+          "Blue Corner â€“ one of the best dive sites in the world, with sharks, manta rays and vibrant coral.",
+          "Chandelier Cave â€“ an underground diving adventure with unique rock formations.",
+          "Snorkelling & Kayaking â€“ explore Palau's crystal-clear lagoons and marine life."
+        ]
+      },
+      {
+        "title": "Culture & History",
+        "checklist": [
+          "Visit a Bai (traditional Palauan meeting house) to learn about the island's cultural traditions.",
+          "Explore ancient stone monoliths and WWII relics reflecting Palau's history.",
+          "Sample authentic Palauan cuisine, including fresh seafood, taro and tropical fruits."
+        ]
+      },
+      {
+        "title": "Adventure & Outdoor Activities",
+        "checklist": [
+          "Hike through lush rainforests to breathtaking viewpoints.",
+          "Go sport fishing in some of the richest waters in the Pacific.",
+          "Stargaze under Palau's pristine night skies."
+        ]
+      },
+      {
+        "sectionBreak": "Getting to Palau"
+      },
+      {
+        "title": "Airport Information",
+        "checklist": [
+          "Palau International Airport (ROR) is the main gateway, on Babeldaob Island, about 5km from Koror.",
+          "Taxis and hotel shuttle services are available for transfers.",
+          "Car rentals are available at the airport for independent travel."
+        ]
+      },
+      {
+        "title": "Airport Departure Tax",
+        "checklist": [
+          "Your departure tax is included in your Naoero Airlines ticket purchase - no additional payment required."
+        ]
+      },
+      {
+        "title": "Money & Payments",
+        "checklist": [
+          "Currency: United States Dollar (USD$) is the official currency.",
+          "Banks & ATMs: major banks including Bank of Hawaii and Bank of Guam are located in Koror.",
+          "Credit Cards: Visa and Mastercard are widely accepted, but cash is recommended for smaller establishments.",
+          "Currency Exchange: available at banks and select hotels, though rates may vary."
+        ]
+      },
+      {
+        "title": "Climate & What to Pack",
+        "description": "Tropical climate with high humidity year-round.",
+        "items": [
+          {
+            "label": "Best time to visit:",
+            "text": "November to April (dry season)."
+          },
+          {
+            "label": "Temperature:",
+            "text": "Average of 27Â°C â€“ 32Â°C with cooling sea breezes."
+          }
+        ]
+      },
+      {
+        "title": "What to Pack:",
+        "checklist": [
+          "Light, breathable clothing (modest attire recommended for villages and religious sites).",
+          "Sunscreen, hat and insect repellent.",
+          "Reef-safe sunscreen - Palau bans sunscreens that harm coral reefs.",
+          "A waterproof bag and sturdy sandals for outdoor adventures."
+        ]
+      },
+      {
+        "title": "Getting Around Palau",
+        "items": [
+          {
+            "label": "Driving:",
+            "text": "Palau drives on the right side of the road; international driver's licences are accepted."
+          },
+          {
+            "label": "Speed Limit:",
+            "text": "40km/h, and overtaking slow vehicles is illegal."
+          },
+          {
+            "label": "Public Transport:",
+            "text": "Limited - taxis and hotel shuttles are the primary transport options."
+          },
+          {
+            "label": "Car Rentals:",
+            "text": "Available, with rates from around $50 â€“ $100 per day."
+          }
+        ]
+      },
+      {
+        "title": "Communications & Internet",
+        "items": [
+          {
+            "label": "Mobile Networks:",
+            "text": "Reliable coverage, with local SIM cards available for purchase."
+          },
+          {
+            "label": "Wi-Fi:",
+            "text": "Free Wi-Fi at hotels, cafÃ©s and Palau International Airport."
+          }
+        ]
+      },
+      {
+        "title": "Medical & Emergency Services",
+        "items": [
+          {
+            "label": "Belau National Hospital",
+            "text": "- the main hospital, providing emergency medical care."
+          },
+          {
+            "label": "Private Clinics",
+            "text": "- several are available in Koror."
+          },
+          {
+            "label": "Hyperbaric Chamber",
+            "text": "- available for diving-related emergencies."
+          },
+          {
+            "label": "Travel Insurance",
+            "text": "- highly recommended to cover medical evacuations."
+          },
+          {
+            "label": "Contact:",
+            "text": "+680 488 2552/2553"
+          }
+        ]
+      },
+      {
+        "title": "Shopping & Business Hours",
+        "items": [
+          {
+            "label": "Shopping District:",
+            "text": "Koror is the main commercial hub, with local handicrafts, souvenirs and convenience stores."
+          },
+          {
+            "label": "Hours:",
+            "text": "Most businesses operate Monday â€“ Friday (8am â€“ 5pm), with some stores open until 9pm on Saturdays."
+          },
+          {
+            "label": "Local Markets:",
+            "text": "Good places to find authentic Palauan crafts and fresh produce."
+          }
+        ]
+      }
+    ]
+  },
+  "pohnpei": {
+    "info_sections": [
+      {
+        "paragraphs": [
+          "Pohnpei is one of the islands belonging to the Federated States of Micronesia. It is approximately 96 kilometres around.",
+          "The Federated States of Micronesia consists of 607 islands stretching 2900 kilometres."
+        ],
+        "highlight": "Many of these islands are very small and uninhabited."
+      },
+      {
+        "paragraphs": [
+          "Like other locations we fly to, the climate in Pohnpei is warm and tropical. There are typically only two seasons - wet and dry.",
+          "The wet season is April to December (most rain between July and October), while the dry season is December to April.",
+          "The official currency of the Federated States of Micronesia is the US Dollar and ATMs are available in most of the major islands.",
+          "Cash is most prevalent, although most large tourist businesses and hotels will accept major credit cards."
+        ]
+      },
+      {
+        "paragraphs": [
+          "The majority of people in Pohnpei speak Pohnpeian, which is the second-most broadly spoken language in the Federated States of Micronesia. English is taught in schools and widely spoken."
+        ]
+      }
+    ]
+  }
+}

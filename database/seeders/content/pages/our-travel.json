@@ -1,0 +1,215 @@
+{
+    "slug": "our-travel",
+    "title": "Our Travel",
+    "group": "pages",
+    "path": "/our-travel",
+    "summary": "Introducing Naoero Airlines in house Travel Agency, Our Travel.",
+    "seo_title": "Our Travel | Naoero Airlines Travel Agency",
+    "seo_description": "Corporate travel services including flights, accommodation and car hire, from our offices in Brisbane and Naoero.",
+    "banner_key": "our-travel",
+    "sort_order": 80,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Our Travel",
+            "body": "Introducing Naoero Airlines in house Travel Agency, Our Travel."
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Home › Our Travel",
+            "heading": "Your Travel, Simplified",
+            "body": "Professional Travel Assistance For Flights, Accommodation, Car Hire And Corporate Travel"
+        },
+        {
+            "key": "app-services",
+            "type": "cards",
+            "show_on": "app",
+            "heading": "Popular Services",
+            "items": [
+                {
+                    "title": "Flights",
+                    "text": "Domestic And International Booking Services Through Our Travel."
+                },
+                {
+                    "title": "Accommodation",
+                    "text": "Our Travel Can Assist With Accommodation As Part Of Your Travel Arrangements."
+                },
+                {
+                    "title": "Car Hire",
+                    "text": "Arrange Transfers And Car Hire As Part Of Your Travel Plans."
+                },
+                {
+                    "title": "Visa Assistance",
+                    "text": "Our Travel Provides Assistance With Visa Requirements."
+                }
+            ]
+        },
+        {
+            "key": "service",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Our Travel Service",
+            "subheading": "We offer Corporate Travel Services including Flights, Accommodation and Car Hire.",
+            "items": [
+                {
+                    "title": "Specializing in the Central Pacific"
+                },
+                {
+                    "title": "Two offices located in Brisbane and Naoero"
+                },
+                {
+                    "title": "Professional and friendly advice"
+                },
+                {
+                    "title": "Corporate Travel Management specialists"
+                },
+                {
+                    "title": "Dedicated Travel Consultants to provide tailored solutions"
+                },
+                {
+                    "title": "Domestic and International booking services"
+                }
+            ]
+        },
+        {
+            "key": "provides",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Our Travel provides",
+            "items": [
+                {
+                    "title": "Itinerary planning and booking",
+                    "text": "Our travel consultants build and book your itinerary end to end."
+                },
+                {
+                    "title": "Hotel reservations, transfer and car hire",
+                    "text": "Accommodation, transfers and car hire booked to match your travel dates and budget."
+                },
+                {
+                    "title": "Visa assistance and insurance",
+                    "text": "Support with visa requirements and travel insurance options."
+                },
+                {
+                    "title": "Exclusive discounted corporate rates for flights and accommodation",
+                    "text": "Preferential corporate fares and accommodation rates for regular business travel."
+                }
+            ]
+        },
+        {
+            "key": "offices",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Our Office",
+            "items": [
+                {
+                    "slug": "brisbane",
+                    "value": "Brisbane",
+                    "title": "Brisbane Team",
+                    "subtitle": "Naoero Airlines",
+                    "text": "Level 2, 99 Creek Street, Brisbane QLD 4000 Australia",
+                    "list": [
+                        "Toll Free Number (Within Australia): 1300 726 822 or +61 7 3837 5400",
+                        "Office Hours: 0700-1700, 7 days per week",
+                        "Urgent travel requests (Out of hours): +61 7 3837 5400",
+                        "Email: book@ourtravel.com.au"
+                    ],
+                    "image": "seed:our-travel/Brisbane-Team.png",
+                    "image_alt": "Brisbane"
+                },
+                {
+                    "slug": "naoero",
+                    "value": "Naoero",
+                    "title": "Naoero Team",
+                    "subtitle": "Naoero International Airport,",
+                    "text": "Yaren District, Republic of Naoero",
+                    "list": [
+                        "Telephone: +(674) 5577000",
+                        "Office Hours: 09:00 - 17:00, Monday-Friday",
+                        "Mobile: +(674) 5577001",
+                        "Email: book@ourtravel.com.au"
+                    ],
+                    "image": "seed:our-travel/nauruTeam.png",
+                    "image_alt": "Naoero"
+                }
+            ]
+        },
+        {
+            "key": "brisbane-consultants",
+            "type": "gallery",
+            "show_on": "both",
+            "heading": "Brisbane Consultants",
+            "items": [
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Fleur",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                }
+            ]
+        },
+        {
+            "key": "naoero-consultants",
+            "type": "gallery",
+            "show_on": "both",
+            "heading": "Naoero Consultants",
+            "items": [
+                {
+                    "title": "Lorrina",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Merys",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Trini",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                },
+                {
+                    "title": "Ricka",
+                    "subtitle": "Consultants",
+                    "image": "seed:our-travel/Brisbane-consultantant.png"
+                }
+            ]
+        },
+        {
+            "key": "app-cta",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Need help planning your trip?",
+            "button_label": "Contact Our Travel Agency",
+            "button_url": "/contact-us"
+        }
+    ]
+}

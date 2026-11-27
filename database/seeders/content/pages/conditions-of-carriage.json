@@ -1,0 +1,74 @@
+{
+    "slug": "conditions-of-carriage",
+    "title": "Conditions of Carriage",
+    "group": "travel-info",
+    "path": "/travel-info/conditions-of-carriage",
+    "summary": "The terms that apply to your travel with Naoero Airlines.",
+    "seo_title": "Conditions of Carriage | Naoero Airlines",
+    "seo_description": "Naoero Airlines Conditions of Carriage: tickets, fares, baggage, refunds, liability and passenger obligations.",
+    "banner_key": "conditions-of-carriage",
+    "sort_order": 290,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About Us > Travel Info > Condition Of Carriage",
+            "heading": "Conditions Of Carriage",
+            "body": "Please take a moment to read our conditions of carriage prior to booking",
+            "image": "seed:shared/0936aa78-banner.jpg",
+            "image_alt": "Passengers walking through an airport terminal"
+        },
+        {
+            "key": "intro",
+            "type": "image_text",
+            "show_on": "both",
+            "body": "These Conditions of Carriage ('the Conditions') together with the documents referred to in Subparagraph 2.2 form a contract between you and Naoero Airlines in relation to your travel on Naoero Airlines Services.\n\n[Click here](https://www.nauruair.com/library/files/nauruairlines-conditionsofcarriage-01nov24-documentnumberna-exo-py-001.pdf) to download the Conditions of Carriage.",
+            "image": "seed:shared/f64ba3c7-family.png",
+            "image_alt": "Family travelling through the airport"
+        },
+        {
+            "key": "important",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "These Conditions Of Carriage Contain Important Terms Of Which You Should Be Aware.",
+            "items": [
+                {
+                    "title": "Privacy",
+                    "text": "Clause 5.9 says that we need to collect your personal information so that we can provide services to you. It also says we will collect and handle your personal information in accordance with our [Privacy Policy](/privacy-policy)."
+                },
+                {
+                    "title": "Check-In Rules",
+                    "text": "Clause 9.4 provides that you may have your Reservation cancelled or re-allocated, be refused carriage or charged a reasonable service fee with no liability to Naoero Airlines if you do not comply with our check-in rules."
+                },
+                {
+                    "title": "Refusal Of Carriage",
+                    "text": "Clause 10.2 sets out the circumstances in which we can refuse you carriage on our flights and limitations on our liability to you when this occurs."
+                },
+                {
+                    "title": "Schedule Changes & Flight Cancellation",
+                    "text": "Clause 11.3 sets out limitations on our liability to you in the event of schedule changes and/or flight cancellations."
+                },
+                {
+                    "title": "Refusal Of Entry At Destination",
+                    "text": "Clause 15.3 sets out limitations on our liability to you in the event you are refused entry into your destination port."
+                },
+                {
+                    "title": "Liability For Death, Personal Injury Or Baggage –",
+                    "list": [
+                        "Clause 16.6.1 and 17.5.4 sets out limitations on our liability to you in the event of loss or damage of important or valuable items taken as Checked Baggage or Carry-on Baggage.",
+                        "Clause 16.3.2 sets out our right to refuse carriage of your Baggage, and clause 13.4 sets the limitations on our liability to you in the event that you do not collect your Baggage.",
+                        "Clause 17 sets out limitations on our liability to you in the event you suffer illness, injury or death on our flights or in the event we delay, damage or lose your Baggage.",
+                        "Clause 17.5.8 sets out the timeframes you need to comply with when making a claim for lost or damaged Baggage."
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "document",
+            "type": "feed",
+            "feed": "conditions-of-carriage",
+            "show_on": "both"
+        }
+    ]
+}

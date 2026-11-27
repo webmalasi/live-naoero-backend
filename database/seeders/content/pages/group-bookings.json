@@ -1,0 +1,118 @@
+{
+    "slug": "group-bookings",
+    "title": "Group Bookings",
+    "group": "pages",
+    "path": "/group-bookings",
+    "summary": "Group travel for 10 or more adults: flexible deposits, delayed naming and ticketing, and dedicated group services.",
+    "seo_title": "Group Bookings | Naoero Airlines",
+    "seo_description": "Planning a trip for a group of 10 or more? Flexible deposit conditions, custom itineraries and services for sporting, school and music groups.",
+    "banner_key": "group-bookings",
+    "sort_order": 40,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About Us > Specials > Group Bookings",
+            "heading": "Planning A Trip For A Group?",
+            "body": "Whether you're going on holiday, to a conference or an event, we can assist you in making your group travels as smooth as possible."
+        },
+        {
+            "key": "planning",
+            "type": "image_text",
+            "show_on": "both",
+            "heading": "Planning A Trip For A Group? We've Got You Covered!",
+            "body": "Naoero Airlines define a group booking as 10 or more adults traveling together to the same destination.\n\nWhether it's for a family gathering, corporate event, sports team, or special occasion, our experienced sales team is here to make the booking process smooth and hassle-free.\n\nOur team can advise on the best travel options for various groups from corporate events, meetings or incentives, to arranging school, sports or family tours.",
+            "image_alt": "Family travelling together with luggage",
+            "image": "seed:shared/1a6838d9-groupBooking.png"
+        },
+        {
+            "key": "why-book",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Why Book as a group?",
+            "body": "Group bookings can save you money and simplify planning, with one point of contact managing your booking from start to finish.",
+            "items": [
+                {
+                    "title": "Exclusive group rates for better savings",
+                    "icon": "dollar"
+                },
+                {
+                    "title": "Flexible booking options to suit your needs",
+                    "icon": "dollar"
+                },
+                {
+                    "title": "Personalized support from our dedicated team",
+                    "icon": "dollar"
+                }
+            ],
+            "note": "Let us guide you through the process and ensure your group enjoys a seamless and comfortable journey."
+        },
+        {
+            "key": "travel-made-easy",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Group Travel Made Easy with Naoero Airlines",
+            "body": "At Naoero Airlines, we know that group travel requires flexibility, convenience, and tailored solutions. Whether you're traveling for business, leisure, sports, school, or special events, we offer exclusive benefits designed to make group bookings seamless and stress-free.",
+            "items": [
+                {
+                    "title": "Flexible Deposit Conditions",
+                    "text": "We understand that group sizes can change. If you've already paid a deposit and your group size changes by less than 20%, we'll simply apply any excess deposit toward your final payment, making adjustments hassle-free.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                },
+                {
+                    "title": "Delayed Payment, Naming and Ticketing",
+                    "text": "Work delegates not decided? Not sure who's in the team that round? Haven't drawn the incentive winners? Our late payment, naming and ticketing deadlines mean you can still book your travel without delay.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                },
+                {
+                    "title": "Custom Itineraries & Multi-Origin Travel",
+                    "text": "Unlike most airlines, we accommodate group members with different travel needs. Whether it's:\n- Separate side trips\n- Extra travel days\n- Multiple origin bookings\n\nOur team will work with you to ensure everyone's itinerary fits their schedule.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                },
+                {
+                    "title": "Dedicated Group Services",
+                    "text": "Groups traveling with Naoero Airlines may be eligible for:\n- Assisted check-in for a smooth airport experience\n- Pre-seating arrangements to keep your group together\n- Additional baggage allowances for eligible bookings\n\nWe understand that every group is unique, and we're here to make your journey as easy and seamless as possible.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                }
+            ]
+        },
+        {
+            "key": "specialised",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Specialized Group Travel Services",
+            "items": [
+                {
+                    "title": "Sporting Groups",
+                    "text": "Travelling around Australia with sporting equipment can be challenging and expensive. By utilising our pre-organised group check-in available at most of our domestic airports, we make the end to end check-in process easy and time efficient. We can also offer additional baggage allowances for eligible sporting groups; just include your baggage requirements and sporting team details within your quote request to obtain further information.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                },
+                {
+                    "title": "School Groups",
+                    "text": "Organising an educational trip or student tour? Our flexible booking conditions allow you to:\n- Secure your booking early while finalizing the finer details\n- Coordinate large groups with ease\n\nWe understand that school trips require extra planning, and we're here to make it simple!",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                },
+                {
+                    "title": "Musicians & Performers",
+                    "text": "Need to travel with your musical instruments? We offer:\n- Additional baggage allowances for eligible musicians\n- Careful handling of fragile instruments\n\nTo qualify, include details of your musical instrument and eligible music association membership in your quote request.",
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png"
+                }
+            ]
+        },
+        {
+            "key": "enquiry-form",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Group Booking Inquiry Form",
+            "note": "Does your group have any special requirements? If YES, please provide details in the field below."
+        },
+        {
+            "key": "app-cta",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Want To Book This Special Deal?",
+            "button_label": "Book Now"
+        }
+    ]
+}

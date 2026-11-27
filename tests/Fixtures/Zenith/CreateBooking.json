@@ -1,0 +1,2358 @@
+{
+ "InvalidData": null,
+ "Booking": {
+  "FareInfo": {
+   "SaleCurrencyAmountToPay": {
+    "TotalAmount": 1176.46,
+    "MilesAmount": 0,
+    "Extensions": null
+   },
+   "SaleCurrencyAmountToPayInAccount": 0,
+   "EMDTicketFares": [],
+   "SaleCurrencyAmountTotal": {
+    "DiscountAmount": 0,
+    "BaseAmount": 932,
+    "TaxAmount": 244.46,
+    "TotalAmount": 1176.46,
+    "MilesAmount": 0,
+    "Extensions": null
+   },
+   "Itineraries": [
+    {
+     "Ref": "IT_0",
+     "AirOriginDestinations": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefFareRule": "IT_0_1",
+       "AirCoupons": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490318",
+         "BookingClassCode": "Q",
+         "Extensions": null
+        }
+       ],
+       "Extensions": null
+      }
+     ],
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 932,
+      "TaxAmount": 244.46,
+      "TotalAmount": 1176.46,
+      "MilesAmount": 0,
+      "Extensions": null
+     },
+     "Extensions": null,
+     "RefExchangingItin": null,
+     "ValidatingAirlineDesignator": null
+    }
+   ],
+   "FareRules": [
+    {
+     "Ref": "IT_0_1",
+     "VoluntaryChangeCode": "WithPenalties",
+     "VoluntaryRefundCode": "Forbidden",
+     "Details": {
+      "ExchangePenalties": [
+       {
+        "FromHours": 0,
+        "ToHours": 10000,
+        "Amount": {
+         "TotalAmount": 165,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": -24,
+        "ToHours": 0,
+        "Amount": {
+         "TotalAmount": 165,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": -10000,
+        "ToHours": -24,
+        "Amount": {
+         "TotalAmount": 55,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": null,
+        "ToHours": null,
+        "Amount": {
+         "TotalAmount": 120,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": true,
+        "Extensions": null
+       }
+      ],
+      "RefundPenalties": [
+       {
+        "FromHours": 0,
+        "ToHours": 10000,
+        "Amount": {
+         "TotalAmount": 932,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": -24,
+        "ToHours": 0,
+        "Amount": {
+         "TotalAmount": 932,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": -10000,
+        "ToHours": -24,
+        "Amount": {
+         "TotalAmount": 932,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": false,
+        "Extensions": null
+       },
+       {
+        "FromHours": null,
+        "ToHours": null,
+        "Amount": {
+         "TotalAmount": 932,
+         "MilesAmount": 0,
+         "Extensions": null
+        },
+        "IsNoShowPenalty": true,
+        "Extensions": null
+       }
+      ],
+      "MinimumStay": 0,
+      "MaximumStay": 365,
+      "DayOffNightStay": false,
+      "AdvancePurchaseDays": 1,
+      "Extensions": null
+     },
+     "FareConditionText": {
+      "Text": "General terms and conditions of sale",
+      "Value": "One way",
+      "Children": [
+       {
+        "Text": "Fare basis code",
+        "Value": "Q - Pacific Saver Fare",
+        "Children": [],
+        "Extensions": null
+       },
+       {
+        "Text": "One way",
+        "Value": "allowed",
+        "Children": [],
+        "Extensions": null
+       },
+       {
+        "Text": "Open ticket",
+        "Value": "not allowed",
+        "Children": [],
+        "Extensions": null
+       },
+       {
+        "Text": "The duration of the stay must be included between 0 and 365 days",
+        "Value": null,
+        "Children": [],
+        "Extensions": null
+       },
+       {
+        "Text": "Ticket",
+        "Value": "Modifiable with fee",
+        "Children": [
+         {
+          "Text": "Until 1 day(s)* before the flight",
+          "Value": "55 AUD",
+          "Children": [],
+          "Extensions": null
+         },
+         {
+          "Text": "From 1 day(s)* until flight",
+          "Value": "165 AUD",
+          "Children": [],
+          "Extensions": null
+         },
+         {
+          "Text": "After the flight",
+          "Value": "165 AUD",
+          "Children": [],
+          "Extensions": null
+         },
+         {
+          "Text": "Additional penalty in case of no-show",
+          "Value": "120 AUD",
+          "Children": [],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       },
+       {
+        "Text": "Ticket",
+        "Value": "Non-refundable",
+        "Children": [],
+        "Extensions": null
+       },
+       {
+        "Text": "Bag allowance",
+        "Value": null,
+        "Children": [
+         {
+          "Text": "AD",
+          "Value": "23 Kg",
+          "Children": [],
+          "Extensions": null
+         },
+         {
+          "Text": "INF",
+          "Value": "10 Kg",
+          "Children": [],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       },
+       {
+        "Text": "days are divided in increments of 24 hours and governed by the flight departure time",
+        "Value": "*",
+        "Children": [],
+        "Extensions": null
+       }
+      ],
+      "Extensions": null
+     },
+     "Extensions": null
+    }
+   ],
+   "SaleCurrencyCode": "AUD",
+   "ETTicketFares": [
+    {
+     "Taxes": [
+      {
+       "CountryCode": "AU",
+       "Code": "WG",
+       "SaleCurrencyAmount": 6.29,
+       "Extensions": null
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "AU",
+       "SaleCurrencyAmount": 70,
+       "Extensions": null
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "WY",
+       "SaleCurrencyAmount": 36,
+       "Extensions": null
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YR",
+       "SaleCurrencyAmount": 25,
+       "Extensions": null
+      },
+      {
+       "CountryCode": "AU",
+       "Code": "YQ",
+       "SaleCurrencyAmount": 107.17,
+       "Extensions": null
+      }
+     ],
+     "OriginDestinationFares": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefWebClass": null,
+       "CouponFares": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490318",
+         "BookingClassCode": "Q",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 23,
+           "Extensions": null,
+           "CarryOn": false,
+           "TotalWeight": 23
+          }
+         ],
+         "FareBasisCode": "QECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 932,
+          "TaxAmount": 244.46,
+          "TotalAmount": 1176.46,
+          "MilesAmount": 0,
+          "Extensions": null
+         },
+         "AmountDetails": null,
+         "Extensions": [
+          {
+           "CouponPricingId": "15641423"
+          }
+         ]
+        }
+       ],
+       "Extensions": null,
+       "RefFareRule": null
+      }
+     ],
+     "RefPassenger": "237560",
+     "RefItinerary": "IT_0",
+     "Ref": "15404460",
+     "CreatedDateGMT": null,
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 932,
+      "TaxAmount": 244.46,
+      "TotalAmount": 1176.46,
+      "MilesAmount": 0,
+      "Extensions": null
+     },
+     "AmountDetails": null,
+     "Extensions": null
+    },
+    {
+     "Taxes": [],
+     "OriginDestinationFares": [
+      {
+       "OriginDestinationOrder": 1,
+       "RefWebClass": null,
+       "CouponFares": [
+        {
+         "CouponOrder": 1,
+         "RefSegment": "490318",
+         "BookingClassCode": "Q",
+         "Taxes": null,
+         "BagAllowances": [
+          {
+           "Quantity": null,
+           "WeightMeasureQualifier": "KG",
+           "Weight": 10,
+           "Extensions": null,
+           "CarryOn": false,
+           "TotalWeight": 10
+          }
+         ],
+         "FareBasisCode": "QECO",
+         "SaleCurrencyAmount": {
+          "DiscountAmount": 0,
+          "BaseAmount": 0,
+          "TaxAmount": 0,
+          "TotalAmount": 0,
+          "MilesAmount": 0,
+          "Extensions": null
+         },
+         "AmountDetails": null,
+         "Extensions": [
+          {
+           "CouponPricingId": "15641424"
+          }
+         ]
+        }
+       ],
+       "Extensions": null,
+       "RefFareRule": null
+      }
+     ],
+     "RefPassenger": "237561",
+     "RefItinerary": "IT_0",
+     "Ref": "15404461",
+     "CreatedDateGMT": null,
+     "SaleCurrencyAmount": {
+      "DiscountAmount": 0,
+      "BaseAmount": 0,
+      "TaxAmount": 0,
+      "TotalAmount": 0,
+      "MilesAmount": 0,
+      "Extensions": null
+     },
+     "AmountDetails": null,
+     "Extensions": null
+    }
+   ],
+   "Extensions": null,
+   "SaleCurrencyTravelerAmountToPay": {
+    "TotalAmount": 1176.46,
+    "MilesAmount": 0,
+    "Extensions": null
+   },
+   "SaleCurrencyTravelerAmountToPayInAccount": {
+    "TotalAmount": 0,
+    "MilesAmount": 0,
+    "Extensions": null
+   }
+  },
+  "TicketInfo": {
+   "ETTickets": [],
+   "EMDTickets": [],
+   "Fops": [],
+   "Extensions": null
+  },
+  "MiscInfo": {
+   "BoardingPassList": [],
+   "IsPendingExchange": false,
+   "PendingRefundRequest": null,
+   "ExchangeableOriginDestinations": [
+    {
+     "RefItinerary": "IT_0",
+     "OriginDestinationOrder": 1,
+     "ETTicketFareTargets": [
+      {
+       "RefETTicketFare": "15404460",
+       "CouponOrders": [
+        1
+       ],
+       "Extensions": null
+      },
+      {
+       "RefETTicketFare": "15404461",
+       "CouponOrders": [
+        1
+       ],
+       "Extensions": null
+      }
+     ],
+     "Extensions": null
+    }
+   ],
+   "CancelInfo": {
+    "CanCancel": true,
+    "CanVoid": false,
+    "CanRefund": false,
+    "CanRequestRefund": false
+   },
+   "TicketPrintHttpLink": null,
+   "DCSCoupons": [],
+   "Extensions": null,
+   "ContainsIssuableTickets": true,
+   "HasPendingPayment": false,
+   "HasPendingRefund": false,
+   "IsSalesClosingReached": false
+  },
+  "PnrInformation": {
+   "PnrCode": "003PUX",
+   "PnrStatusCode": "Option",
+   "TimeLimit": "2026-10-16T15:07:43.66",
+   "MissingTravelerRecordLocator": false,
+   "RefCustomer": "10027346",
+   "CreatedDateGMT": "2026-10-16T11:08:00",
+   "ModifiedDateGMT": "2026-10-16T11:07:50.617",
+   "Extensions": null,
+   "IsServiceBooking": false,
+   "PartnerInformation": {
+    "HasPartners": false,
+    "AllowNameElementChange": false
+   }
+  },
+  "Segments": [
+   {
+    "BookingClass": {
+     "CabinClassCode": "Y",
+     "Code": "Q",
+     "OperatingCode": "Q",
+     "Quantity": 1,
+     "StatusCode": "HK",
+     "Extensions": null
+    },
+    "TimeLimit": "2026-10-16T15:07:43.66",
+    "Ref": "490318",
+    "AirlineDesignator": "ON",
+    "FlightInfo": {
+     "OriginAirportTerminal": null,
+     "DestinationAirportTerminal": null,
+     "FlightNumber": "092",
+     "OperatingAirlineDesignator": "ON",
+     "OperatingFlightNumber": "092",
+     "CodeShareAgreementTypeCode": "",
+     "EquipmentCode": "733",
+     "EquipmentText": "Boeing 737-300 Passenger",
+     "DurationMinutes": 285,
+     "DepartureDate": "2026-10-28T06:20:00",
+     "Stops": [],
+     "ArrivalDate": "2026-10-28T13:05:00",
+     "Remarks": "ON092 BRISBANE-NAURU COMBINED SERVICE | NAURU AIRLINES (NW26)",
+     "Extensions": null
+    },
+    "OriginCode": "BNE",
+    "DestinationCode": "INU",
+    "Extensions": null
+   }
+  ],
+  "Passengers": [
+   {
+    "Ref": "237560",
+    "RefClient": null,
+    "PassengerQuantity": 1,
+    "PassengerTypeCode": "AD",
+    "NameElement": {
+     "CivilityCode": "MR",
+     "Firstname": "ADULT",
+     "Middlename": "",
+     "Surname": "TESTNYWXTS",
+     "Extensions": null
+    },
+    "Extensions": null
+   },
+   {
+    "Ref": "237561",
+    "RefClient": null,
+    "PassengerQuantity": 1,
+    "PassengerTypeCode": "INF",
+    "NameElement": {
+     "CivilityCode": "INF",
+     "Firstname": "X",
+     "Middlename": "",
+     "Surname": "TESTMNALKG",
+     "Extensions": null
+    },
+    "Extensions": null
+   }
+  ],
+  "SpecialServices": [
+   {
+    "Text": "TESTER/////",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": {
+      "ContactFullName": "Tester",
+      "ContactEmail": null,
+      "ContactCellPhone": null,
+      "ContactHomePhone": null,
+      "ContactWorkPhone": null,
+      "ContactFaxNumber": null,
+      "Extensions": null
+     },
+     "Ectc": null,
+     "Bill": null,
+     "Umctc": null,
+     "Fields": null,
+     "Extensions": null
+    },
+    "Status": null,
+    "RefPassenger": null,
+    "RefSegment": null,
+    "Code": "PCTC",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400000001",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237560",
+    "RefSegment": null,
+    "Code": "CTCH",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "+61400000001",
+    "Data": null,
+    "Status": null,
+    "RefPassenger": "237560",
+    "RefSegment": null,
+    "Code": "CTCM",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "PP/AU/PA1234567/AU/14Mar1985/M/01Jan2031//TESTNYWXTS/ADULT",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": {
+      "Documents": [
+       {
+        "IssueCountryCode": "AU",
+        "NationalityCountryCode": "AU",
+        "DateOfBirth": "1985-03-14T00:00:00",
+        "Gender": "M",
+        "DocumentExpiryDate": "2031-01-01T00:00:00",
+        "DocumentIssuanceDate": null,
+        "Firstname": "ADULT",
+        "Surname": "TESTNYWXTS",
+        "DocumentTypeCode": "PP",
+        "DocumentNumber": "PA1234567",
+        "Extensions": null
+       }
+      ],
+      "Extensions": null,
+      "AllowedDocumentTypeCodes": null
+     },
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Umctc": null,
+     "Fields": null,
+     "Extensions": null
+    },
+    "Status": null,
+    "RefPassenger": "237560",
+    "RefSegment": null,
+    "Code": "DOCS",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "14Mar1985",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": {
+      "DateOfBirth": "1985-03-14T00:00:00",
+      "RefPassengerWithSeat": null,
+      "Extensions": null
+     },
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Umctc": null,
+     "Fields": null,
+     "Extensions": null
+    },
+    "Status": null,
+    "RefPassenger": "237560",
+    "RefSegment": null,
+    "Code": "EXT-ADOB",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "PP/AU/N1234567/AU/10Jan2026/FI/01Jan2031//TESTMNALKG/X",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": {
+      "Documents": [
+       {
+        "IssueCountryCode": "AU",
+        "NationalityCountryCode": "AU",
+        "DateOfBirth": "2026-01-10T00:00:00",
+        "Gender": "FI",
+        "DocumentExpiryDate": "2031-01-01T00:00:00",
+        "DocumentIssuanceDate": null,
+        "Firstname": "X",
+        "Surname": "TESTMNALKG",
+        "DocumentTypeCode": "PP",
+        "DocumentNumber": "N1234567",
+        "Extensions": null
+       }
+      ],
+      "Extensions": null,
+      "AllowedDocumentTypeCodes": null
+     },
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": null,
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Umctc": null,
+     "Fields": null,
+     "Extensions": null
+    },
+    "Status": null,
+    "RefPassenger": "237561",
+    "RefSegment": null,
+    "Code": "DOCS",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   },
+   {
+    "Text": "10Jan2026/237560",
+    "Data": {
+     "Doca": null,
+     "Doco": null,
+     "Docs": null,
+     "Foid": null,
+     "Fqtv": null,
+     "Inft": {
+      "DateOfBirth": "2026-01-10T00:00:00",
+      "RefPassengerWithSeat": "237560",
+      "Extensions": null
+     },
+     "Chld": null,
+     "Umnr": null,
+     "Adof": null,
+     "Seat": null,
+     "Pctc": null,
+     "Ectc": null,
+     "Bill": null,
+     "Umctc": null,
+     "Fields": null,
+     "Extensions": null
+    },
+    "Status": null,
+    "RefPassenger": "237561",
+    "RefSegment": null,
+    "Code": "INFT",
+    "TechnicalType": null,
+    "Extensions": null,
+    "Available": null
+   }
+  ],
+  "SeatMaps": [
+   {
+    "AircraftName": "Boeing 737-300 Passenger",
+    "RefSegment": "490318",
+    "Decks": [
+     {
+      "DeckNumber": 1,
+      "Areas": [
+       {
+        "Name": "A",
+        "ColumnSizes": [
+         0,
+         2
+        ],
+        "Rows": [
+         {
+          "RowNumber": 1,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       },
+       {
+        "Name": "A",
+        "ColumnSizes": [
+         2,
+         2
+        ],
+        "Rows": [
+         {
+          "RowNumber": 2,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 3,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 4,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 5,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Business",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       },
+       {
+        "Name": "B",
+        "ColumnSizes": [
+         3,
+         3
+        ],
+        "Rows": [
+         {
+          "RowNumber": 6,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 7,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 8,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 9,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 10,
+          "LeftSideTypeCode": "Exit",
+          "RightSideTypeCode": "Exit",
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": false,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 11,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 12,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 13,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 14,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "Economy",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       },
+       {
+        "Name": "C",
+        "ColumnSizes": [
+         3,
+         3
+        ],
+        "Rows": [
+         {
+          "RowNumber": 15,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 16,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 17,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 18,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 19,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 20,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         },
+         {
+          "RowNumber": 21,
+          "LeftSideTypeCode": null,
+          "RightSideTypeCode": null,
+          "Curtains": false,
+          "Columns": [
+           {
+            "Seats": [
+             {
+              "Letter": "A",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "B",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "C",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           },
+           {
+            "Seats": [
+             {
+              "Letter": "D",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "E",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             },
+             {
+              "Letter": "F",
+              "SeatTypeCode": "None",
+              "IsAvailable": true,
+              "RefPassenger": null,
+              "AssociatedAncillaryCode": null,
+              "SpecialServiceCodeRestrictions": [],
+              "PassengerTypeCodeRestrictions": [],
+              "Extensions": null
+             }
+            ],
+            "Extensions": null
+           }
+          ],
+          "Extensions": null
+         }
+        ],
+        "Extensions": null
+       }
+      ],
+      "Extensions": null
+     }
+    ],
+    "Extensions": null
+   }
+  ],
+  "Extensions": null
+ },
+ "ResponseInfo": {
+  "EchoToken": null,
+  "Error": null,
+  "Warnings": null,
+  "ProcessingMs": 14286,
+  "Extensions": null
+ },
+ "Extensions": null
+}

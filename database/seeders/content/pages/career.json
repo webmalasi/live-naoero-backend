@@ -1,0 +1,81 @@
+{
+    "slug": "career",
+    "title": "Careers",
+    "group": "pages",
+    "path": "/career",
+    "summary": "Are you looking for a new and exciting career at Naoero Airlines?",
+    "seo_title": "Careers | Naoero Airlines",
+    "seo_description": "Careers at Naoero Airlines, the national carrier of Naoero. Current openings are advertised on SEEK.",
+    "banner_key": "career",
+    "sort_order": 110,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "subheading": "About Us > Careers",
+            "heading": "Careers",
+            "body": "Are you looking for a new and exciting career at Naoero Airlines?"
+        },
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Be Part Of Our Team",
+            "body": "At Naoero Airlines, we take pride in being the national carrier of Naoero, committed to connecting communities across the Pacific and beyond. Our team is at the heart of everything we do, driving innovation, excellence, and exceptional service to ensure seamless air travel for our passengers."
+        },
+        {
+            "key": "environment",
+            "type": "text",
+            "show_on": "both",
+            "heading": "A dynamic and rewarding work environment",
+            "body": "We offer a dynamic and rewarding work environment, providing growth opportunities, professional development, and a strong sense of purpose in shaping the future of aviation in the region."
+        },
+        {
+            "key": "openings",
+            "type": "feed",
+            "feed": "careers",
+            "show_on": "both",
+            "heading": "Current openings"
+        },
+        {
+            "key": "seek",
+            "type": "links",
+            "show_on": "both",
+            "heading": "Find your next opportunity",
+            "subheading": "Naoero Airlines Careers",
+            "body": "All current job openings are advertised on **SEEK**. Browse available positions and start your journey with us today:",
+            "button_label": "View Naoero Airlines Careers on SEEK",
+            "button_url": "https://www.seek.com.au"
+        },
+        {
+            "key": "hr",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Reach out to our HR team",
+            "body": "If you don't see a suitable role listed at this time, we encourage you to reach out to our Human Resources team for future opportunities.",
+            "button_label": "Contact HR: hr@naoeroairlines.com.au",
+            "button_url": "mailto:hr@naoeroairlines.com.au"
+        },
+        {
+            "key": "photos",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures at the foot of the Careers page",
+            "items": [
+                {
+                    "image": "seed:career/firstImage.png",
+                    "title": "Cabin crew member"
+                },
+                {
+                    "image": "seed:career/secondImage.png",
+                    "title": "Team training session"
+                },
+                {
+                    "image": "seed:career/thirdImage.png",
+                    "title": "Flight deck crew"
+                }
+            ]
+        }
+    ]
+}

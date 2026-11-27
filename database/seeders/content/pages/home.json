@@ -1,0 +1,78 @@
+{
+    "slug": "home",
+    "title": "Home",
+    "group": "pages",
+    "path": "/",
+    "summary": "The words on the home page: the line under the title, Travel Services and the Route Network figures. Specials, destinations, reasons to fly, shop and reviews have their own screens.",
+    "seo_title": "Naoero Airlines | Connecting the Pacific",
+    "seo_description": "Book flights with Naoero Airlines: Brisbane, Naoero, Tarawa, Majuro, Nadi and Suva.",
+    "banner_key": "home",
+    "sort_order": 1,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Our Specials",
+            "body": "Connecting Brisbane, Naoero, Tarawa, Majuro, Nadi & Suva—bringing Pacific communities closer with reliable regional travel.",
+            "image_alt": "Naoero Airlines aircraft flying over the Pacific"
+        },
+        {
+            "key": "travel-services",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Travel Services",
+            "items": [
+                {
+                    "title": "Pre-Purchased Additional Baggage",
+                    "text": "Purchase additional baggage online **before your flight** and enjoy **lower rates** than airport prices. Choose from flexible baggage options ranging from 5 kg to 25 kg and add them during booking or through My Booking.",
+                    "list": [
+                        "Save compared to airport rates",
+                        "Available up to 24 hours before departure",
+                        "Flexible options from 5 kg to 25 kg"
+                    ],
+                    "image": "seed:shared/eb5fa3ef-prepurchase.png",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/additional-baggage"
+                },
+                {
+                    "title": "Group Bookings",
+                    "text": "Travelling with **10 or more people?** Whether it's a family holiday, school trip, sports team, corporate event, or special occasion, we offer flexible booking options and dedicated support to make group travel simple.",
+                    "list": [
+                        "Exclusive group fares",
+                        "Flexible booking conditions",
+                        "Dedicated travel support"
+                    ],
+                    "image": "seed:shared/1a6838d9-groupBooking.png",
+                    "link_label": "Know More",
+                    "link_url": "/group-bookings"
+                }
+            ]
+        },
+        {
+            "key": "route-network",
+            "type": "stats",
+            "show_on": "both",
+            "heading": "Route Network",
+            "image": "seed:shared/2b26f9d3-routenetwork.png",
+            "image_alt": "Naoero Airlines route network map",
+            "items": [
+                {
+                    "icon": "users",
+                    "value": "50+",
+                    "title": "Years of Service"
+                },
+                {
+                    "icon": "users",
+                    "value": "8",
+                    "title": "Destinations"
+                },
+                {
+                    "icon": "users",
+                    "value": "100k+",
+                    "title": "Happy Passengers"
+                }
+            ]
+        }
+    ]
+}

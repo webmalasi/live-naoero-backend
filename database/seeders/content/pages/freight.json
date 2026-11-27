@@ -1,0 +1,219 @@
+{
+    "slug": "freight",
+    "title": "Freight",
+    "group": "pages",
+    "path": "/freight",
+    "summary": "Cargo transit across Australia, New Zealand, the South and Central Pacific and Asia.",
+    "seo_title": "Freight | Naoero Airlines",
+    "seo_description": "Freight services on Boeing 737 freighters and passenger aircraft, cargo agents across the Pacific, and freight quotes.",
+    "banner_key": "freight",
+    "sort_order": 20,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Freight",
+            "body": "Naoero Airlines offers cargo transit to our clients to various locations in Australia, New Zealand and the South/Central Pacific and Asia. We have a choice of aircraft available including Boeing 737-300, Boeing 737-700 and Boeing 737-800 aircraft available.",
+            "button_label": "Track freight"
+        },
+        {
+            "key": "freight-fleet",
+            "type": "cards",
+            "show_on": "website",
+            "heading": "Naoero Airlines Freight Fleet",
+            "body": "Please refer to our news article on the Naoero Post Frigate Service for detailed information about the Brisbane-Naoero Air Mail service. [Click here to learn more.](/news-hub)",
+            "button_label": "Explore Our Boeing 737 Fleet",
+            "button_url": "/our-fleet",
+            "items": [
+                {
+                    "title": "Aviation Standards",
+                    "text": "With an Australian Air Operator's Certificate, we uphold the highest aviation standards, operating a fleet of Boeing 737 aircraft."
+                },
+                {
+                    "title": "Freight Services",
+                    "text": "Our freight services accommodate a wide range of cargo needs, from mail to perishable goods, with the capacity and flexibility to handle even the most complex logistical requirements."
+                },
+                {
+                    "title": "Fleet",
+                    "text": "In addition to our dedicated freight fleet, comprising two Boeing 737-300Fs and Australia's first E-TOPS Boeing 737-800F, we also utilise our fleet of four Boeing 737 passenger aircraft to transport cargo across the Pacific."
+                },
+                {
+                    "title": "Scheduled Network",
+                    "text": "Our scheduled routes include Naoero, Fiji, Kiribati, the Republic of the Marshall Islands and the Federated States of Micronesia."
+                }
+            ]
+        },
+        {
+            "key": "who-to-contact",
+            "type": "contacts",
+            "show_on": "website",
+            "heading": "Who Do I Contact?",
+            "image_alt": "Naoero Airlines freight aircraft on the tarmac",
+            "items": [
+                {
+                    "title": "Freight Enquiries",
+                    "text": "For inquiries regarding cargo transportation, our dedicated team is ready to assist with expert guidance and support.",
+                    "value": "freight@naoeroairlines.com.au",
+                    "link_label": "Request Freight Quote",
+                    "link_url": "#freight-quote"
+                },
+                {
+                    "title": "Freight Charters",
+                    "text": "For Freight Charters, please visit our Charters Page or email us for more information.",
+                    "value": "charters@naoeroairlines.com.au",
+                    "link_label": "Visit Charters Page",
+                    "link_url": "/charter"
+                }
+            ],
+            "image": "seed:freight/whodocontent.png"
+        },
+        {
+            "key": "cargo-agents",
+            "type": "contacts",
+            "show_on": "both",
+            "heading": "Freight Network",
+            "body": "Quickly locate certified cargo agents across our global network.",
+            "note": "No cargo agents listed for this country yet. Please check back soon or contact our freight team directly.",
+            "items": [
+                {
+                    "slug": "Fiji",
+                    "title": "NADI (Fiji) Cargo Agent",
+                    "subtitle": "Air Terminal Services (Fiji) Ltd",
+                    "text": "Cargo Terminal Building, Nadi Airport, Fiji.",
+                    "value": "(679) 6722824 or 9922094",
+                    "link_label": "cargosupervisors@ats.com.fj",
+                    "link_url": "mailto:cargosupervisors@ats.com.fj",
+                    "image": "seed:freight/fiji2.png"
+                },
+                {
+                    "slug": "Fiji",
+                    "title": "NADI (Fiji) Freight Forwarders",
+                    "subtitle": "Bollore Logistics (Fiji) Pte Ltd",
+                    "text": "Lot 13 Naua Road, West Field, Nadi Airport",
+                    "value": "(679) 990 6422 or 965 6824",
+                    "link_label": "hemant.singh@bollore.com",
+                    "link_url": "mailto:hemant.singh@bollore.com",
+                    "image": "seed:freight/Fiji.png"
+                }
+            ],
+            "columns": [
+                "All",
+                "Fiji",
+                "Australia",
+                "Naoero",
+                "Kiribati",
+                "Marshall Island"
+            ]
+        },
+        {
+            "key": "freight-quote",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Request A Freight Quote",
+            "image_alt": "Naoero Airlines freight aircraft on the runway",
+            "image": "seed:shared/02c4a632-form.png"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Baggage",
+                    "text": "Please take note of your baggage allowances before you fly",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/baggage",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                },
+                {
+                    "title": "Travel Classes",
+                    "text": "We want you to have a relaxed and enjoyable experience while onboard with us",
+                    "link_label": "Know More",
+                    "link_url": "/on-board",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                }
+            ]
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Freight",
+            "body": "Cargo transit across Australia, New Zealand and the South and Central Pacific"
+        },
+        {
+            "key": "app-services",
+            "type": "list",
+            "show_on": "app",
+            "heading": "Freight Services",
+            "items": [
+                {
+                    "title": "General & Oversized"
+                },
+                {
+                    "title": "Perishable Goods"
+                },
+                {
+                    "title": "Medical & Essential"
+                },
+                {
+                    "title": "Mail & Postal"
+                }
+            ]
+        },
+        {
+            "key": "app-network",
+            "type": "list",
+            "show_on": "app",
+            "heading": "Freight Network",
+            "body": "Scheduled freight destinations across the Pacific",
+            "items": [
+                {
+                    "icon": "🇳🇷",
+                    "title": "Naoero"
+                },
+                {
+                    "icon": "🇫🇯",
+                    "title": "Fiji"
+                },
+                {
+                    "icon": "🇰🇮",
+                    "title": "Kiribati"
+                },
+                {
+                    "icon": "🇲🇭",
+                    "title": "Marshall Islands"
+                }
+            ]
+        },
+        {
+            "key": "app-charter",
+            "type": "cards",
+            "show_on": "app",
+            "heading": "Freight Charter",
+            "subheading": "Custom Cargo Solutions",
+            "body": "Freight charter service are available for urgent deliveries, bulk shipments and custom cargo requirements",
+            "button_label": "Enquire about charter",
+            "items": [
+                {
+                    "title": "Need dedicated Solutions?"
+                }
+            ]
+        },
+        {
+            "key": "app-agents",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Cargo Agents"
+        }
+    ]
+}

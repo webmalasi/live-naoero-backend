@@ -1,0 +1,47 @@
+{
+    "slug": "feedback",
+    "title": "Feedback",
+    "group": "pages",
+    "path": "/feedback",
+    "summary": "The words and pictures around the feedback form. The answers people send arrive under Inquiries.",
+    "seo_title": "Feedback | Naoero Airlines",
+    "seo_description": "Share feedback about your Naoero Airlines experience.",
+    "banner_key": "feedback",
+    "sort_order": 200,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Feedback",
+            "body": "Share feedback about your experience. To share feedback related to a booking or flight with us, you'll need to enter your flight details manually.",
+            "image_alt": "Naoero Airlines aircraft flying over the ocean"
+        },
+        {
+            "key": "slides",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures above the form (three show at a time)",
+            "items": [
+                {
+                    "title": "Relaxing on a sunset beach",
+                    "image": "seed:feedback/slideerimage1.jpg"
+                },
+                {
+                    "title": "Snorkelling and scuba diving",
+                    "image": "seed:feedback/slideerimage2.jpg"
+                },
+                {
+                    "title": "Local culture and traditions",
+                    "image": "seed:feedback/slideerimage3.jpg"
+                }
+            ]
+        },
+        {
+            "key": "form",
+            "type": "text",
+            "show_on": "website",
+            "heading": "Customer Feedback"
+        }
+    ]
+}

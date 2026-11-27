@@ -1,0 +1,183 @@
+{
+    "slug": "our-team",
+    "title": "Our Team",
+    "group": "pages",
+    "path": "/our-team",
+    "summary": "Meet the passionate people behind every safe and memorable journey.",
+    "seo_title": "Our Team | Naoero Airlines",
+    "seo_description": "The people of Naoero Airlines: reservations, operations and engineering, ground services, pilots and cabin crew.",
+    "banner_key": "our-team",
+    "sort_order": 100,
+    "sections": [
+        {
+            "key": "intro",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "About > Our Team",
+            "heading": "Our Team",
+            "body": "Meet the passionate people behind every safe and memorable journey."
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Home > About Us > Our Team",
+            "heading": "The People Behind Your Journey",
+            "body": "From booking to arrival, our dedicated team works to make your journey safe, smooth and enjoyable."
+        },
+        {
+            "key": "about-team",
+            "type": "image_text",
+            "show_on": "both",
+            "subheading": "About Our Team",
+            "heading": "People. Passion. Purpose.",
+            "body": "Our team is the heart of Naoero Airlines. From the cockpit to the cabin and every department in between, we work together to deliver exceptional travel experience.\n\nWe are committed to safety, reliability and island hospitality while connecting people and places that matter most.\n\nWith diverse skills and a shared commitment, our people make every journey extraordinary.",
+            "image_alt": "Naoero Airlines pilots and cabin crew",
+            "image": "seed:our-team/aboutteam.jpg"
+        },
+        {
+            "key": "service",
+            "type": "list",
+            "show_on": "both",
+            "heading": "Employee Photos",
+            "body": "We take immense pride in the exceptional service we provide to our passengers. From the moment you consider booking your flight to the time you arrive at your destination, our dedicated team works tirelessly to ensure a safe, smooth, and enjoyable journey.",
+            "items": [
+                {
+                    "title": "Reservations & Customer Support",
+                    "text": "Need assistance with booking? Our friendly and knowledgeable reservations team is here to help, making your travel planning effortless."
+                },
+                {
+                    "title": "Operations & Engineering",
+                    "text": "Behind the scenes, our highly skilled operations and engineering teams uphold the highest safety standards, ensuring our fleet is always maintained and ready to fly."
+                },
+                {
+                    "title": "Ground Services",
+                    "text": "At every port, our efficient ground staff work to provide a seamless experience, ensuring quick turnarounds and smooth transits for all passengers."
+                },
+                {
+                    "title": "Pilots & Cabin Crew",
+                    "text": "Our highly trained pilots and cabin crew are the heart of our airline, committed to your safety, comfort, and exceptional inflight experience."
+                }
+            ]
+        },
+        {
+            "key": "employee-photos",
+            "type": "gallery",
+            "show_on": "website",
+            "heading": "Pictures: Employee Photos (first is the tall one)",
+            "items": [
+                {
+                    "image": "seed:our-team/employeePhoto1.png",
+                    "title": "Cabin crew assisting a passenger"
+                },
+                {
+                    "image": "seed:our-team/employeePhoto2.png",
+                    "title": "Ground crew team walking together"
+                },
+                {
+                    "image": "seed:our-team/employeePhoto3.png",
+                    "title": "Check-in desk service"
+                }
+            ]
+        },
+        {
+            "key": "members",
+            "type": "feed",
+            "feed": "team",
+            "show_on": "both",
+            "heading": "Meet The Team"
+        },
+        {
+            "key": "values",
+            "type": "cards",
+            "show_on": "both",
+            "heading": "Our Value",
+            "items": [
+                {
+                    "icon": "shield",
+                    "title": "Safety First",
+                    "text": "Safety is our top priority in every decision we make."
+                },
+                {
+                    "icon": "heart",
+                    "title": "Integrity",
+                    "text": "We do right things always with honesty."
+                },
+                {
+                    "icon": "users",
+                    "title": "Customer Care",
+                    "text": "We care for our passengers like family."
+                },
+                {
+                    "icon": "star",
+                    "title": "Excellence",
+                    "text": "We strive for excellence in everything we do."
+                }
+            ]
+        },
+        {
+            "key": "stats",
+            "type": "stats",
+            "show_on": "both",
+            "items": [
+                {
+                    "icon": "plane",
+                    "value": "40+",
+                    "title": "Years of service"
+                },
+                {
+                    "icon": "users",
+                    "value": "70+",
+                    "title": "Employees"
+                },
+                {
+                    "icon": "map-pin",
+                    "value": "7",
+                    "title": "Destinations"
+                },
+                {
+                    "icon": "clock",
+                    "value": "99%",
+                    "title": "On Time Performance"
+                }
+            ]
+        },
+        {
+            "key": "app-cta",
+            "type": "text",
+            "show_on": "app",
+            "heading": "Need assistance?",
+            "button_label": "Contact Reservations",
+            "button_url": "/contact-us"
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "FAQs",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/faqs",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Contact Us!",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/contact-us",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}

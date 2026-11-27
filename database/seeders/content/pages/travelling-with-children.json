@@ -1,0 +1,107 @@
+{
+    "slug": "travelling-with-children",
+    "title": "Travelling With Children",
+    "group": "travel-info",
+    "path": "/travel-info/before-you-fly/travelling-with-children",
+    "summary": "Let us know in advance if you need any special assistance, dietary support, medical clearance or additional services.",
+    "seo_title": "Travelling With Children | Naoero Airlines",
+    "seo_description": "Age limits, baggage, meals and check-in for infants and children travelling with Naoero Airlines.",
+    "banner_key": "travelling-with-children",
+    "sort_order": 250,
+    "sections": [
+        {
+            "key": "hero",
+            "type": "text",
+            "show_on": "website",
+            "subheading": "Before You Fly",
+            "heading": "Travelling With Children",
+            "body": "Let us know in advance if you need any special assistance dietary support, medical clearance or additional services. Our team will do our best to ensure a smooth journey from start to finish.",
+            "button_label": "Learn More",
+            "image_alt": "A flight attendant talking with a child on board",
+            "image": "seed:travelling-with-children/hero.jpg"
+        },
+        {
+            "key": "app-hero",
+            "type": "text",
+            "show_on": "app",
+            "subheading": "Before You Fly > Travelling With Children",
+            "heading": "Make Travelling With Little Ones Easier."
+        },
+        {
+            "key": "on-the-day",
+            "type": "text",
+            "show_on": "both",
+            "heading": "On The Day",
+            "body": "We suggest you plan your route in advance to ensure you have enough time for airport arrival and passenger processing with children or infants. For international flights, passengers should arrive at the airport 3 hours prior to flying. This will help to ensure a smooth check-in experience and transition through the airport.\n\nCheck-in closes 1 hour prior to the flight and you should arrive at your allocated gate a minimum of 30 minutes before take-off. If you have any questions about travelling with children or infants on our flights, please contact our friendly ground staff or cabin crew who will be happy to assist you."
+        },
+        {
+            "key": "age-limits",
+            "type": "text",
+            "show_on": "both",
+            "heading": "Age Limitations For Children And Infants",
+            "subheading": "Age limitations for Children and Infants",
+            "body": "The Unaccompanied Minor service is compulsory for children ages 5-11 travelling without an adult passenger who is at least 15 years old.\n\nChildren under 5 years of age cannot travel unless they are accompanied by an adult over the age of 15 years.\n\nOne infant may travel per adult.\n\n**Infant**: Age under 2 years\n\n**Child**: Age 2 years - 11 years\n\n**Adult**: Age 12 and above",
+            "note": "Please Note That Naoero Airlines Aircraft Are Not Fitted With Bassinets."
+        },
+        {
+            "key": "children",
+            "type": "cards",
+            "show_on": "both",
+            "items": [
+                {
+                    "title": "Baggage Allowance - Children",
+                    "text": "Children are passengers aged 2-11 years of age. The baggage allowance for children is the same as for adult passengers. For more information about baggage allowances and fare types, please click [here](/travel-info/baggage) or contact our reservations team at reservations@naoeroair.com."
+                },
+                {
+                    "title": "Child meals",
+                    "text": "For passengers travelling with children, children's meals are available on request a minimum of 48 hours prior to the flight. If not requested, a standard meal will be provided. For assistance with meal requests, call reservations on +61 7 3229 6455 or email us at reservations@naoeroair.com."
+                }
+            ]
+        },
+        {
+            "key": "infants",
+            "type": "cards",
+            "show_on": "both",
+            "items": [
+                {
+                    "title": "Baggage Allowance - Infants",
+                    "text": "Infants are passengers under 2 years of age. For passengers travelling with infants, accompanying adults may carry 10kg of baggage and check-in one (1) of the following for free: stroller or bassinet or car seat. If any of these items are used to board the aircraft, the items will be stowed in the hold after boarding and returned to you at the destination port. These items must be presented at the boarding gate no later than 45 minutes prior to departure."
+                },
+                {
+                    "title": "Infant meals",
+                    "text": "Passengers accompanying an infant are welcome to bring sufficient baby food onboard for the flight. However, if you would prefer to request an infant meal, please contact reservations on +61 7 3229 6455 or email us at reservations@naoeroair.com prior to your flight.\n\nPlease ensure you place any special meal orders a minimum of 48 hours before departure."
+                }
+            ],
+            "note": "Infants and children must be accompanied by an adult. Children can travel alone if they are booked as an Unaccompanied Minor. Please refer to the section on Unaccompanied Minors for more information."
+        },
+        {
+            "key": "quick-links",
+            "type": "links",
+            "show_on": "website",
+            "heading": "Quick Links",
+            "items": [
+                {
+                    "title": "Before you fly",
+                    "text": "Read more about our Before you fly here !",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/before-you-fly",
+                    "image": "seed:shared/fad0f1e2-quickLink1.png"
+                },
+                {
+                    "title": "FAQs",
+                    "text": "Have a question? We might have already answered it here!",
+                    "link_label": "Know More",
+                    "link_url": "/travel-info/faqs",
+                    "image": "seed:shared/3dd99e0f-quickLink2.png"
+                },
+                {
+                    "title": "Contact Us!",
+                    "text": "Our Team are here for you!",
+                    "link_label": "Know More",
+                    "link_url": "/contact-us",
+                    "image": "seed:shared/3ba0f670-quickLink3.png"
+                }
+            ]
+        }
+    ]
+}
